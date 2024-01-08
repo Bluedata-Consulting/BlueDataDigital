@@ -1,90 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const testimonal = () => {
+const testimonialsData = [
+  {
+    name: "Maria Kate",
+    role: "Photographer",
+    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg",
+    content:
+      "In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar. Sed semper ligula sed lorem tincidunt dignissim. Nam sed cursus lectus. Proin non rutrum magna. Proin gravida, justo et imperdiet tristique turpis nisi viverra.",
+    rating: 5,
+  },
+  {
+    name: "John Doe",
+    role: "Web Developer",
+    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel magna sit amet erat lacinia rutrum eu in leo. Curabitur ut ex vel augue fringilla interdum ut eu libero.",
+    rating: 4,
+  },
+  {
+    name: "Alice Smith",
+    role: "Graphic Designer",
+    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).jpg",
+    content:
+      "Sed euismod est eget sapien tincidunt, id ullamcorper elit volutpat. In non lacus eu lectus egestas ultricies eget in elit. Sed vel elit id arcu vulputate tristique.",
+    rating: 5,
+  },
+  {
+    name: "Bob Johnson",
+    role: "Marketing Specialist",
+    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).jpg",
+    content:
+      "Nullam a est ut tellus feugiat fringilla. Ut et gravida sem, sit amet elementum ligula. Integer ut ligula in dui consectetur feugiat. Donec eu rhoncus metus.",
+    rating: 3,
+  },
+  // Add more testimonials with a similar structure
+];
+
+const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : testimonialsData.length - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex < testimonialsData.length - 1 ? prevIndex + 1 : 0
+    );
+  };
+
+  useEffect(() => {
+    const autoplayInterval = setInterval(() => {
+      handleNext();
+    }, 5000); // Change the interval as needed (e.g., every 5 seconds)
+
+    return () => {
+      clearInterval(autoplayInterval);
+    };
+  }, [activeIndex]);
+
+  const currentTestimonial = testimonialsData[activeIndex];
+
   return (
-    <div>
-      <div className="py-5 bg-gradient-to-r from-blue-500 to-green-500">
-        <div className="container mx-auto">
-          <div className="flex justify-center">
-            <div className="text-center mb-4 pb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-12 h-12 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-            <div className="w-full md:w-10/12 lg:w-8/12 xl:w-6/12">
-              <div className="bg-white rounded-md shadow-lg">
-                <div className="p-4 md:p-5">
-                  <div className="carousel">
-                    <div className="carousel-inner">
-                      <div className="carousel-item active">
-                        <div className="flex justify-center">
-                          <div className="w-full lg:w-8/12 xl:w-7/12">
-                            <div className="flex">
-                              <div className="lg:w-4/12">
-                                <img
-                                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                                  alt="woman avatar"
-                                  className="rounded-circle shadow-1 mb-4 mb-lg-0"
-                                  width="150"
-                                  height="150"
-                                />
-                              </div>
-                              <div className="lg:w-8/12 md:ml-8">
-                                <h4 className="mb-4 text-2xl font-bold">
-                                  Maria Smantha - Web Developer
-                                </h4>
-                                <p className="mb-3 text-gray-700">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. A aliquam amet animi
-                                  blanditiis consequatur debitis dicta
-                                  distinctio, enim error eum iste libero modi
-                                  nam natus perferendis possimus quasi sint sit
-                                  tempora voluptatem. Est, exercitationem id
-                                  ipsa ipsum laboriosam perferendis.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* ... (similar structure for other carousel items) */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="text-center mt-4 pt-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-12 h-12 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+    <div className="container my-24 mx-auto md:px-6">
+      <section className="mb-32 text-center">
+        <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
+
+        <div className="flex items-center justify-center">
+          <div className="max-w-lg">
+            <div className="mb-6">
+              <img
+                className="mx-auto mb-6 rounded-full shadow-lg w-24"
+                src={currentTestimonial.image}
+                alt="avatar"
+              />
+              <h5 className="mb-2 text-lg font-bold">
+                {currentTestimonial.name}
+              </h5>
+              <p className="mb-4 font-medium text-gray-700">
+                {currentTestimonial.role}
+              </p>
+              <p className="mb-6 text-gray-500">{currentTestimonial.content}</p>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Previous and Next Buttons */}
+        <div className="flex justify-between">
+          <button className="text-gray-700 " type="button" onClick={handlePrev}>
+            Previous
+          </button>
+          <button className="text-gray-700 " type="button" onClick={handleNext}>
+            Next
+          </button>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default testimonal;
+export default Testimonials;

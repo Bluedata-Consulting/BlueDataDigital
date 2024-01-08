@@ -41,6 +41,7 @@ const Homepage = () => {
           </div>
         </div>
       </div> */}
+
       <div className="relative z-10 bg-white">
         {/* Features Section */}
         <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 md:my-24 lg:my-32 lg:px-8">
@@ -144,8 +145,8 @@ const Homepage = () => {
           </div>
         </section>
 
-        {/* Testimonals Carousel */}
         {/* <Testimonal /> */}
+        <Testimonal />
       </div>
       {/* Footer */}
       <Footer />
