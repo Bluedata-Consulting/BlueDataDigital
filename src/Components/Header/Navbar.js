@@ -35,7 +35,8 @@ const Navbar = () => {
       // Close dropdowns if clicked outside the dropdown container
       if (
         dropdownContainerRef.current &&
-        !dropdownContainerRef.current.contains(event.target)
+        !dropdownContainerRef.current.contains(event.target) &&
+        !event.target.closest(".dropdown-item")
       ) {
         closeDropdowns();
       }
@@ -125,7 +126,8 @@ const Navbar = () => {
               )}
             </li>
             {/* Industries Dropdown */}
-            <li className="relative">
+
+            <li ref={dropdownContainerRef} className="relative">
               <button
                 onClick={toggleIndustriesDropdown}
                 className="text-md font-semibold text-gray-800 hover:text-gray-900 flex items-center"
@@ -139,20 +141,18 @@ const Navbar = () => {
               </button>
               {isIndustriesOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
-                  {/* Dropdown items */}
                   <a
-                    href="/"
+                    href="/telecom"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
                   >
-                    Item 1
+                    Telecom
                   </a>
                   <a
-                    href="/"
+                    href="/manufacturing"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
                   >
-                    Item 2
+                    Manufacturing
                   </a>
-                  {/* Add more items as needed */}
                 </div>
               )}
             </li>

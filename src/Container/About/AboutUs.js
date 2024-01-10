@@ -27,7 +27,7 @@ const AboutUs = () => {
                 </p>
                 <div className="mt-10 flex flex-col items-center md:flex-row">
                   <a
-                    href="/"
+                    href="/"  
                     aria-label=""
                     className="group inline-flex items-center font-semibold text-g1"
                   >
