@@ -1,9 +1,7 @@
 import React from "react";
+import BenefitImage from "../../Assets/benefit.png";
 
 const ImageWithListSection = () => {
-  const imageUrl =
-    "https://assets-global.website-files.com/637c58df1aee6bdbac035e31/63f33a54060ea9f9e86f40c1_Business%20Benefits.webp";
-
   const listItems = [
     "Improved network performance and capacity planning.",
     "Enhanced customer experience and retention strategies.",
@@ -19,9 +17,9 @@ const ImageWithListSection = () => {
     <section className="container mx-auto px-4 py-8 space-y-6 bg-slate-50 dark:bg-transparent md:py-12 lg:pt-10 my-10 flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
-          src={imageUrl}
+          src={BenefitImage}
           alt="Business Benefits"
-          className="w-full h-auto md:max-w-full md:h-auto"
+          className="w-full h-auto md:max-w-full md:h-auto rounded-3xl"
         />
       </div>
       <div className="md:w-1/2 ml-4 md:ml-8 flex flex-col justify-start h-full">

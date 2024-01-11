@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
-import image1 from "../../Assets/1.jpg";
-import image2 from "../../Assets/2.jpeg";
+import { Link } from "react-router-dom";
 
-const slides = [image1, image2];
+const slides = [
+  "https://cdn.dribbble.com/userupload/4851305/file/original-12a08a6234ffb850cb5a7950a3dcbaf0.png?resize=1024x576",
+  "https://cdn.dribbble.com/users/563760/screenshots/18883005/media/860374fff7402eeedeaff4ecc988e135.jpg?resize=1000x750&vertical=center",
+];
 
 const CarouselComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -49,12 +51,20 @@ const CarouselComponent = () => {
               esse qui repudiandae cum fuga aspernatur ea?
             </p>
             <div className="mt-8">
-              <button
+              <Link
+                to="/about"
                 type="button"
                 className="rounded-md bg-white px-4 py-2 text-md font-semibold text-black shadow-sm hover:bg-gray-2 00 focus:outline-none focus:ring focus:border-blue-300"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 ABOUT US
-              </button>
+              </Link>
             </div>
           </div>
         </Transition>

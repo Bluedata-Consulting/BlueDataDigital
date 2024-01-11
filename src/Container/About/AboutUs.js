@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import image from "../../Assets/image-1.jpg";
@@ -26,10 +27,17 @@ const AboutUs = () => {
                   accusantium doloremque it.
                 </p>
                 <div className="mt-10 flex flex-col items-center md:flex-row">
-                  <a
-                    href="/"  
+                  <Link
+                    to="/"
                     aria-label=""
                     className="group inline-flex items-center font-semibold text-g1"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Watch how it works
                     <svg
@@ -46,7 +54,7 @@ const AboutUs = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -263,9 +271,19 @@ const AboutUs = () => {
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </p>
-              <a href="/about" className="font-bold text-blueGray-700 mt-8">
+              <Link
+                to="/about"
+                className="font-bold text-blueGray-700 mt-8"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
                 Check Notus JS!
-              </a>
+              </Link>
             </div>
             <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-2 shadow-gray-400 shadow-lg rounded-lg">

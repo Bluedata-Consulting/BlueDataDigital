@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,36 +40,64 @@ const Footer = () => {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Affiliate Program
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Press Kit
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -80,36 +109,64 @@ const Footer = () => {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Account
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Help
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Customer Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -121,28 +178,49 @@ const Footer = () => {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="/"
+                    to="/"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Licensing
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

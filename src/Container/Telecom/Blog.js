@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ArticleCard = ({
   category,
@@ -18,14 +19,34 @@ const ArticleCard = ({
       <div className="flex flex-1 flex-col justify-between bg-white p-6">
         <div className="flex-1">
           <p className="text-sm font-medium text-gray-600">
-            <a href="/article" className="hover:underline">
+            <Link
+              to="/article"
+              className="hover:underline"
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
               {category}
-            </a>
+            </Link>
           </p>
-          <a href="/article" className="mt-2 block">
+          <Link
+            to="/article"
+            className="mt-2 block"
+            onClick={() => {
+              window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             <p className="text-xl font-semibold text-gray-900">{title}</p>
             <p className="mt-3 text-base text-gray-500">{description}</p>
-          </a>
+          </Link>
         </div>
         {/* <div className="mt-6 flex items-center">
           <div className="flex-shrink-0">
@@ -58,7 +79,7 @@ const ArticleCard = ({
 
 const Blog = () => {
   return (
-    <section className="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+    <section className="relative px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
       <div className="absolute inset-0">
         <div className="h-1/3 bg-white sm:h-2/3"></div>
       </div>

@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import FeaturesSection from "./FeaturesSection";
 import WhyUs from "./WhyUs";
 import Benefits from "./Benefits";
 import Blog from "./Blog";
+import ImageTele from "../../Assets/telecom.jpg";
 
 const Telecom = () => {
   return (
@@ -24,18 +26,25 @@ const Telecom = () => {
               Count on us to deliver these in the exact measure.
             </p>
             <div className="mt-8 flex items-start space-x-2">
-              <button
-                type="button"
+              <Link
+                to="/contact"
                 className="rounded-md bg-black px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Get in touch
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
             <img
-              className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
-              src="https://assets-global.website-files.com/637c58df1aee6bdbac035e31/63f3426fc129831b36e1e9d6_Telecom%20Analytics.webp"
+              className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[500px] xl:aspect-[16/9]"
+              src={ImageTele}
               alt=""
             />
           </div>

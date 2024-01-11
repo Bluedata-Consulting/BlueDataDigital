@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const testimonialsData = [
   {
@@ -89,11 +94,23 @@ const Testimonials = () => {
 
         {/* Previous and Next Buttons */}
         <div className="flex justify-between">
-          <button className="text-gray-700 " type="button" onClick={handlePrev}>
+          {/* Previous Button with Icon */}
+          <button
+            className="text-gray-700 mr-4"
+            type="button"
+            onClick={handlePrev}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
             Previous
           </button>
-          <button className="text-gray-700 " type="button" onClick={handleNext}>
+          {/* Next Button with Icon */}
+          <button
+            className="text-gray-700 ml-4"
+            type="button"
+            onClick={handleNext}
+          >
             Next
+            <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
           </button>
         </div>
       </section>

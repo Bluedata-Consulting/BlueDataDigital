@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +56,17 @@ const Navbar = () => {
     <header className="relative w-full border-b bg-white py-1">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
         {/* Logo and brand name */}
-        <div className="inline-flex items-center space-x-2">
+        <Link
+          to="/"
+          className="inline-flex items-center space-x-2"
+          onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <span>
             <svg
               width="30"
@@ -70,27 +81,41 @@ const Navbar = () => {
               />
             </svg>
           </span>
-          <span className="font-bold">BDD</span>
-        </div>
+          <span className="font-bold">BLUE DATA DIGITAL</span>
+        </Link>
 
         {/* Navigation Menu for large screens */}
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-md font-semibold text-gray-800 hover:text-gray-900"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-md font-semibold text-gray-800 hover:text-gray-900"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 About
-              </a>
+              </Link>
             </li>
 
             {/* Expertise Dropdown */}
@@ -109,18 +134,32 @@ const Navbar = () => {
               {isExpertiseOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
                   {/* Dropdown items */}
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Item 1
-                  </a>
-                  <a
-                    href="/"
+                  </Link>
+                  <Link
+                    to="/"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Item 2
-                  </a>
+                  </Link>
                   {/* Add more items as needed */}
                 </div>
               )}
@@ -141,28 +180,49 @@ const Navbar = () => {
               </button>
               {isIndustriesOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
-                  <a
-                    href="/telecom"
+                  <Link
+                    to="/telecom"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Telecom
-                  </a>
-                  <a
-                    href="/manufacturing"
+                  </Link>
+                  <Link
+                    to="/manufacturing"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                   >
                     Manufacturing
-                  </a>
+                  </Link>
                 </div>
               )}
             </li>
             <li>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="text-md font-semibold text-gray-800 hover:text-gray-900"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -188,15 +248,32 @@ const Navbar = () => {
                 </div>
               </div>
               <nav className="grid gap-y-4">
-                <a href="/" className="text-base font-medium text-gray-900">
-                  Home
-                </a>
-                <a
-                  href="/about"
+                <Link
+                  to="/"
                   className="text-base font-medium text-gray-900"
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-base font-medium text-gray-900"
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   About
-                </a>
+                </Link>
                 {/* Dropdown for Expertise in Mobile */}
                 <div>
                   <button
@@ -208,12 +285,32 @@ const Navbar = () => {
                   </button>
                   {isExpertiseOpen && (
                     <div className="ml-4 mt-2 space-y-2">
-                      <a href="/" className="block text-md text-gray-700">
+                      <Link
+                        to="/"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                        }}
+                      >
                         Item 1
-                      </a>
-                      <a href="/" className="block text-md text-gray-700">
+                      </Link>
+                      <Link
+                        to="/"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                        }}
+                      >
                         Item 2
-                      </a>
+                      </Link>
                       {/* Add more dropdown items as needed */}
                     </div>
                   )}
@@ -229,22 +326,49 @@ const Navbar = () => {
                   </button>
                   {isIndustriesOpen && (
                     <div className="ml-4 mt-2 space-y-2">
-                      <a href="/" className="block text-md text-gray-700">
+                      <Link
+                        to="/"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                        }}
+                      >
                         Item 1
-                      </a>
-                      <a href="/" className="block text-md text-gray-700">
+                      </Link>
+                      <Link
+                        to="/"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                        }}
+                      >
                         Item 2
-                      </a>
+                      </Link>
                       {/* Add more dropdown items as needed */}
                     </div>
                   )}
                 </div>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-base font-medium text-gray-900"
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   Contact
-                </a>
+                </Link>
               </nav>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import { DollarSign, Filter, Moon, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 import CarouselComponent from "./CarouselComponent";
 import Testimonal from "./testimonal";
@@ -132,15 +133,22 @@ const Homepage = () => {
                 </div>
               ))}
             </div>
-            <p className="mt-10 text-center text-gray-600">
+            <p className="mt-10 text-center text-gray-800">
               Can&apos;t find what you&apos;re looking for?{" "}
-              <a
-                href="/"
+              <Link
+                to="/contact"
                 title=""
                 className="black font-semibold hover:underline"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Contact us
-              </a>
+              </Link>
             </p>
           </div>
         </section>
