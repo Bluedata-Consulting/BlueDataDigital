@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import B1 from "../../Assets/B1.png";
+import B2 from "../../Assets/B2.png";
 
-const slides = [
-  "https://cdn.dribbble.com/userupload/4851305/file/original-12a08a6234ffb850cb5a7950a3dcbaf0.png?resize=1024x576",
-  "https://cdn.dribbble.com/users/563760/screenshots/18883005/media/860374fff7402eeedeaff4ecc988e135.jpg?resize=1000x750&vertical=center",
-];
+const slides = [B1, B2];
 
 const CarouselComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const goToSlide = (index) => {
-    setActiveIndex(index);
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((current) => (current + 1) % slides.length);
-    }, 8000);
+    }, 2500);
     return () => clearInterval(interval);
   }, []);
 
@@ -69,19 +64,6 @@ const CarouselComponent = () => {
           </div>
         </Transition>
       ))}
-
-      <div className="absolute bottom-4 flex justify-center w-full">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`h-3 w-3 rounded-full mx-2 ${
-              index === activeIndex ? "bg-white" : "bg-gray-500"
-            } hover:bg-gray-300 focus:outline-none focus:ring focus:border-blue-300`}
-            aria-label={`Go to Slide ${index + 1}`}
-          ></button>
-        ))}
-      </div>
     </section>
   );
 };

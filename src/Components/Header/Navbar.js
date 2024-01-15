@@ -13,12 +13,12 @@ const Navbar = () => {
   };
 
   const toggleExpertiseDropdown = () => {
-    closeDropdowns("expertise"); // Close other dropdowns when opening expertise dropdown
+    closeDropdowns("expertise");
     setIsExpertiseOpen(!isExpertiseOpen);
   };
 
   const toggleIndustriesDropdown = () => {
-    closeDropdowns("industries"); // Close other dropdowns when opening industries dropdown
+    closeDropdowns("industries");
     setIsIndustriesOpen(!isIndustriesOpen);
   };
 
@@ -28,25 +28,26 @@ const Navbar = () => {
     if (except !== "industries") setIsIndustriesOpen(false);
   };
 
-  // UseRef to create a reference to the dropdown container
-  const dropdownContainerRef = useRef();
+  // UseRef for the dropdown containers
+  const expertiseDropdownContainerRef = useRef();
+  const industriesDropdownContainerRef = useRef();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Close dropdowns if clicked outside the dropdown container
       if (
-        dropdownContainerRef.current &&
-        !dropdownContainerRef.current.contains(event.target) &&
-        !event.target.closest(".dropdown-item")
+        expertiseDropdownContainerRef.current &&
+        !expertiseDropdownContainerRef.current.contains(event.target) &&
+        !event.target.closest(".dropdown-item-expertise") &&
+        industriesDropdownContainerRef.current &&
+        !industriesDropdownContainerRef.current.contains(event.target) &&
+        !event.target.closest(".dropdown-item-industries")
       ) {
         closeDropdowns();
       }
     };
 
-    // Add mousedown event listener to the entire document
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Remove the event listener when the component is unmounted
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -119,10 +120,10 @@ const Navbar = () => {
             </li>
 
             {/* Expertise Dropdown */}
-            <li ref={dropdownContainerRef} className="relative">
-              <button
+            <li ref={expertiseDropdownContainerRef} className="relative">
+              <div
                 onClick={toggleExpertiseDropdown}
-                className="text-md font-semibold text-gray-800 hover:text-gray-900 flex items-center"
+                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
               >
                 Expertise
                 {isExpertiseOpen ? (
@@ -130,14 +131,15 @@ const Navbar = () => {
                 ) : (
                   <ChevronDown className="ml-2" />
                 )}
-              </button>
+              </div>
               {isExpertiseOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
                   {/* Dropdown items */}
                   <Link
-                    to="/"
+                    to="/ai"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
-                    onClick={() => {
+                    onClick={(event) => {
+                      toggleExpertiseDropdown(event);
                       window.scroll({
                         top: 0,
                         left: 0,
@@ -145,10 +147,10 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    Item 1
+                    AI
                   </Link>
                   <Link
-                    to="/"
+                    to="/genai"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
                     onClick={() => {
                       window.scroll({
@@ -158,7 +160,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    Item 2
+                    GEN AI
                   </Link>
                   {/* Add more items as needed */}
                 </div>
@@ -166,10 +168,10 @@ const Navbar = () => {
             </li>
             {/* Industries Dropdown */}
 
-            <li ref={dropdownContainerRef} className="relative">
-              <button
+            <li ref={industriesDropdownContainerRef} className="relative">
+              <div
                 onClick={toggleIndustriesDropdown}
-                className="text-md font-semibold text-gray-800 hover:text-gray-900 flex items-center"
+                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
               >
                 Industries
                 {isIndustriesOpen ? (
@@ -177,7 +179,7 @@ const Navbar = () => {
                 ) : (
                   <ChevronDown className="ml-2" />
                 )}
-              </button>
+              </div>
               {isIndustriesOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
                   <Link

@@ -1,11 +1,13 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./Container/Homepage/Homepage";
 import About from "./Container/About/AboutUs";
 import Contact from "./Container/Contact/Contact";
 import Telecom from "./Container/Telecom/Telecom";
 import Manufacturing from "./Container/Manufacturing/Manufacturing";
 import Article from "./Container/Article/Article";
+import AI from "./Container/AI/AI";
+import GenAI from "./Container/GenAI/GenAI";
 import "./index.css";
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/telecom" element={<Telecom />} />
           <Route path="/manufacturing" element={<Manufacturing />} />
           <Route path="/article" element={<Article />} />
+          <Route path="/ai" element={<AI />} />
+          <Route path="/genai" element={<GenAI />} />
         </Routes>
       </Router>
     </>
