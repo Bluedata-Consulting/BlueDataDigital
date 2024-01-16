@@ -80,8 +80,8 @@ const Blockchain = () => {
           </div>
           {/* <div className="relative ml-16"> */}
           <img
-            className="relative inset-0 w-4/5 h-2/3 transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-10 lg:translate-y-20"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GMWmP0731udNIQ2_gFzVnJaL1thiJos--Q&usqp=CAU"
+            className="relative inset-0 w-4/5 h-2/3 transform translate-x-6 translate-y-6 rounded-md object-fill object-left-top sm:translate-x-10 lg:translate-y-20"
+            src="https://cdn.dribbble.com/userupload/3248213/file/original-5d429eb2c795419666fddabde548bc4b.png?resize=1024x768"
             alt=""
           />
           {/* </div> */}
