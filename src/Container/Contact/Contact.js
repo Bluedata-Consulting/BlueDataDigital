@@ -153,7 +153,7 @@ const Contact = () => {
       <Form />
 
       {/* NewsLetter */}
-      <section className="mx-auto max-w-7xl px-2 md:my-24 lg:my-32 lg:px-0">
+      {/* <section className="mx-auto max-w-7xl px-2 md:my-24 lg:my-32 lg:px-0">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
           <div className="w-full md:w-2/3 lg:w-1/2">
             <h2 className="text-3xl font-bold text-black">
@@ -198,7 +198,7 @@ const Contact = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );

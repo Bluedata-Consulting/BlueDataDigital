@@ -1,46 +1,49 @@
 import React from "react";
 import {
-  AiOutlineCode,
-  AiOutlineDatabase,
-  AiOutlineCloud,
-  AiOutlineUser,
+  AiOutlineDollar,
+  AiOutlineLineChart,
+  AiOutlineSafetyCertificate,
 } from "react-icons/ai";
+import { MdSecurity } from "react-icons/md";
 
 const WorkSection = () => {
   const workCards = [
     {
-      title: "Accuracy",
+      title: "Optimized Costs",
       description:
-        "Prevent human errors and ensure accurate results with the help of Artificial Intelligence in your processes.",
-      icon: <AiOutlineCode size={36} />,
+        "Businesses need not invest in maintaining on-premise IT infrastructure; they pay only for what they use.",
+      icon: <AiOutlineDollar size={36} />,
     },
     {
-      title: "Decision-Making",
+      title: "Security",
       description:
-        "With quicker data analysis and programming, Artificial Intelligence and Machine Learning aid in making informed decisions.",
-      icon: <AiOutlineDatabase size={36} />,
+        "Stringent security regulations keep business data safe from malware, hacks, and internal theft.",
+      icon: <MdSecurity size={36} />,
     },
     {
-      title: "Forecasting",
+      title: "Easy Scalability",
       description:
-        "Accurate forecasting and predictions by processing volumes of data to assist in planning the next steps and business goals.",
-      icon: <AiOutlineCloud size={36} />,
+        "Seamless scalability and agility of Cloud platforms help address fluctuating workloads without a hitch.",
+      icon: <AiOutlineLineChart size={36} />,
     },
     {
-      title: "Process Optimization",
+      title: "Business Continuity",
       description:
-        "Machine Learning to aid in identifying anomalies in business processes and to optimize them to increase efficiency.",
-      icon: <AiOutlineUser size={36} />,
+        "Automated back-up and DR solutions ensure minimal to no impact on operations in the event of a disaster.",
+      icon: <AiOutlineSafetyCertificate size={36} />,
     },
   ];
 
   return (
-    <div className="bg-gray-100 p-4 pb-10">
+    <div className="p-4 pb-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         <div className="md:w-2/3 lg:w-1/2 mt-4 text-gray-100">
           <h2 className="my-2 text-4xl font-bold text-black md:text-6xl">
-            Business Benefits of AI & ML Solutions
+            Business Benefits
           </h2>
+          <p className="text-black font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
+            Harness the Power of the Cloud for an Unprecedented Experience
+          </p>
         </div>
         <div className="mt-6 grid divide-x divide-y divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
           {workCards.map((card, index) => (

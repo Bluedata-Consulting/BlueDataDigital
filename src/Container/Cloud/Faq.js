@@ -5,7 +5,7 @@ const FaqSection = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="cursor-pointer bg-white rounded-md border border-gray-400 shadow-lg transition-all duration-200">
+    <div className="cursor-pointer rounded-md border border-gray-400 shadow-lg transition-all duration-200">
       <div
         type="button"
         className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
@@ -32,31 +32,31 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do I choose an AI & ML company for my requirements?",
+      question: "What kind of services do Cloud consulting firms offer?",
       answer:
-        "There are a number of factors you must consider while choosing an AI & ML company for their development and maintenance requirements, including their exposure to different industries and specific to your industry, the types of solutions they build, and the support they provide post-implementation. Damco is one of the leading and renowned AI & ML services providers with cross-industry experience and a 99.8% client satisfaction rate.",
+        "Cloud consulting companies guide businesses in planning and implementing Cloud migration and developing Cloud-native applications and solutions. Their teams help you with the technical aspects of the Cloud, so you can innovate at speed and scale.",
+    },
+    {
+      question: "How can Cloud strategy consulting benefit my business?",
+      answer:
+        "Cloud strategy consulting helps you realize several key benefits, some of which include cost optimization, hassle-free migration, continuous monitoring, enhanced security and risk management, speedy resolution of issues, and round-the-clock support.",
     },
     {
       question:
-        "Can I hire developers under Machine Learning and AI services as per my requirements?",
+        "When should I partner with a Cloud solutions consulting company?",
       answer:
-        "Yes, you certainly can hire developers under our Build Your Team model under our Machine Learning and AI services. These expert developers will be working with your team to deliver the requirements and can be hired individually or as managed teams.",
+        "You can partner with a Cloud solutions consulting company at any stage of your Cloud journey. Whether you have already moved to the Cloud, are in the process of migrating or just planning to switch to the Cloud, we can help boost your Cloud capabilitie.",
     },
     {
       question:
-        "Will I have control over such hired resources taken from an AI & ML solutions company?",
+        "I need Cloud Consulting partners for my project. Can you help?",
       answer:
-        "When you hire resources from an AI & Machine Learning Services company such as Damco, you get the assurance of clear communication with transparent policies. A convenient communication platform is provided to keep the channel open and the hired resources work as your own integral team.",
-    },
-    {
-      question: "What is the general cost of developing AI & ML solutions?",
-      answer:
-        "Well, it completely depends on a number of factors, including the scope of the project, the number of solutions developed, man-hours invested and more. Damco provides time-tested AI & ML consulting to its clientele and assesses the project before initiating to give a ballpark figure to go ahead with.",
+        "Yes, we can. our certified Cloud consultants sit with you to closely assess your business requirements, state of maturity, workloads, and come up with a comprehensive roadmap for your Cloud transformation journey.",
     },
   ];
 
   return (
-    <section className="mx-auto bg-gray-100 px-2 py-10 md:px-0 ">
+    <section className="mx-auto max-w-7xl px-2 py-10 md:px-0 ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">

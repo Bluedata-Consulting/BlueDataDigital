@@ -32,31 +32,30 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do I choose an AI & ML company for my requirements?",
+      question: "How do Robotic Process Automation Services help a business?",
       answer:
-        "There are a number of factors you must consider while choosing an AI & ML company for their development and maintenance requirements, including their exposure to different industries and specific to your industry, the types of solutions they build, and the support they provide post-implementation. Damco is one of the leading and renowned AI & ML services providers with cross-industry experience and a 99.8% client satisfaction rate.",
+        "Robotic Process Automation development services enable businesses to transfer their mundane and repetitive tasks from the workforce to bots trained for doing such tasks tirelessly. This results in generating more bandwidth for the workforce to focus on more critical tasks and improve process accuracy with the removal of human errors.",
+    },
+    {
+      question: "Is RPA actually needed for my business?",
+      answer:
+        "Our Robotic Process Automation consulting services help assess if your business has repetitive tasks that can be automated through technology. Once that has been taken care of, our experts help you understand the scope of automation possible for the said process and how it will benefit your business and its efficiency.",
+    },
+    {
+      question: "Is RPA the solution for a quick and secure KYC process?",
+      answer:
+        "KYC is an essential yet time-consuming process that banking and financial institutions are required to regularly perform. As an eminent RPA development company, Damco provides cutting-edge RPA tools that automate several KYC tasks from automated customer alerts to identification verification and document routing. This ensures faster turn-around time as well as higher process accuracy.",
     },
     {
       question:
-        "Can I hire developers under Machine Learning and AI services as per my requirements?",
+        "How much does it cost to avail of RPA Implementation Services?",
       answer:
-        "Yes, you certainly can hire developers under our Build Your Team model under our Machine Learning and AI services. These expert developers will be working with your team to deliver the requirements and can be hired individually or as managed teams.",
-    },
-    {
-      question:
-        "Will I have control over such hired resources taken from an AI & ML solutions company?",
-      answer:
-        "When you hire resources from an AI & Machine Learning Services company such as Damco, you get the assurance of clear communication with transparent policies. A convenient communication platform is provided to keep the channel open and the hired resources work as your own integral team.",
-    },
-    {
-      question: "What is the general cost of developing AI & ML solutions?",
-      answer:
-        "Well, it completely depends on a number of factors, including the scope of the project, the number of solutions developed, man-hours invested and more. Damco provides time-tested AI & ML consulting to its clientele and assesses the project before initiating to give a ballpark figure to go ahead with.",
+        "The actual cost of RPA implementation services depends on your business requirements, the engagement model you choose, total man-hours required, the technology stack used, and other related factors. As a leading Robotic Process Automation company, we offer premium quality solutions that fit the budget of every business.",
     },
   ];
 
   return (
-    <section className="mx-auto bg-gray-100 px-2 py-10 md:px-0 ">
+    <section className="bg-gray-100 mx-auto px-2 my-10 py-16 md:px-0 ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">

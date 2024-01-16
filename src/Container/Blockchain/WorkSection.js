@@ -1,46 +1,49 @@
 import React from "react";
 import {
-  AiOutlineCode,
-  AiOutlineDatabase,
-  AiOutlineCloud,
-  AiOutlineUser,
+  AiOutlineDollar,
+  AiOutlineLineChart,
+  AiOutlineSafetyCertificate,
 } from "react-icons/ai";
+import { MdSecurity } from "react-icons/md";
 
 const WorkSection = () => {
   const workCards = [
     {
-      title: "Accuracy",
-      description:
-        "Prevent human errors and ensure accurate results with the help of Artificial Intelligence in your processes.",
-      icon: <AiOutlineCode size={36} />,
+      title: "Bespoke Blockchain Services",
+      description: "Step into the future with Blockchain-backed applications.",
+      icon: <AiOutlineDollar size={36} />,
     },
     {
-      title: "Decision-Making",
+      title: "Enterprise Blockchain Development",
       description:
-        "With quicker data analysis and programming, Artificial Intelligence and Machine Learning aid in making informed decisions.",
-      icon: <AiOutlineDatabase size={36} />,
+        "Unparalleled expertise across a range of Blockchain frameworks.",
+      icon: <MdSecurity size={36} />,
     },
     {
-      title: "Forecasting",
-      description:
-        "Accurate forecasting and predictions by processing volumes of data to assist in planning the next steps and business goals.",
-      icon: <AiOutlineCloud size={36} />,
+      title: "Cryptocurrency Development",
+      description: "Industry experience to navigate your crypto journey.",
+      icon: <AiOutlineLineChart size={36} />,
     },
     {
-      title: "Process Optimization",
+      title: "NFT Development Services",
       description:
-        "Machine Learning to aid in identifying anomalies in business processes and to optimize them to increase efficiency.",
-      icon: <AiOutlineUser size={36} />,
+        "Tokenize your digital collectibles with secure NFT marketplace development.",
+      icon: <AiOutlineSafetyCertificate size={36} />,
     },
   ];
 
   return (
-    <div className="bg-gray-100 p-4 pb-10">
+    <div className=" p-4 py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-        <div className="md:w-2/3 lg:w-1/2 mt-4 text-gray-100">
+        <div className=" mt-4 text-gray-100">
           <h2 className="my-2 text-4xl font-bold text-black md:text-6xl">
-            Business Benefits of AI & ML Solutions
+            Our Offerings
           </h2>
+          <p className="text-black font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
+            Blockchain web development services turns disruptive ideas into
+            action by developing business models built on the next-gen
+            decentralized Blockchain network.
+          </p>
         </div>
         <div className="mt-6 grid divide-x divide-y divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
           {workCards.map((card, index) => (

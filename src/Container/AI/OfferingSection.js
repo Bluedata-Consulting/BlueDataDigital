@@ -55,12 +55,11 @@ const OfferingSection = () => {
     >
       <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
-          Features
+          Our Offerings
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-          The product can personalize user experiences by understanding
-          individual preferences and tailoring recommendations or content based
-          on user behavior and historical data.
+          Artificial Intelligence and Machine Learning Services to Optimize Your
+          Business Functions.
         </p>
       </div>
 

@@ -150,6 +150,32 @@ const Navbar = () => {
                     AI
                   </Link>
                   <Link
+                    to="/blockchain"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    BLOCKCHAIN
+                  </Link>
+                  <Link
+                    to="/cloud"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    CLOUD
+                  </Link>
+                  <Link
                     to="/genai"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
                     onClick={() => {
@@ -161,6 +187,19 @@ const Navbar = () => {
                     }}
                   >
                     GEN AI
+                  </Link>
+                  <Link
+                    to="/rpa"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    RPA
                   </Link>
                   {/* Add more items as needed */}
                 </div>

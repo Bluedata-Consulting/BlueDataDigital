@@ -8,6 +8,9 @@ import Manufacturing from "./Container/Manufacturing/Manufacturing";
 import Article from "./Container/Article/Article";
 import AI from "./Container/AI/AI";
 import GenAI from "./Container/GenAI/GenAI";
+import Cloud from "./Container/Cloud/Cloud";
+import RPA from "./Container/RPA/RPA";
+import Blockchain from "./Container/Blockchain/Blockchain";
 import "./index.css";
 
 const App = () => {
@@ -23,6 +26,9 @@ const App = () => {
           <Route path="/article" element={<Article />} />
           <Route path="/ai" element={<AI />} />
           <Route path="/genai" element={<GenAI />} />
+          <Route path="/cloud" element={<Cloud />} />
+          <Route path="/rpa" element={<RPA />} />
+          <Route path="/blockchain" element={<Blockchain />} />
         </Routes>
       </Router>
     </>
