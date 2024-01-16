@@ -12,6 +12,7 @@ import knowledge_bas_creation from "../../Assets/knowledge-base-creation.png";
 import llm_config from "../../Assets/llm-config.png";
 import prompt_engineering from "../../Assets/prompt-engineering.png";
 import chatbot_development from "../../Assets/chatbot-development.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -25,12 +26,19 @@ const Hero = () => {
             Innovate Responsibly with Our Generative AI Solutions
           </p>
           <p className="mt-6">
-            <button
-              type="button"
+            <Link
+              to="/contact"
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}
               className="py-2 px-5 text-lg bg-gray-900 hover:bg-gray-700 rounded text-white"
             >
               Contact Us
-            </button>
+            </Link>
           </p>
         </div>
 

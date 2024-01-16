@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import image from "../../Assets/image-1.jpg";
+import Testimonal from "../../Container/Homepage/testimonal";
 
 const AboutUs = () => {
   return (
@@ -10,25 +11,24 @@ const AboutUs = () => {
       <Header />
 
       {/* Section - 1*/}
-      <div className="bg-white flex items-center  n justify-center overflow-hidden z-50 ">
+      <div className="bg-gray-100 flex items-center  n justify-center overflow-hidden z-50 ">
         <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row py-16">
             <div className=" relative ">
               <div className="lg:max-w-xl lg:pr-5 relative z-40">
-                <p className="flex text-2xl uppercase text-g1  ">About Us</p>
+                <p className="flex text-2xl uppercase text-g1  ">Our Story</p>
                 <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
                   We make you look
-                  <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">
+                  <span className="my-1 inline-block border-b-8 border-gray-400 px-4 font-bold text-g4 animate__animated animate__flash">
                     different
                   </span>
                 </h2>
                 <p className="text-base text-gray-700">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque it.
+                  Discover the magic that happens when passion meets dentistry.
                 </p>
                 <div className="mt-10 flex flex-col items-center md:flex-row">
                   <Link
-                    to="/"
+                    to="/contact"
                     aria-label=""
                     className="group inline-flex items-center font-semibold text-g1"
                     onClick={() => {
@@ -39,7 +39,7 @@ const AboutUs = () => {
                       });
                     }}
                   >
-                    Watch how it works
+                    BE A PART IN OUR JOURNEY
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2"
@@ -80,7 +80,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="hidden text-9xl varien absolute top-6 left-1/4 text-g/10 z-40    ">
-          About Us
+          Our Story
         </div>
 
         <div className=" absolute -bottom-0 left-3/4 z-0  opacity-10 ">
@@ -128,20 +128,21 @@ const AboutUs = () => {
               />
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                Nuxt development is carried out by passionate developers
+              <h2 className="text-3xl text-gray-900 font-bold md:text-5xl">
+                Empowering Businesses Through Technology
               </h2>
-              <p className="mt-6 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                omnis voluptatem accusantium nemo perspiciatis delectus atque
-                autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-                consequatur! Officiis id consequatur atque doloremque!
+              <p className="mt-6 text-lg text-gray-700">
+                At Blue Data Digital, we are on a mission to empower businesses
+                through cutting-edge technology solutions. Our team of dedicated
+                professionals is passionate about delivering results that exceed
+                expectations.
               </p>
-              <p className="mt-4 text-gray-600">
+              <p className="mt-4 text-lg text-gray-700">
                 {" "}
-                Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                iure expedita at? Asperiores nemo possimus nesciunt dicta veniam
-                aspernatur quam mollitia.
+                With a focus on innovation and client satisfaction, we provide a
+                range of services including web development, software solutions,
+                and technology consulting. Partner with us for a transformative
+                journey towards success.
               </p>
             </div>
           </div>
@@ -149,7 +150,7 @@ const AboutUs = () => {
       </div>
 
       {/* Section - 3*/}
-      <section className="relative pt-16">
+      <section className=" bg-gray-100 relative my-16 py-24">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
@@ -171,14 +172,14 @@ const AboutUs = () => {
                       className="text-my-orange fill-current"
                     ></polygon>
                   </svg>
-                  <h4 className="text-xl font-bold text-black">
-                    Great for your awesome project
+                  <h4 className="text-2xl font-bold text-black">
+                    Fueling Innovation with Technology
                   </h4>
-                  <p className="text-md font-light mt-2 text-black">
-                    Putting together a page has never been easier than matching
-                    together pre-made components. From landing pages
-                    presentation to login areas, you can easily customise and
-                    built your pages.
+                  <p className="text-lg font-normal mt-2 text-black">
+                    Embark on a journey of innovation with Blue Data Digital. We
+                    are passionate about leveraging cutting-edge technologies to
+                    fuel creativity and drive transformative solutions. Let us
+                    turn your ideas into reality.
                   </p>
                 </blockquote>
               </div>
@@ -192,12 +193,14 @@ const AboutUs = () => {
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-gray-400 shadow-lg rounded-full bg-white">
                         <i className="fas fa-sitemap"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        CSS Components
+                      <h6 className="text-2xl mb-1 font-semibold">
+                        Tech-Driven Solutions
                       </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        Notus JS comes with a huge number of Fully Coded CSS
-                        components.
+                      <p className="mb-4 text-lg text-gray-500">
+                        Explore a realm of possibilities with our tech-driven
+                        solutions. From advanced web technologies to emerging
+                        trends, we harness the power of innovation to build
+                        robust and scalable solutions for your business.
                       </p>
                     </div>
                   </div>
@@ -206,26 +209,34 @@ const AboutUs = () => {
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-gray-400 shadow-lg  rounded-full bg-white">
                         <i className="fas fa-drafting-compass"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        JavaScript Components
+                      <h6 className="text-2xl mb-1 font-semibold">
+                        Collaborative Excellence
                       </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        We also feature many dynamic components for React,
-                        NextJS, Vue and Angular.
+                      <p className="mb-4 text-lg text-gray-500">
+                        Experience the power of collaborative excellence. Our
+                        teams work seamlessly to bring together diverse skill
+                        sets, fostering an environment where great ideas
+                        flourish and technological innovations thrive.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col min-w-0 mt-4">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-gray-400 shadow-lg  rounded-full bg-white">
                         <i className="fas fa-newspaper"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">Pages</h6>
-                      <p className="mb-4 text-blueGray-500">
-                        This extension also comes with 3 sample pages. They are
-                        fully coded so you can start working instantly.
+                      <h6 className="text-2xl mb-1 font-semibold">
+                        Result-Driven Approach
+                      </h6>
+                      <p className="mb-4 text-lg text-gray-500">
+                        Our focus extends beyond technology; it's about
+                        delivering tangible results. From conceptualization to
+                        execution, we ensure our solutions align with your
+                        business goals, driving success and fostering
+                        innovation.
                       </p>
                     </div>
                   </div>
@@ -234,12 +245,15 @@ const AboutUs = () => {
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-gray-400 shadow-lg rounded-full bg-white">
                         <i className="fas fa-file-alt"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
-                        Documentation
+                      <h6 className="text-2xl mb-1 font-semibold">
+                        Customer-Centric Innovation
                       </h6>
-                      <p className="mb-4 text-blueGray-500">
-                        Built by developers for developers. You will love how
-                        easy is to to work with Notus JS.
+                      <p className="mb-4 text-lg text-gray-500">
+                        Your success is at the heart of what we do. We follow a
+                        customer-centric approach, tailoring innovative
+                        solutions to your unique requirements. Join us in the
+                        pursuit of transformative and customer-focused
+                        innovation.
                       </p>
                     </div>
                   </div>
@@ -250,75 +264,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Section - 4 */}
-      <section className="mb-20 mt-24">
-        <div className="container mx-auto px-2 ">
-          <div className="flex flex-wrap items-center mt-16">
-            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-gray-400 shadow-lg rounded-full bg-white">
-                <i className="fas fa-user-friends text-xl"></i>
-              </div>
-              <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
-              </h3>
-              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
-              </p>
-              <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
-              </p>
-              <Link
-                to="/about"
-                className="font-bold text-blueGray-700 mt-8"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Check Notus JS!
-              </Link>
-            </div>
-            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-2 shadow-gray-400 shadow-lg rounded-lg">
-                <img
-                  alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                  className="w-full align-middle rounded-t-lg"
-                />
-                <blockquote className="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    className="absolute left-0 w-full block h-95-px -top-94-px"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      className="text-my-orange fill-current"
-                    ></polygon>
-                  </svg>
-
-                  <h4 className="text-xl font-bold text-gray-900">
-                    Top Notch Services
-                  </h4>
-                  <p className="text-md font-light mt-2 text-gray-700">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* <Testimonal /> */}
+      <Testimonal />
       <Footer />
     </div>
   );

@@ -38,12 +38,13 @@ const CarouselComponent = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
           <div className="absolute px-4 py-10 lg:px-24 bottom-10 w-full text-white">
             <h1 className="mt-8 max-w-4xl text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl xl:text-6xl">
-              People who really care about your business
+              Blue Data Digital: Empowering growth through data-driven
+              solutions.
             </h1>
             <p className="mt-8 max-w-3xl text-lg text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              ipsam nulla aperiam quo possimus, nihil molestiae modi tenetur
-              esse qui repudiandae cum fuga aspernatur ea?
+              Consulting expertise in data science, cloud computing, AI,
+              blockchain, and automation for telecommunication, health tech, and
+              edtech sector companies.
             </p>
             <div className="mt-8">
               <Link

@@ -6,13 +6,13 @@ const FaqSection = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="cursor-pointer bg-white rounded-md border border-gray-400 shadow-lg transition-all duration-200">
+    <div className="cursor-pointer bg-gray-50/95 rounded-md border border-gray-400 shadow-lg transition-all duration-200">
       <div
         type="button"
         className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="flex text-lg font-semibold text-black">
+        <span className="flex text-xl font-semibold text-black">
           {question}
         </span>
         {isOpen ? (
@@ -23,7 +23,7 @@ const FaqSection = ({ question, answer }) => {
       </div>
       {isOpen && (
         <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-          <p className="text-gray-500">{answer}</p>
+          <p className="text-gray-700 text-lg">{answer}</p>
         </div>
       )}
     </div>
@@ -33,30 +33,30 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do Robotic Process Automation Services help a business?",
+      question: "How does Blue Data Digital leverage AI in consulting?",
       answer:
-        "Robotic Process Automation development services enable businesses to transfer their mundane and repetitive tasks from the workforce to bots trained for doing such tasks tirelessly. This results in generating more bandwidth for the workforce to focus on more critical tasks and improve process accuracy with the removal of human errors.",
+        "Blue Data Digital specializes in leveraging Artificial Intelligence (AI) to provide transformative consulting solutions. We harness AI to optimize business processes, gain actionable insights, and drive innovation across various industries.",
     },
     {
-      question: "Is RPA actually needed for my business?",
+      question: "What industries does Blue Data Digital cater to?",
       answer:
-        "Our Robotic Process Automation consulting services help assess if your business has repetitive tasks that can be automated through technology. Once that has been taken care of, our experts help you understand the scope of automation possible for the said process and how it will benefit your business and its efficiency.",
-    },
-    {
-      question: "Is RPA the solution for a quick and secure KYC process?",
-      answer:
-        "KYC is an essential yet time-consuming process that banking and financial institutions are required to regularly perform. As an eminent RPA development company, Damco provides cutting-edge RPA tools that automate several KYC tasks from automated customer alerts to identification verification and document routing. This ensures faster turn-around time as well as higher process accuracy.",
+        "Blue Data Digital caters to a diverse range of industries, including telecommunication, health tech, edtech, manufacturing, and more. Our consulting expertise is tailored to meet the specific needs and challenges of each industry, driving intelligent solutions.",
     },
     {
       question:
-        "How much does it cost to avail of RPA Implementation Services?",
+        "Can Blue Data Digital assist in implementing blockchain solutions?",
       answer:
-        "The actual cost of RPA implementation services depends on your business requirements, the engagement model you choose, total man-hours required, the technology stack used, and other related factors. As a leading Robotic Process Automation company, we offer premium quality solutions that fit the budget of every business.",
+        "Yes, Blue Data Digital offers expertise in implementing blockchain solutions. Whether you are looking to enhance security, transparency, or streamline processes through blockchain, our team can guide you through the integration and optimization of blockchain technology.",
+    },
+    {
+      question:
+        "How can businesses benefit from Cloud Computing services provided by Blue Data Digital?",
+      answer:
+        "Blue Data Digital's Cloud Computing services empower businesses to cut operational costs, drive innovation, and address legacy challenges. With strategic partnerships with leading cloud providers such as AWS, Azure, and Google Cloud, we help businesses evolve their cloud capabilities, develop cloud-based applications, and accelerate product release.",
     },
   ];
-
   return (
-    <section className="bg-gray-100 mx-auto px-2 my-10 py-16 md:px-0 ">
+    <section className="mx-auto px-2 my-10 py-16 md:px-0 ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
@@ -79,7 +79,7 @@ const Faq = () => {
         <p className="textbase mt-6 text-center text-gray-600">
           Can&apos;t find what you&apos;re looking for?{" "}
           <Link
-            href="/contact"
+            to="/contact"
             onClick={() => {
               window.scroll({
                 top: 0,

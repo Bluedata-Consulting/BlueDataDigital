@@ -147,7 +147,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    AI
+                    Artificial Intelligence
                   </Link>
                   <Link
                     to="/blockchain"
@@ -160,7 +160,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    BLOCKCHAIN
+                    Blockchain
                   </Link>
                   <Link
                     to="/cloud"
@@ -173,7 +173,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    CLOUD
+                    Cloud Computing
                   </Link>
                   <Link
                     to="/genai"
@@ -186,7 +186,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    GEN AI
+                    Generative AI
                   </Link>
                   <Link
                     to="/rpa"
@@ -199,7 +199,7 @@ const Navbar = () => {
                       });
                     }}
                   >
-                    RPA
+                    Robotics Process Automation
                   </Link>
                   {/* Add more items as needed */}
                 </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FaqSection = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,13 +79,19 @@ const Faq = () => {
         </div>
         <p className="textbase mt-6 text-center text-gray-600">
           Can&apos;t find what you&apos;re looking for?{" "}
-          <a
-            href="/"
-            title=""
+          <Link
+            to="/contact"
+            onClick={() => {
+              window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            }}
             className="font-semibold text-black hover:underline"
           >
             Contact our support
-          </a>
+          </Link>
         </p>
       </div>
     </section>

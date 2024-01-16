@@ -6,6 +6,7 @@ import Faq from "./Faq";
 import IndustryUseCases from "./IndustryUseCases";
 import WorkSection from "./WorkSection";
 import OfferingsSection from "./OfferingSection";
+import { Link } from "react-router-dom";
 
 const RPA = () => {
   return (
@@ -21,12 +22,6 @@ const RPA = () => {
             Automate Business Process, Increase Employee Productivity, and
             Improve User Experience.
           </p>
-          <a
-            href="/"
-            className="bg-gray-900 text-white text-normal font-semibold py-2 px-4 rounded-md hover:bg-gray-00 hover:text-white transition duration-200"
-          >
-            Shop Now
-          </a>
         </div>
       </section>
 
@@ -68,14 +63,20 @@ const RPA = () => {
                 Logic Apps, Azure Automation Services, we instill intelligent
                 automation into processes leading to measurable business impact.
               </p>
-              <a
-                href="/"
-                target="_blank"
+              <Link
+                to="/contact"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
                 style={{ backgroundColor: "#000" }}
                 className="mt-8 border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-white transition duration-150 ease-in-out"
               >
                 Get started
-              </a>
+              </Link>
             </div>
           </div>
           {/* <div className="relative ml-16"> */}

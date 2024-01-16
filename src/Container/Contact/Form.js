@@ -88,6 +88,7 @@ const Form = () => {
                   <Link
                     className="mx-1.5  text-black transition-colors duration-300 transform hover:text-blue-500"
                     to="/"
+                    target="_blank"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -109,6 +110,7 @@ const Form = () => {
                   <Link
                     className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
                     to="/"
+                    target="_blank"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -141,6 +143,7 @@ const Form = () => {
                   <Link
                     className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
                     to="/"
+                    target="_blank"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -165,6 +168,7 @@ const Form = () => {
                   <Link
                     className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
                     to="/"
+                    target="_blank"
                     onClick={() => {
                       window.scroll({
                         top: 0,

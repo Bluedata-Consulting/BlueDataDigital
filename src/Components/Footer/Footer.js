@@ -24,8 +24,8 @@ const Footer = () => {
                 <span className="ml-4 text-lg font-bold">BDD</span>
               </div>
               <div>
-                <p className="mb-4  text-base font-medium">
-                  The Tailwind CSS Component library
+                <p className="mb-2  text-lg font-medium">
+                  BLUE DATA DIGITAL
                 </p>
                 <p className="text-sm text-gray-600">
                   &copy; Copyright 2024. All Rights Reserved by BDD.
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
-              <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+              <h3 className="tracking-px mb-5  text-sm font-semibold uppercase text-gray-500">
                 Company
               </h3>
               <ul>
@@ -51,13 +51,13 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Features
+                    Home
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/about"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -66,13 +66,13 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Pricing
+                    About
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/contact"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -81,10 +81,10 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Affiliate Program
+                    Contact
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     to="/"
@@ -98,20 +98,20 @@ const Footer = () => {
                   >
                     Press Kit
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+          <div className="w-full p-6 md:w-1/2 lg:w-4/12">
             <div className="h-full">
-              <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                Support
+              <h3 className="tracking-px mb-5  text-sm font-semibold uppercase text-gray-500">
+                Expertise
               </h3>
               <ul>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/ai"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -120,13 +120,13 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Account
+                    Artificial Intelligence
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/blockchain"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -135,13 +135,13 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Help
+                    Blockchain
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/cloud"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -150,13 +150,28 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Contact Us
+                    Cloud Computing
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                    to="/genai"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Generative AI
                   </Link>
                 </li>
                 <li>
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/rpa"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -165,22 +180,22 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Customer Support
+                    Robotics Process Automation
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-3/12">
+          <div className="w-full p-6 md:w-1/2 lg:w-1/12">
             <div className="h-full">
-              <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                Legals
+              <h3 className="tracking-px mb-5 text-sm font-semibold uppercase text-gray-500">
+                Industries
               </h3>
               <ul>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/telecom"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -189,13 +204,13 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Terms &amp; Conditions
+                    Telecom
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/"
+                    to="/manufacturing "
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -204,10 +219,10 @@ const Footer = () => {
                       });
                     }}
                   >
-                    Privacy Policy
+                    Manufacturing
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     to="/"
@@ -221,7 +236,7 @@ const Footer = () => {
                   >
                     Licensing
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

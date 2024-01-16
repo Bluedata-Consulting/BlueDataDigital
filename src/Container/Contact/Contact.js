@@ -30,10 +30,6 @@ const Contact = () => {
             <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">
               Get in touch
             </h1>
-
-            <p className="mt-3 text-lg text-gray-600 ">
-              Our friendly team would love to hear from you.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
@@ -59,9 +55,7 @@ const Contact = () => {
                 <h2 className="mt-2 text-lg font-medium text-gray-800 ">
                   Email
                 </h2>
-                <p className="mt-2 text-md text-gray-500 ">
-                  Our friendly team is here to help.
-                </p>
+
                 <p className="text-lg font-medium text-blue-500 ">
                   info@bluedatadigital.my
                 </p>
@@ -93,9 +87,7 @@ const Contact = () => {
                 <h2 className="mt-2 text-lg font-medium text-gray-800 ">
                   Office
                 </h2>
-                <p className="mt-2 text-md text-gray-500 ">
-                  Come say hello at our office HQ.
-                </p>
+
                 <p className="text-lg font-medium text-blue-500 ">
                   T10, 4th Floor, Atlanta Business Hub, VIP Road, beside Offira,
                   Vesu, Surat, Gujarat 395007
@@ -123,7 +115,7 @@ const Contact = () => {
                 <h2 className="mt-2 text-lg font-medium text-gray-800 ">
                   Phone
                 </h2>
-                <p className="mt-2 text-md text-gray-500 ">
+                <p className="text-md text-gray-500 ">
                   Mon-Fri from 8 AM to 5 PM.
                 </p>
                 <p className="text-lg font-medium text-blue-500 ">
