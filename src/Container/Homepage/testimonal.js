@@ -7,36 +7,28 @@ import {
 
 const testimonialsData = [
   {
-    name: "Maria Kate",
-    role: "Photographer",
-    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg",
+    name: "Airtel, India",
+    role: "Enterprise buisnes team",
+    image:
+      "https://www.bluedataconsulting.in/wp-content/uploads/2021/11/airtel-logo-white-text-vertical_customer_blue_data_consulting_telecom-150x150.jpg",
     content:
-      "In ac turpis justo. Vivamus auctor quam vitae odio feugiat pulvinar. Sed semper ligula sed lorem tincidunt dignissim. Nam sed cursus lectus. Proin non rutrum magna. Proin gravida, justo et imperdiet tristique turpis nisi viverra.",
-    rating: 5,
+      "Getting to work with Blue Data team has been of great benefit to us, they understand data well, have good experience in suggesting right approach and tools, the consultant was experienced and helped us to speed up our project.",
   },
   {
-    name: "John Doe",
-    role: "Web Developer",
-    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
+    name: "Etisalat, UAE",
+    role: "Enterprise data management team, Sharjah",
+    image:
+      "https://www.bluedataconsulting.in/wp-content/uploads/2021/10/etisalat-logo-150x150.png",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel magna sit amet erat lacinia rutrum eu in leo. Curabitur ut ex vel augue fringilla interdum ut eu libero.",
-    rating: 4,
+      "The company provided consultant to scale up our data and analytics team with Azure services in data and ML space. Our team is now more confident and faster at developing solutions.",
   },
   {
-    name: "Alice Smith",
-    role: "Graphic Designer",
-    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).jpg",
+    name: "Trainocate",
+    role: "Service Delivery Team",
+    image:
+      "https://www.bluedataconsulting.in/wp-content/uploads/2021/10/trainocate-150x150.png",
     content:
-      "Sed euismod est eget sapien tincidunt, id ullamcorper elit volutpat. In non lacus eu lectus egestas ultricies eget in elit. Sed vel elit id arcu vulputate tristique.",
-    rating: 5,
-  },
-  {
-    name: "Bob Johnson",
-    role: "Marketing Specialist",
-    image: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).jpg",
-    content:
-      "Nullam a est ut tellus feugiat fringilla. Ut et gravida sem, sit amet elementum ligula. Integer ut ligula in dui consectetur feugiat. Donec eu rhoncus metus.",
-    rating: 3,
+      "Blue Data Consulting often collaborates with us in getting right set of consultants for our projects The consultants are usually expert in their domain and help us satisfying our clients for their needs.",
   },
   // Add more testimonials with a similar structure
 ];
@@ -71,23 +63,25 @@ const Testimonials = () => {
   return (
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
-        <h2 className="mb-12 text-3xl font-bold">Word from our Clients</h2>
+        <h2 className="mb-12 text-3xl font-bold">
+          WHAT OUR CLIENTS HAVE TO SAY
+        </h2>
 
         <div className="flex items-center justify-center">
           <div className="max-w-lg">
             <div className="mb-6">
               <img
-                className="mx-auto mb-6 rounded-full shadow-lg w-24"
+                className="mx-auto mb-6 rounded-full border border-black shadow-lg w-24"
                 src={currentTestimonial.image}
                 alt="avatar"
               />
-              <h5 className="mb-2 text-lg font-bold">
+              <h5 className="mb-2 text-xl font-bold">
                 {currentTestimonial.name}
               </h5>
-              <p className="mb-4 font-medium text-gray-700">
+              <p className="mb-4 font-medium text-lg text-gray-700">
                 {currentTestimonial.role}
               </p>
-              <p className="mb-6 text-gray-500">{currentTestimonial.content}</p>
+              <p className="mb-6 text-gray-500 text-md">{currentTestimonial.content}</p>
             </div>
           </div>
         </div>
@@ -95,23 +89,23 @@ const Testimonials = () => {
         {/* Previous and Next Buttons */}
         <div className="flex justify-between">
           {/* Previous Button with Icon */}
-          <button
-            className="text-gray-700 mr-4"
+          <div
+            className="cursor-pointer text-gray-700 mr-4"
             type="button"
             onClick={handlePrev}
           >
             <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
             Previous
-          </button>
+          </div>
           {/* Next Button with Icon */}
-          <button
-            className="text-gray-700 ml-4"
+          <div
+            className="cursor-pointer text-gray-700 ml-4"
             type="button"
             onClick={handleNext}
           >
             Next
             <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
-          </button>
+          </div>
         </div>
       </section>
     </div>
