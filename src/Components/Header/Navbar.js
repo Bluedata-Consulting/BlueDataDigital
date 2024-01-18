@@ -265,6 +265,21 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                to="/team"
+                className="text-md font-semibold text-gray-800 hover:text-gray-900"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Team
+              </Link>
+            </li>
           </ul>
         </div>
 

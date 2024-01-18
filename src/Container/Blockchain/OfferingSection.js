@@ -1,25 +1,26 @@
+// OfferingSection.js
 import React from "react";
 
 const features = [
   {
-    heading: "Corda Development",
+    heading: "Blockchain Solutions with Corda",
     description:
-      "Corda is an open-source distributed ledger platform that helps in removing costly friction in business transactions to allow businesses to transact transparently by making use of Consensus Time, Hashgraphs and Stamping. Navigate the Corda Development journey seamlessly with our team of certified blockchain development service providers.",
+      "Corda is an open-source distributed ledger platform that removes costly friction in business transactions, allowing transparent and secure transactions. Seamlessly navigate the Corda Development journey with our team of certified blockchain development service providers at Blue Data Digital.",
   },
   {
-    heading: "Stellar Development",
+    heading: "Innovative Solutions on Stellar",
     description:
-      "Our team of experts can help you build future-ready, robust, and secure solutions on Stellar Blockchain app development platform that connect banks, customers and payment systems to make money move quickly, securely, and cost-effectively. We are an established Blockchain development company with rich expertise in various Stellar Blockchain tools such as Stellar Core, Horizon, Federation Server, Bridge Server, etc.",
+      "Our team of experts at Blue Data Digital can help you build future-ready, robust, and secure solutions on the Stellar Blockchain app development platform. Connect banks, customers, and payment systems to facilitate quick, secure, and cost-effective money transactions. Benefit from our rich expertise in various Stellar Blockchain tools such as Stellar Core, Horizon, Federation Server, Bridge Server, etc.",
   },
   {
-    heading: "Hyperledger Development",
+    heading: "Advanced Enterprise Ecosystem with Hyperledger",
     description:
-      "Build an advanced enterprise ecosystem with transparent and secure transactions ensured by Hyperledger framework to foster your Blockchain business ahead. We have expertise in all the Hyperledger platforms- Hyperledger Burrow, Hyperledger Fabric, Hyperledger Sawtooth, Hyperledger Indy, and Hyperledger Iroha.",
+      "Build an advanced enterprise ecosystem with transparent and secure transactions ensured by the Hyperledger framework. Blue Data Digital brings expertise in all Hyperledger platforms, including Hyperledger Burrow, Hyperledger Fabric, Hyperledger Sawtooth, Hyperledger Indy, and Hyperledger Iroha.",
   },
   {
-    heading: "Quorum Development",
+    heading: "Quorum Development for Secure Blockchain",
     description:
-      "Take advantage of Quorum Development Blockchain platform to facilitate a faster transaction, interaction, processing, high throughput, and privacy- by using different consensus algorithms. Being a pioneering Blockchain development company, we build scalable applications over Quorum to help you create a new generation of highly secure blockchain.",
+      "Take advantage of Quorum Development Blockchain platform to facilitate faster transactions, interactions, and high throughput with privacy using different consensus algorithms. As a pioneering Blockchain development company, Blue Data Digital builds scalable applications over Quorum to help you create a new generation of highly secure blockchain solutions.",
   },
 ];
 
@@ -31,14 +32,14 @@ const OfferingSection = () => {
     >
       <div className="mx-auto flex flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
-          Enterprise Blockchain Development
+          Transformative Blockchain Solutions
         </h2>
         <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-          As a leading enterprise blockchain development company, we leverage a
-          broad array of Blockchain platforms to facilitate robust and secure
-          Blockchain application development for various industries, including
-          financial, insurance, healthcare, manufacturing, supply chain,
-          logistics, and more
+          As a leading enterprise blockchain development company, Blue Data
+          Digital leverages a broad array of Blockchain platforms to facilitate
+          robust and secure Blockchain application development for various
+          industries. Our expertise spans financial, insurance, healthcare,
+          manufacturing, supply chain, logistics, and more.
         </p>
       </div>
 

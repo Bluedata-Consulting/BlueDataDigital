@@ -33,26 +33,28 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "What kind of services do Cloud consulting firms offer?",
+      question:
+        "What services does Blue Data Digital offer in Cloud consulting?",
       answer:
-        "Cloud consulting companies guide businesses in planning and implementing Cloud migration and developing Cloud-native applications and solutions. Their teams help you with the technical aspects of the Cloud, so you can innovate at speed and scale.",
-    },
-    {
-      question: "How can Cloud strategy consulting benefit my business?",
-      answer:
-        "Cloud strategy consulting helps you realize several key benefits, some of which include cost optimization, hassle-free migration, continuous monitoring, enhanced security and risk management, speedy resolution of issues, and round-the-clock support.",
+        "Blue Data Digital provides guidance on Cloud migration, Cloud-native application development, and strategic Cloud solutions. Our team ensures you leverage the Cloud for innovation, scalability, and operational efficiency.",
     },
     {
       question:
-        "When should I partner with a Cloud solutions consulting company?",
+        "How can Cloud strategy consulting from Blue Data Digital benefit my business?",
       answer:
-        "You can partner with a Cloud solutions consulting company at any stage of your Cloud journey. Whether you have already moved to the Cloud, are in the process of migrating or just planning to switch to the Cloud, we can help boost your Cloud capabilitie.",
+        "Cloud strategy consulting with Blue Data Digital yields benefits such as cost optimization, seamless migration, continuous monitoring, enhanced security, and round-the-clock support. We tailor our strategies to align with your business goals.",
     },
     {
       question:
-        "I need Cloud Consulting partners for my project. Can you help?",
+        "When should I partner with Blue Data Digital for Cloud solutions consulting?",
       answer:
-        "Yes, we can. our certified Cloud consultants sit with you to closely assess your business requirements, state of maturity, workloads, and come up with a comprehensive roadmap for your Cloud transformation journey.",
+        "You can partner with Blue Data Digital at any stage of your Cloud journey. Whether you're already on the Cloud, in the migration process, or planning the switch, our certified consultants help boost your Cloud capabilities.",
+    },
+    {
+      question:
+        "I need Cloud Consulting partners for my project. Can Blue Data Digital help?",
+      answer:
+        "Absolutely! Our certified Cloud consultants collaborate with you to assess your business requirements, workload, and maturity. We develop a comprehensive roadmap for your Cloud transformation journey to ensure success.",
     },
   ];
 
@@ -64,8 +66,8 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-            assumenda
+            Explore common questions about Cloud consulting with Blue Data
+            Digital.
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">
@@ -78,7 +80,7 @@ const Faq = () => {
           ))}
         </div>
         <p className="textbase mt-6 text-center text-gray-600">
-          Can&apos;t find what you&apos;re looking for?{" "}
+          Can't find what you're looking for?{" "}
           <Link
             to="/contact"
             onClick={() => {

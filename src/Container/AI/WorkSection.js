@@ -9,27 +9,27 @@ import {
 const WorkSection = () => {
   const workCards = [
     {
-      title: "Accuracy",
+      title: "Strategic Consulting",
       description:
-        "Prevent human errors and ensure accurate results with the help of Artificial Intelligence in your processes.",
+        "Provide strategic tech consulting to align AI & ML solutions with your business objectives and enhance overall efficiency.",
       icon: <AiOutlineCode size={36} />,
     },
     {
       title: "Decision-Making",
       description:
-        "With quicker data analysis and programming, Artificial Intelligence and Machine Learning aid in making informed decisions.",
+        "Enable informed decision-making through rapid data analysis, leveraging AI and Machine Learning capabilities.",
       icon: <AiOutlineDatabase size={36} />,
     },
     {
-      title: "Forecasting",
+      title: "Technology Forecasting",
       description:
-        "Accurate forecasting and predictions by processing volumes of data to assist in planning the next steps and business goals.",
+        "Forecast and anticipate future technology trends, ensuring your business stays ahead in the fast-evolving tech landscape.",
       icon: <AiOutlineCloud size={36} />,
     },
     {
       title: "Process Optimization",
       description:
-        "Machine Learning to aid in identifying anomalies in business processes and to optimize them to increase efficiency.",
+        "Optimize business processes by leveraging Machine Learning to identify inefficiencies and streamline operations.",
       icon: <AiOutlineUser size={36} />,
     },
   ];
@@ -39,7 +39,7 @@ const WorkSection = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         <div className="md:w-2/3 lg:w-1/2 mt-4 text-gray-100">
           <h2 className="my-2 text-4xl font-bold text-black md:text-6xl">
-            Business Benefits of AI & ML Solutions
+            Tech Consulting Benefits with AI & ML Solutions
           </h2>
         </div>
         <div className="mt-6 grid divide-x divide-y divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">

@@ -20,10 +20,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 lg:flex lg:items-center">
         <div className="flex flex-col justify-center lg:text-center lg:w-1/2">
           <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold leading-tight md:text-4xl">
-            Generative AI Services
+            Blue Data Digital: Empowering Your Generative AI Journey
           </h1>
           <p className="text-lg lg:text-xl mt-3 md:text-base">
-            Innovate Responsibly with Our Generative AI Solutions
+            Revolutionize Your Business with Blue Data Digital's Generative AI
+            Solutions
           </p>
           <p className="mt-6">
             <Link
@@ -59,20 +60,18 @@ const Description = () => {
     <section className="mt-16 lg:pt-20 lg:pb-20 bg-gray-100">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-bold">
-          Experience Power of Generative AI to Drive Fast-Paced Transformation
+          Elevate Your Business with Blue Data Digital's Generative AI
+          Technology
         </h2>
         <div className="flex flex-col md:flex-row justify-center mt-8">
           <p className="text-xl md:font-normal leading-relaxed w-2/3">
-            When it comes to embracing generative AI, enterprises need
-            assistance figuring out where to start and how to make the most of
-            the technology. Damco, a trusted technology partner, can help your
-            business cut through the noise by democratizing access to generative
-            AI. Our seasoned tech experts employ advanced AI algorithms to craft
-            bespoke, fit-for-purpose solutions that align perfectly with your
-            unique needs. So, whether you are planning to optimize business
-            operations, generate innovative ideas, or deliver exceptional
-            customer experiences with next-gen AI, we have the expertise and
-            experience to help you reach your desired future state.
+            Blue Data Digital is your trusted partner in navigating the world of
+            generative AI. Our skilled tech experts harness the potential of
+            advanced AI algorithms to craft tailor-made solutions that align
+            seamlessly with your unique requirements. Whether you're looking to
+            optimize operations, generate innovative ideas, or deliver
+            exceptional customer experiences, our expertise and experience will
+            propel your business into the future.
           </p>
         </div>
       </div>
@@ -158,7 +157,7 @@ const servicesData = [
   {
     title: "Prompt Engineering",
     description:
-      "Damco’s generative AI development teams develop, refine, and optimize prompts to enhance the accuracy and performance of generative AI models, so that you get relevant, high-quality, and unbiased responses, every single time.",
+      "Blue Data Digital generative AI development teams develop, refine, and optimize prompts to enhance the accuracy and performance of generative AI models, so that you get relevant, high-quality, and unbiased responses, every single time.",
     image: prompt_engineering,
   },
   {
@@ -230,7 +229,7 @@ const principlesData = [
   {
     title: "Secure",
     content:
-      "Damco employs robust security measures to safeguard your data from unauthorized access, breaches, and cyber threats. Our generative AI solutions are designed with encryption, access controls, and continuous monitoring to mitigate risks and maintain the integrity of sensitive information.",
+      "Blue Data Digital employs robust security measures to safeguard your data from unauthorized access, breaches, and cyber threats. Our generative AI solutions are designed with encryption, access controls, and continuous monitoring to mitigate risks and maintain the integrity of sensitive information.",
   },
   {
     title: "Ethical",
@@ -259,9 +258,9 @@ const PrinciplesSection = () => {
         <div className="flex flex-col md:flex-row md:-mx-3 md:flex-wrap mt-6">
           {principlesData.map((principle, index) => (
             <div key={index} className="md:w-1/2 px-3 mt-6">
-              <div className="p-6 rounded-lg border border-solid border-gray-200 bg-white h-60 shadow-lg">
-                <p className="text-xl font-semibold">{principle.title}</p>
-                <p className="mt-2 text-sm md:text-base font-normal">
+              <div className="px-6 py-6 rounded-lg border border-solid border-gray-200 bg-white h-full shadow-lg">
+                <p className="text-xl font-bold">{principle.title}</p>
+                <p className="mt-2 text-md md:text-md font-normal">
                   {principle.content}
                 </p>
               </div>

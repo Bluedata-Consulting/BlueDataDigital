@@ -1,34 +1,115 @@
+// CryptocurrencyDevelopment.js
 import React from "react";
 
-const CryptocurrencyDevelopment = () => {
-  const featuresData = [
-    {
-      title: "Initial Coin Offering (ICO) Development",
-      description:
-        "With our extensive experience in building Blockchain and crypto technologies, we can help you build a fully compliant, secure and highly scalable ICO Management platform to facilitate investor reporting, crowdfunding and crowd sales, KPI tracking and community management",
-    },
-    {
-      title: "Security Token Offering (STO)",
-      description:
-        "Being the leading service provider in Security Token Offering (STO), we have been helping professional investors invest securely, transparently while complying with the regulations. Our rich experience in STO can help you ride the next big wave of crypto-based investing",
-    },
-    {
-      title: "Initial Exchange Offering",
-      description:
-        "IEO is the next-gen of Cryptocurrency crowdfunding enabling the investor to enter the crypto world through a safe passage while investing in projects. Our team of Cryptocurrency developers builds the most unique tokens for your IEO’s and helps you list them on various platforms",
-    },
-    {
-      title: "Cryptocurrency Exchange Development",
-      description:
-        "We have developed white-labeled, highly secured, controlled, centralized and decentralized exchange with the fastest matching engine. To carry out transactions in a reliable and secure way, we have designed and implemented robust and scalable platforms integrated with advanced Blockchain functionality",
-    },
-    {
-      title: "Wallet Development",
-      description:
-        "Cryptocurrency wallet is a software functionality that allows users to earn, monitor and transfer virtual currencies. Damco has implemented multiple wallets including multisig and multi-currency wallets for enabling secure cryptocurrency transactions and stores it with universal wallets that are highly immune to both hard and soft fork",
-    },
-  ];
+const featuresData = [
+  {
+    title: "Initial Coin Offering (ICO) Development",
+    description:
+      "With our extensive experience in building Blockchain and crypto technologies, we can help you build a fully compliant, secure and highly scalable ICO Management platform to facilitate investor reporting, crowdfunding and crowd sales, KPI tracking and community management",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 15.9998C21 17.1048 20.1049 17.9998 19 17.9998C17.895 17.9998 17 17.1048 17 15.9998C17 14.8948 17.895 13.9998 19 13.9998C20.1049 13.9998 21 14.8948 21 15.9998ZM19 17.9998H5M7 5.99979H3V10.9998H7M21 10.9998H17V5.99979H21M7 14.9998H3V19.9998H7M21 19.9998H17V14.9998H21"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Security Token Offering (STO)",
+    description:
+      "Being the leading service provider in Security Token Offering (STO), we have been helping professional investors invest securely, transparently while complying with the regulations. Our rich experience in STO can help you ride the next big wave of crypto-based investing",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3V21M5 9H19M5 15H19"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Initial Exchange Offering",
+    description:
+      "IEO is the next-gen of Cryptocurrency crowdfunding enabling the investor to enter the crypto world through a safe passage while investing in projects. Our team of Cryptocurrency developers builds the most unique tokens for your IEO’s and helps you list them on various platforms",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zM9 9h6m-3 3v6"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Cryptocurrency Exchange Development",
+    description:
+      "We have developed white-labeled, highly secured, controlled, centralized and decentralized exchange with the fastest matching engine. To carry out transactions in a reliable and secure way, we have designed and implemented robust and scalable platforms integrated with advanced Blockchain functionality",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zM8 9v6m8-6v6m-8-3h14m-4-10l-4 4-4-4"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Wallet Development",
+    description:
+      "Cryptocurrency wallet is a software functionality that allows users to earn, monitor and transfer virtual currencies. Damco has implemented multiple wallets including multisig and multi-currency wallets for enabling secure cryptocurrency transactions and stores it with universal wallets that are highly immune to both hard and soft fork",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zM12 6c1.6569 0 3 1.3431 3 3s-1.3431 3-3 3-3-1.3431-3-3 1.3431-3 3-3zM6 14a7 7 0 1114 0 7 7 0 01-14 0z"
+        ></path>
+      </svg>
+    ),
+  },
+];
 
+const CryptocurrencyDevelopment = () => {
   return (
     <div className="bg-gray-100 my-8 space-y-10 py-8 md:py-12 lg:py-20">
       <div className="mx-auto flex flex-col items-center space-y-4 text-center">
@@ -46,25 +127,13 @@ const CryptocurrencyDevelopment = () => {
         {featuresData.map((feature, index) => (
           <div key={index} className="flex gap-4 items-start flex-col">
             <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
-              >
-                <path
-                  d="M7.28856 0.796908C7.42258 0.734364 7.57742 0.734364 7.71144 0.796908L13.7114 3.59691C13.8875 3.67906 14 3.85574 14 4.05V10.95C14 11.1443 13.8875 11.3209 13.7114 11.4031L7.71144 14.2031C7.57742 14.2656 7.42258 14.2656 7.28856 14.2031L1.28856 11.4031C1.11252 11.3209 1 11.1443 1 10.95V4.05C1 3.85574 1.11252 3.67906 1.28856 3.59691L7.28856 0.796908ZM2 4.80578L7 6.93078V12.9649L2 10.6316V4.80578ZM8 12.9649L13 10.6316V4.80578L8 6.93078V12.9649ZM7.5 6.05672L12.2719 4.02866L7.5 1.80176L2.72809 4.02866L7.5 6.05672Z"
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              {feature.icon}
             </span>
             <div>
               <h3 className="font-bold text-xl">{feature.title}</h3>
-              <p className="mt-1 text-md text-gray-700">{feature.description}</p>
+              <p className="mt-1 text-md text-gray-700">
+                {feature.description}
+              </p>
             </div>
           </div>
         ))}

@@ -9,27 +9,27 @@ import { MdSecurity } from "react-icons/md";
 const WorkSection = () => {
   const workCards = [
     {
-      title: "Accuracy",
+      title: "Enhanced Accuracy",
       description:
-        "AI-based bots trained to repeat a certain task without failure and errors directly add to process accuracy.",
+        "AI-powered bots ensure precise and error-free execution of tasks, contributing to enhanced process accuracy.",
       icon: <AiOutlineDollar size={36} />,
     },
     {
-      title: "Efficiency",
+      title: "Operational Efficiency",
       description:
-        "A robotic workforce that never gets tired or takes a break, no redundancies or errors, with efficiency improvements up to 50%.",
+        "A robotic workforce operates tirelessly without breaks, minimizing redundancies and errors, leading to efficiency improvements of up to 50%.",
       icon: <MdSecurity size={36} />,
     },
     {
-      title: "Return on Investment",
+      title: "Maximized Return on Investment",
       description:
-        "Custom RPA development generates strong ROI in a short period and delivers business excellence throughout the value chain.",
+        "Custom RPA development delivers a strong return on investment in a short period, fostering business excellence across the value chain.",
       icon: <AiOutlineLineChart size={36} />,
     },
     {
-      title: "Scalability",
+      title: "Scalability Advantage",
       description:
-        "Bots are quickly scaled to accommodate spikes in workload and handle large volumes of data.",
+        "Bots can be rapidly scaled to handle fluctuations in workload and manage large volumes of data efficiently.",
       icon: <AiOutlineSafetyCertificate size={36} />,
     },
   ];
@@ -42,8 +42,8 @@ const WorkSection = () => {
             Business Benefits of RPA
           </h2>
           <p className="text-black font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-            Introduce speed and convenience with rules-based trained bots
-            freeing the workforce to perform more everyday
+            Introduce speed and convenience with rules-based trained bots,
+            freeing the workforce to perform more strategic tasks.
           </p>
         </div>
         <div className="mt-6 grid divide-x divide-y divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">

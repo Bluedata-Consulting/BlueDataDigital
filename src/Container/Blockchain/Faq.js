@@ -23,7 +23,7 @@ const FaqSection = ({ question, answer }) => {
       </div>
       {isOpen && (
         <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-          <p className="text-gray-500">{answer}</p>
+          <p className="text-gray-700">{answer}</p>
         </div>
       )}
     </div>
@@ -33,25 +33,26 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do Robotic Process Automation Services help a business?",
+      question: "How does outsourcing to a Blockchain development agency work?",
       answer:
-        "Robotic Process Automation development services enable businesses to transfer their mundane and repetitive tasks from the workforce to bots trained for doing such tasks tirelessly. This results in generating more bandwidth for the workforce to focus on more critical tasks and improve process accuracy with the removal of human errors.",
+        "Our Subject Matter Experts (SMEs) will reach out to understand your requirements and assess the project scope. Following this, we provide a detailed project proposal with various engagement models for you to choose from. Once the contract is signed, we commence the project immediately.",
     },
     {
-      question: "Is RPA actually needed for my business?",
+      question: "Can I hire a Blockchain developer on a full-time basis?",
       answer:
-        "Our Robotic Process Automation consulting services help assess if your business has repetitive tasks that can be automated through technology. Once that has been taken care of, our experts help you understand the scope of automation possible for the said process and how it will benefit your business and its efficiency.",
-    },
-    {
-      question: "Is RPA the solution for a quick and secure KYC process?",
-      answer:
-        "KYC is an essential yet time-consuming process that banking and financial institutions are required to regularly perform. As an eminent RPA development company, Damco provides cutting-edge RPA tools that automate several KYC tasks from automated customer alerts to identification verification and document routing. This ensures faster turn-around time as well as higher process accuracy.",
+        "Yes, you can. We offer ready-to-hire skilled resources with extensive experience in Blockchain and related technologies for full-time project development.",
     },
     {
       question:
-        "How much does it cost to avail of RPA Implementation Services?",
+        "How long does it take to go live with a Blockchain development project?",
       answer:
-        "The actual cost of RPA implementation services depends on your business requirements, the engagement model you choose, total man-hours required, the technology stack used, and other related factors. As a leading Robotic Process Automation company, we offer premium quality solutions that fit the budget of every business.",
+        "The project duration varies depending on the scope, ranging from a few weeks to a few months. We follow the Agile development approach to ensure timely delivery with the highest quality standards.",
+    },
+    {
+      question:
+        "Does a blockchain development firm offer post-development support?",
+      answer:
+        "Yes, we do. With our extended software protection plans, we take full ownership of post-development maintenance and updates. In other engagements, we provide support on a case-by-case basis.",
     },
   ];
 
@@ -63,8 +64,8 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-            assumenda
+            Discover more about our Blockchain development services through
+            these commonly asked questions.
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">
@@ -77,7 +78,7 @@ const Faq = () => {
           ))}
         </div>
         <p className="textbase mt-6 text-center text-gray-600">
-          Can&apos;t find what you&apos;re looking for?{" "}
+          Can't find what you're looking for?{" "}
           <Link
             href="/contact"
             onClick={() => {

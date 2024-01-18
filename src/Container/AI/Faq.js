@@ -33,26 +33,31 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do I choose an AI & ML company for my requirements?",
+      question: "What services does Blue Data Digital offer?",
       answer:
-        "There are a number of factors you must consider while choosing an AI & ML company for their development and maintenance requirements, including their exposure to different industries and specific to your industry, the types of solutions they build, and the support they provide post-implementation. Damco is one of the leading and renowned AI & ML services providers with cross-industry experience and a 99.8% client satisfaction rate.",
+        "Blue Data Digital is a tech consulting company specializing in cutting-edge Artificial Intelligence and Machine Learning services. We provide a range of solutions to help businesses leverage AI for enhanced decision-making, automation, and business intelligence. Explore our services to discover how we can elevate your business.",
+    },
+    {
+      question: "How can I benefit from Blue Data Digital's AI & ML expertise?",
+      answer:
+        "Blue Data Digital offers AI & ML consulting and development services tailored to your business needs. Whether you're looking to automate processes, implement predictive analytics, or develop AI-powered applications, our team of experts is dedicated to delivering solutions that drive business growth and efficiency.",
+    },
+    {
+      question: "Can I hire AI & ML developers from Blue Data Digital?",
+      answer:
+        "Absolutely! Blue Data Digital provides flexible hiring models for AI & ML developers. You can hire skilled professionals to work on your specific projects. Our developers, experienced in AI and Machine Learning, can be hired individually or as part of a managed team, ensuring your project's success.",
     },
     {
       question:
-        "Can I hire developers under Machine Learning and AI services as per my requirements?",
+        "How transparent is the communication with Blue Data Digital's hired resources?",
       answer:
-        "Yes, you certainly can hire developers under our Build Your Team model under our Machine Learning and AI services. These expert developers will be working with your team to deliver the requirements and can be hired individually or as managed teams.",
+        "When you hire resources from Blue Data Digital, you gain full control and transparency. We prioritize clear communication with transparent policies. You'll have access to a convenient communication platform, fostering an open channel between your team and our hired resources. Consider them as an integral part of your team.",
     },
     {
       question:
-        "Will I have control over such hired resources taken from an AI & ML solutions company?",
+        "What factors determine the cost of developing AI & ML solutions with Blue Data Digital?",
       answer:
-        "When you hire resources from an AI & Machine Learning Services company such as Damco, you get the assurance of clear communication with transparent policies. A convenient communication platform is provided to keep the channel open and the hired resources work as your own integral team.",
-    },
-    {
-      question: "What is the general cost of developing AI & ML solutions?",
-      answer:
-        "Well, it completely depends on a number of factors, including the scope of the project, the number of solutions developed, man-hours invested and more. Damco provides time-tested AI & ML consulting to its clientele and assesses the project before initiating to give a ballpark figure to go ahead with.",
+        "The cost of developing AI & ML solutions with Blue Data Digital depends on various factors, including the project scope, complexity, and man-hours invested. Our experienced team assesses each project individually to provide accurate estimates. Trust Blue Data Digital for time-tested AI & ML consulting and cost-effective solutions.",
     },
   ];
 
@@ -64,8 +69,8 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-            assumenda
+            Have questions? Find answers to commonly asked questions about Blue
+            Data Digital and our services.
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">

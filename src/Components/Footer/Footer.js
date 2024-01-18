@@ -24,9 +24,7 @@ const Footer = () => {
                 <span className="ml-4 text-lg font-bold">BDD</span>
               </div>
               <div>
-                <p className="mb-2  text-lg font-medium">
-                  BLUE DATA DIGITAL
-                </p>
+                <p className="mb-2  text-lg font-medium">BLUE DATA DIGITAL</p>
                 <p className="text-sm text-gray-600">
                   &copy; Copyright 2024. All Rights Reserved by BDD.
                 </p>
@@ -82,6 +80,21 @@ const Footer = () => {
                     }}
                   >
                     Contact
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                    to="/team"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Team
                   </Link>
                 </li>
                 {/* <li>

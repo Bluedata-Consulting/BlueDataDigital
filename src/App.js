@@ -12,6 +12,7 @@ import Cloud from "./Container/Cloud/Cloud";
 import RPA from "./Container/RPA/RPA";
 import Blockchain from "./Container/Blockchain/Blockchain";
 import "./index.css";
+import TeamSection from "./Container/Team/TeamSection";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/cloud" element={<Cloud />} />
           <Route path="/rpa" element={<RPA />} />
           <Route path="/blockchain" element={<Blockchain />} />
+          <Route path="/team" element={<TeamSection />} />
         </Routes>
       </Router>
     </>

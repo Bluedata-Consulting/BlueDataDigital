@@ -11,39 +11,39 @@ import {
 const features = [
   {
     icon: <AiOutlineCode />,
-    heading: "AI Consulting & Development",
+    heading: "Tech Consulting Solutions",
     description:
-      "Our Artificial Intelligence Consulting and Development Services help catalyze business growth, integrate AI into your existing tech stack, and develop advanced AI solutions for optimizing business processes.",
+      "Transform your business with our comprehensive tech consulting services. We analyze your current tech stack, recommend improvements, and provide tailored solutions to boost efficiency and innovation.",
   },
   {
     icon: <AiOutlineDatabase />,
-    heading: "Machine Learning Development",
+    heading: "Data Science & Analytics",
     description:
-      "Our Machine Learning development services help you automate business processes and perform advanced data analytics. We help you deploy ML models and algorithms that process large sets of data to enable faster and smarter decision-making.",
+      "Unlock the power of data with our Data Science and Analytics services. From data collection to advanced analytics, we help you derive valuable insights to drive strategic decision-making.",
   },
   {
     icon: <AiOutlineCloud />,
-    heading: "AI-Powered Applications",
+    heading: "Cloud Solutions Architecture",
     description:
-      "Empowering you with our future-ready AI-based mobile and web applications to offer improved and intuitive user experience. Leveraging the functionalities offered by AI, we help you better understand user behavior and provide a personalized touch to their browsing time.",
+      "Optimize your infrastructure with our Cloud Solutions Architecture expertise. We design and implement scalable, secure, and efficient cloud solutions to meet your business needs.",
   },
   {
     icon: <AiOutlineUser />,
-    heading: "Natural Language Processing",
+    heading: "User-Centric Design",
     description:
-      "Leverage NLP to derive meaning from large sets of data. We help you build a next-gen digital assistant that holds better understanding of multiple parts of speech, contextual nuances, sentiments, and different languages for personalized customer service.",
+      "Enhance user experience with our User-Centric Design approach. We create AI-powered applications that prioritize usability, accessibility, and an intuitive interface for your target audience.",
   },
   {
     icon: <AiOutlineKey />,
-    heading: "Data Support for AI/ML",
+    heading: "Data Annotation Services",
     description:
-      "Accurately annotate data, including text, images, or videos to train AI/ML models for maximizing your business operations’ efficiency. Our certified experts backed by the AI & ML centres of excellence deliver superior data support with the promise of confidentiality, precision, and accuracy.",
+      "Ensure quality data for your AI/ML models with our Data Annotation Services. Our experts annotate text, images, and videos with precision, confidentiality, and accuracy.",
   },
   {
     icon: <AiOutlineApi />,
-    heading: "AI Solution Support and Optimization",
+    heading: "Continuous AI Solution Support",
     description:
-      "Providing around-the-clock support, monitoring, and optimization for existing and newly developed AI solutions. It includes the addition of new data resources for improving AI insights and accuracy and developing ML-based models to match the newer business needs.",
+      "Get round-the-clock support, monitoring, and optimization for your AI solutions. We adapt to evolving business needs, adding new data resources and enhancing models for improved accuracy.",
   },
 ];
 
@@ -55,11 +55,10 @@ const OfferingSection = () => {
     >
       <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
-          Our Offerings
+          Our Tech Consulting Offerings
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-          Artificial Intelligence and Machine Learning Services to Optimize Your
-          Business Functions.
+          Empowering Your Business with Innovative Tech Solutions.
         </p>
       </div>
 

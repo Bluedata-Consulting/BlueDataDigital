@@ -3,7 +3,9 @@ import React from "react";
 const IndustryUseCase = ({ useCases }) => {
   return (
     <div className="max-w-7xl mx-auto px-5 mt-16 py-16">
-      <h2 className="font-bold text-5xl text-center">Industry Use Cases</h2>
+      <h2 className="font-bold text-5xl text-center">
+        Tech Consulting Use Cases
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {useCases.map((useCase, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -19,34 +21,34 @@ const IndustryUseCase = ({ useCases }) => {
 const IndustryUseCases = () => {
   const industryUseCases = [
     {
-      heading: "Insurance",
+      heading: "Digital Transformation",
       content:
-        "Developed AI-based Intelligent Loss Report Validation Tool to validate data by performing QA checks in the Loss report, predict errors and notify the errors to Adjusters & QA Reviewers.",
+        "Assisted a multinational corporation in their digital transformation journey by implementing AI and ML solutions, optimizing business processes, and enhancing overall efficiency.",
     },
     {
-      heading: "Healthcare",
+      heading: "Customized Analytics",
       content:
-        "Trained a chatbot for a leading healthcare institution for booking appointments and tests directly via the website and app, along with responding to the general user queries.",
+        "Provided tailored analytics solutions for tech startups, enabling them to gain actionable insights from their data and make informed decisions for sustainable growth.",
     },
     {
-      heading: "Retail",
+      heading: "Innovative Product Development",
       content:
-        "Created an ML-based tool for an e-commerce giant to help them analyze the browsing history of users on the website to retarget and cross-sell, along with tracking loyalty rewards.",
+        "Collaborated with emerging tech companies to develop innovative products powered by AI and ML, positioning them as industry leaders in their respective niches.",
     },
     {
-      heading: "Fintech",
+      heading: "Data Security Consulting",
       content:
-        "Developed a predictive scoring model to assess the risk of small consumer loans, providing a weighted predictor of loan performance and the lifetime value of the customer.",
+        "Offered expertise in data security consulting, implementing advanced AI-driven security measures to safeguard sensitive information for financial and technology clients.",
     },
     {
-      heading: "Banking",
+      heading: "Smart Automation Solutions",
       content:
-        "Developed an AI and ML-based bot to help the workforce complete the KYC effortlessly, minimizing the error percentage for a leading national banking chain.",
+        "Implemented smart automation solutions for manufacturing and logistics clients, streamlining operations and reducing operational costs through AI and ML applications.",
     },
     {
-      heading: "OTT",
+      heading: "Customer Experience Enhancement",
       content:
-        "Trained a recommendation engine to analyze user behavior and preferences, recommending shows and films based on the previously watched list.",
+        "Enhanced customer experience for e-commerce businesses by deploying AI-based chatbots, personalized recommendations, and predictive analytics.",
     },
   ];
 

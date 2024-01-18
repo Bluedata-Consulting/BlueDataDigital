@@ -2,34 +2,34 @@ import React from "react";
 
 const features = [
   {
-    heading: "Cloud Consulting Services",
+    heading: "Strategic Cloud Consulting",
     description:
-      "We guide businesses to adopt the right practices and best-fit platform for the migration of legacy infrastructures and applications, along with the creation of a roadmap to enable transition with minimal operational disruption.",
+      "We provide expert guidance for businesses in adopting best practices and selecting the optimal Cloud platform. Our consultancy includes creating a roadmap for migrating legacy infrastructures and applications, ensuring a smooth transition with minimal operational disruption.",
   },
   {
-    heading: "Cloud Migration Services",
+    heading: "Seamless Cloud Migration",
     description:
-      "Damco partners with businesses to transform their digital capabilities through a frictionless migration of their existing applications and platforms to the Cloud environment that best suits their requirements-public, private, or hybrid.",
+      "Partnering with Blue Data Digital ensures a frictionless migration of existing applications and platforms to the Cloud. We tailor the migration strategy to suit specific business requirements, whether it's a public, private, or hybrid Cloud environment.",
   },
   {
-    heading: "Cloud Application Development",
+    heading: "Cloud-Native Application Development",
     description:
-      "Our experts harness their Cloud-native capabilities to build, test, and deploy business-critical applications. We not only help you choose a suitable technology stack and design strategic architecture but also effectively implement CI/CD pipelines.",
+      "Leverage our Cloud-native capabilities to build, test, and deploy business-critical applications. We assist in choosing an optimal technology stack, designing strategic architecture, and implementing efficient CI/CD pipelines for continuous innovation.",
   },
   {
-    heading: "Cloud Management",
+    heading: "Efficient Cloud Management",
     description:
-      "Our Cloud specialists configure, manage, and optimize your IT infrastructure through precise Cloud configuration and performance strategy. We help businesses establish a robust Cloud foundation and reduce heavy workflows to eliminate unnecessary resource consumption.",
+      "Our Cloud specialists configure, manage, and optimize IT infrastructure with precision. Blue Data Digital helps establish a robust Cloud foundation, reducing heavy workflows to eliminate unnecessary resource consumption and enhance operational efficiency.",
   },
   {
-    heading: "Cloud Security",
+    heading: "Robust Cloud Security",
     description:
-      "We prepare businesses for cybersecurity challenges while helping them meet their compliance and audit needs. 360-degree security management, penetration testing and advanced threat prevention for Cloud-based applications, containers and infrastructures offer you much-needed peace of mind.",
+      "Prepare your business for cybersecurity challenges with Blue Data Digital. We ensure compliance and audit needs are met by offering 360-degree security management, penetration testing, and advanced threat prevention for Cloud-based applications, containers, and infrastructures.",
   },
   {
-    heading: "DevOps and Automation",
+    heading: "DevOps Excellence and Automation",
     description:
-      "Our Cloud practitioners help enterprises embrace automation tools and DevOps practices that deliver transformative outcomes. From seamless adoption of standards such as Agile to technology implementation for CI/CD and deployment of container orchestration platforms, we help you every step of the way.",
+      "Embrace automation tools and DevOps practices with Blue Data Digital. Our Cloud practitioners guide enterprises through seamless adoption of standards like Agile, technology implementation for CI/CD, and deployment of container orchestration platforms for transformative outcomes.",
   },
 ];
 
@@ -41,10 +41,10 @@ const OfferingSection = () => {
     >
       <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
-          Our Cloud Offerings
+          Blue Data Digital's Cloud Offerings
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-          Comprehensive Cloud Offerings to Achieve Disruptive Outcomes
+          Comprehensive Cloud Offerings for Disruptive Tech Solutions
         </p>
       </div>
 

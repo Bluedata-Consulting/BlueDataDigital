@@ -39,26 +39,20 @@ const AI = () => {
               <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl sm:leading-10">
                 <span className="">AI & ML Solutions for Automation</span>
               </h2>
-              <p className="mt-5 text-lg leading-6 text-gray-900">
-                Artificial Intelligence and Machine Learning are regarded as one
-                of the most revolutionary technologies of the current times. The
-                global market for AI & ML is predicted to reach a whopping $18
-                trillion in 2030, up from $93 billion in 2021. Companies are
-                steadily integrating AI into their operations, with 56% of the
-                businesses reporting AI adoption in one or more functions.
-                Artificial Intelligence and Machine Learning solutions are
-                helping businesses succeed by identifying trends, enabling smart
-                decision-making, and developing market-winning strategies.
+              <p className="w-4/5 mt-5 text-xl text-gray-900">
+                Blue Data Digital is a leading tech consulting company, offering
+                state-of-the-art Artificial Intelligence and Machine Learning
+                solutions. In an era where technology is driving rapid
+                transformations, our AI & ML services empower businesses to
+                innovate, automate processes, and gain a competitive edge .
               </p>
-              <p className="mt-4 text-lg leading-6 text-gray-900">
-                With Damco’s Artificial Intelligence & Machine Learning
-                services, you can automate processes, strengthen customer
-                relations, leverage enhanced analytics, and future-proof your
-                business processes; ensuring you stay relevant to the evolving
-                market and customer needs. Leveraging our AI & ML consulting and
-                solutions, the possibilities become endless, where you can draw
-                new insights and tap into new business revenue streams by making
-                the best use of your data.
+              <p className="w-4/5 mt-4 text-xl  text-gray-900">
+                With Blue Data Digital’s expertise, you can harness the power of
+                AI to automate operations, enhance analytics, and future-proof
+                your business. Our AI & ML consulting services unlock new
+                possibilities, allowing you to derive valuable insights and tap
+                into new revenue streams by leveraging the full potential of
+                your data.
               </p>
               <Link
                 to="/contact"

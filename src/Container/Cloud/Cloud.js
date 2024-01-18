@@ -18,11 +18,11 @@ const Cloud = () => {
       <section className="py-16 md:py-32 my-20">
         <div className="container mx-auto px-4 md:px-8 text-center">
           <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
-            Cloud Services
+            Cloud Services for Tech Transformation
           </h1>
           <p className="text-black text-lg md:text-2xl mb-12">
-            Drive Business Agility and Resilience With Cloud Advisory, Roadmap,
-            and Solutions.
+            Powering Tech Transformation with Cloud Expertise at Blue Data
+            Digital.
           </p>
         </div>
       </section>
@@ -40,28 +40,25 @@ const Cloud = () => {
             <div className="lg:self-center">
               <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl">
                 <span className="">
-                  Cloud Consulting Solutions to Optimize Performance and Costs
+                  Transforming Businesses with Cloud Consulting
                 </span>
               </h2>
               <p className="mt-5 text-lg leading-6 text-gray-900">
-                Legacy IT infrastructures often fail to manage the growing load
-                of applications, data, and devices, pushing businesses to
-                embrace the Cloud. Implemented the right way, the Cloud can help
-                organizations cut down operational costs, drive innovation, and
-                address legacy challenges.
+                Legacy IT infrastructures often struggle to cope with the
+                evolving demands of applications, data, and devices. Blue Data
+                Digital guides businesses through a strategic Cloud adoption
+                process, reducing operational costs, fostering innovation, and
+                overcoming legacy challenges.
               </p>
               <p className="mt-4 text-lg leading-6 text-gray-900">
-                A recognized leader in Cloud solutions consulting, Damco helps
-                you unlock the true potential of the Cloud through its
-                end-to-end suite of Cloud services. We closely assess your
-                needs, challenges, and technology landscape to devise
-                personalized, sustainable Cloud solutions that enable a
-                connected and transformed future for your business. By
-                leveraging our strategic partnerships with AWS, Azure, and
-                Google Cloud, we help your business evolve its Cloud
-                capabilities, define new revenue streams, develop Cloud-based
-                applications, accelerate product release, and slash
-                infrastructure costs by up to 50%.
+                As a leading tech consulting company, Blue Data Digital
+                specializes in Cloud solutions. We assess your unique needs,
+                challenges, and technology landscape to create personalized,
+                sustainable Cloud solutions. Leveraging strategic partnerships
+                with AWS, Azure, and Google Cloud, we help your business evolve
+                its Cloud capabilities, define new revenue streams, develop
+                Cloud-based applications, accelerate product releases, and
+                reduce infrastructure costs significantly.
               </p>
               <Link
                 to="/contact"

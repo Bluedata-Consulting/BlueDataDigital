@@ -4,11 +4,11 @@ const IndustryUseCase = ({ useCases }) => {
   return (
     <div className="max-w-7xl mx-auto px-5 mt-16 py-16">
       <h2 className="font-bold text-5xl text-center pb-2">
-        RPA Industry Use Cases
+        Blue Data Digital's RPA Industry Use Cases
       </h2>
       <p className="text-center font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-        Our Robotic Process Automation development serves the purpose of
-        delivering best-fit solutions and trained bots.
+        Explore how our Robotic Process Automation solutions bring
+        transformative changes to various industries.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {useCases.map((useCase, index) => (
@@ -27,37 +27,37 @@ const IndustryUseCases = () => {
     {
       heading: "Banking",
       content:
-        "Incorporating OCR and cognitive automation, transforming the customer onboarding process of a leading banking chain to complete the process instantaneously, adding to the customer experience.",
+        "Implementing OCR and cognitive automation to revolutionize customer onboarding processes, ensuring instant completion and enhancing overall customer experience.",
     },
     {
       heading: "IT",
       content:
-        "Developed an RPA-based solution for enabling the installation of very complex software with interdependent components via a single click, making it time efficient and user-friendly.",
+        "Developing an RPA-based solution for the efficient installation of complex software with interdependent components, simplifying the process for users.",
     },
     {
       heading: "Finance",
       content:
-        "Created a semi-automated Financial Planning & Analysis (FP&A) system for a leading financial corporation that processed financial statements from numerous departments and merged them to churn reports.",
+        "Creating a semi-automated Financial Planning & Analysis (FP&A) system for a leading financial corporation, streamlining the processing of financial statements and report generation.",
     },
     {
       heading: "ERP",
       content:
-        "Developed a Virtual HR Assistant chatbot that authenticated employees and served as per their requirements, freeing up workforce bandwidth to work on critical tasks.",
+        "Building a Virtual HR Assistant chatbot for authentication and personalized assistance to employees, freeing up workforce bandwidth for critical tasks.",
     },
     {
       heading: "EdTech",
       content:
-        "Made a dedicated KYC solution against a leading EdTech firm’s requirement using OCR to read, process, approve and reject formats basis the training provided.",
+        "Developing a dedicated KYC solution for a leading EdTech firm using OCR, facilitating the reading, processing, approval, and rejection of documents based on provided training.",
     },
     {
       heading: "Insurance",
       content:
-        "Developed an automation process for claims management for rule-based claim verification, extraction of relevant data, regulatory compliance, and preventing customer dissatisfaction and losses.",
+        "Implementing an automation process for claims management, ensuring rule-based verification, data extraction, regulatory compliance, and preventing customer dissatisfaction and losses.",
     },
   ];
 
   return (
-    <div >
+    <div>
       <IndustryUseCase useCases={industryUseCases} />
     </div>
   );

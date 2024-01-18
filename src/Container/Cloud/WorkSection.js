@@ -11,25 +11,25 @@ const WorkSection = () => {
     {
       title: "Optimized Costs",
       description:
-        "Businesses need not invest in maintaining on-premise IT infrastructure; they pay only for what they use.",
+        "Blue Data Digital helps businesses optimize costs by eliminating the need to invest in and maintain on-premise IT infrastructure; clients pay only for the services they use.",
       icon: <AiOutlineDollar size={36} />,
     },
     {
-      title: "Security",
+      title: "Enhanced Security",
       description:
-        "Stringent security regulations keep business data safe from malware, hacks, and internal theft.",
+        "Blue Data Digital ensures the security of business data by implementing stringent security measures, protecting against malware, hacks, and internal threats.",
       icon: <MdSecurity size={36} />,
     },
     {
-      title: "Easy Scalability",
+      title: "Scalability and Agility",
       description:
-        "Seamless scalability and agility of Cloud platforms help address fluctuating workloads without a hitch.",
+        "Blue Data Digital leverages Cloud platforms to provide seamless scalability and agility, enabling clients to address fluctuating workloads without any operational disruptions.",
       icon: <AiOutlineLineChart size={36} />,
     },
     {
       title: "Business Continuity",
       description:
-        "Automated back-up and DR solutions ensure minimal to no impact on operations in the event of a disaster.",
+        "Blue Data Digital offers automated backup and disaster recovery solutions, ensuring minimal to no impact on operations in the event of a disaster.",
       icon: <AiOutlineSafetyCertificate size={36} />,
     },
   ];
@@ -42,7 +42,8 @@ const WorkSection = () => {
             Business Benefits
           </h2>
           <p className="text-black font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-            Harness the Power of the Cloud for an Unprecedented Experience
+            Unlock Unprecedented Business Benefits with Blue Data Digital's
+            Cloud Solutions
           </p>
         </div>
         <div className="mt-6 grid divide-x divide-y divide-gray-700 overflow-hidden rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">

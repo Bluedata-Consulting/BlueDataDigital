@@ -33,25 +33,24 @@ const FaqSection = ({ question, answer }) => {
 const Faq = () => {
   const faqItems = [
     {
-      question: "How do Robotic Process Automation Services help a business?",
+      question: "How can Blue Data Digital's RPA Services benefit my business?",
       answer:
-        "Robotic Process Automation development services enable businesses to transfer their mundane and repetitive tasks from the workforce to bots trained for doing such tasks tirelessly. This results in generating more bandwidth for the workforce to focus on more critical tasks and improve process accuracy with the removal of human errors.",
+        "Blue Data Digital's RPA services can enhance your business by automating mundane tasks, improving efficiency, reducing errors, and allowing your workforce to focus on more strategic initiatives. Our tailored RPA solutions bring transformative changes to various industries.",
     },
     {
-      question: "Is RPA actually needed for my business?",
+      question: "Do I really need RPA for my business processes?",
       answer:
-        "Our Robotic Process Automation consulting services help assess if your business has repetitive tasks that can be automated through technology. Once that has been taken care of, our experts help you understand the scope of automation possible for the said process and how it will benefit your business and its efficiency.",
+        "Our RPA consulting services assess your business processes to identify repetitive tasks suitable for automation. We guide you in understanding the potential benefits, scope, and efficiency improvements that RPA can bring to your business.",
     },
     {
-      question: "Is RPA the solution for a quick and secure KYC process?",
+      question: "Can RPA streamline KYC processes for better efficiency?",
       answer:
-        "KYC is an essential yet time-consuming process that banking and financial institutions are required to regularly perform. As an eminent RPA development company, Damco provides cutting-edge RPA tools that automate several KYC tasks from automated customer alerts to identification verification and document routing. This ensures faster turn-around time as well as higher process accuracy.",
+        "Yes, Blue Data Digital's RPA tools are designed to automate various KYC tasks, including automated customer alerts, identification verification, and document routing. This ensures faster turn-around time and higher accuracy in the KYC process.",
     },
     {
-      question:
-        "How much does it cost to avail of RPA Implementation Services?",
+      question: "What is the cost of availing RPA Implementation Services?",
       answer:
-        "The actual cost of RPA implementation services depends on your business requirements, the engagement model you choose, total man-hours required, the technology stack used, and other related factors. As a leading Robotic Process Automation company, we offer premium quality solutions that fit the budget of every business.",
+        "The cost of RPA implementation services varies based on your business requirements, engagement model, man-hours, technology stack, and other factors. Blue Data Digital offers premium RPA solutions tailored to fit the budget of every business.",
     },
   ];
 
@@ -63,8 +62,7 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-            assumenda
+            Explore common questions about Blue Data Digital's RPA services.
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">
@@ -77,7 +75,7 @@ const Faq = () => {
           ))}
         </div>
         <p className="textbase mt-6 text-center text-gray-600">
-          Can&apos;t find what you&apos;re looking for?{" "}
+          Can't find what you're looking for?{" "}
           <Link
             to="/contact"
             onClick={() => {
