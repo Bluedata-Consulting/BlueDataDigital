@@ -68,7 +68,8 @@ const TeamSection = () => {
     {
       name: "John Doe",
       position: "Founder & CEO",
-      image: "https://placekitten.com/400/400",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/johndoe",
       twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/johndoe",
@@ -76,15 +77,17 @@ const TeamSection = () => {
     {
       name: "Jane Smith",
       position: "CTO",
-      image: "https://placekitten.com/401/401",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/janesmith",
       twitter: "https://twitter.com/janesmith",
       instagram: "https://www.instagram.com/janesmith",
     },
     {
-      name: "Alex Johnson",
+      name: "Faridah Abdullah",
       position: "Lead Developer",
-      image: "https://placekitten.com/402/402",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/alexjohnson",
       twitter: "https://twitter.com/alexjohnson",
       instagram: "https://www.instagram.com/alexjohnson",
@@ -92,23 +95,26 @@ const TeamSection = () => {
     {
       name: "Emily Brown",
       position: "Designer",
-      image: "https://placekitten.com/403/403",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/emilybrown",
       twitter: "https://twitter.com/emilybrown",
       instagram: "https://www.instagram.com/emilybrown",
     },
     {
-      name: "Chris Wilson",
+      name: "Lee Siew Hui",
       position: "Marketing Specialist",
-      image: "https://placekitten.com/404/404",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/chriswilson",
       twitter: "https://twitter.com/chriswilson",
       instagram: "https://www.instagram.com/chriswilson",
     },
     {
-      name: "Sophia Lee",
+      name: "Ahmad Zaki",
       position: "Software Engineer",
-      image: "https://placekitten.com/405/405",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/sophialee",
       twitter: "https://twitter.com/sophialee",
       instagram: "https://www.instagram.com/sophialee",
@@ -116,39 +122,44 @@ const TeamSection = () => {
     {
       name: "Ryan Miller",
       position: "Data Scientist",
-      image: "https://placekitten.com/406/406",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/ryanmiller",
       twitter: "https://twitter.com/ryanmiller",
       instagram: "https://www.instagram.com/ryanmiller",
     },
     {
-      name: "Ava Davis",
+      name: "Siti Hajar binti Mustafa",
       position: "Product Manager",
-      image: "https://placekitten.com/407/407",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/avadavis",
       twitter: "https://twitter.com/avadavis",
       instagram: "https://www.instagram.com/avadavis",
     },
     {
-      name: "Ethan Taylor",
+      name: "Lim Wei Jie",
       position: "QA Engineer",
-      image: "https://placekitten.com/408/408",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/ethantaylor",
       twitter: "https://twitter.com/ethantaylor",
       instagram: "https://www.instagram.com/ethantaylor",
     },
     {
-      name: "Olivia Martinez",
+      name: "Wong Chen Yee",
       position: "UX/UI Designer",
-      image: "https://placekitten.com/409/409",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/oliviamartinez",
       twitter: "https://twitter.com/oliviamartinez",
       instagram: "https://www.instagram.com/oliviamartinez",
     },
     {
-      name: "William Turner",
+      name: "Nurul Amin",
       position: "DevOps Engineer",
-      image: "https://placekitten.com/410/410",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/williamturner",
       twitter: "https://twitter.com/williamturner",
       instagram: "https://www.instagram.com/williamturner",
@@ -156,7 +167,8 @@ const TeamSection = () => {
     {
       name: "Emma White",
       position: "Content Writer",
-      image: "https://placekitten.com/411/411",
+      image:
+        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
       linkedin: "https://www.linkedin.com/in/emmawhite",
       twitter: "https://twitter.com/emmawhite",
       instagram: "https://www.instagram.com/emmawhite",

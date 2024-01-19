@@ -52,7 +52,7 @@ const Faq = () => {
       question:
         "How can businesses benefit from Cloud Computing services provided by Blue Data Digital?",
       answer:
-        "Blue Data Digital's Cloud Computing services empower businesses to cut operational costs, drive innovation, and address legacy challenges. With strategic partnerships with leading cloud providers such as AWS, Azure, and Google Cloud, we help businesses evolve their cloud capabilities, develop cloud-based applications, and accelerate product release.",
+        "Blue Data Digital's Cloud Computing services empower businesses to cut operational costs, drive innovation, and address legacy challenges. We help businesses evolve their cloud capabilities, develop cloud-based applications, and accelerate product release.",
     },
   ];
   return (

@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import OfferingsSection from "./OfferingSection";
 import WorkSection from "./WorkSection";
 import IndustryUseCases from "./IndustryUseCases";
-import Blog from "./Blog";
+import Blog from "../Article/Blog";
 import Faq from "./Faq";
 import { Link } from "react-router-dom";
 const AI = () => {
@@ -89,10 +89,10 @@ const AI = () => {
       <IndustryUseCases />
 
       {/* Section - 6*/}
-      <Faq />
+      <Blog />
 
       {/* Section - 7*/}
-      <Blog />
+      <Faq />
       <Footer />
     </div>
   );

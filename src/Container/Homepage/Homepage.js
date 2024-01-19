@@ -5,6 +5,7 @@ import { DollarSign, Filter, Moon, Zap } from "lucide-react";
 import Footer from "../../Components/Footer/Footer";
 import CarouselComponent from "./CarouselComponent";
 import Faq from "./Faq";
+import Blog from "../Article/Blog";
 
 const Homepage = () => {
   return (
@@ -14,7 +15,7 @@ const Homepage = () => {
 
       <div className="relative z-10 bg-white">
         {/* Features Section */}
-        <div className="mx-auto my-12 px-4 sm:px-6 md:my-24 lg:my-32 lg:px-8">
+        <div className="mx-auto my-12 px-4 lg:max-w-[90rem] sm:px-6 md:my-24 lg:my-32 lg:px-8">
           <div className="mx-auto text-center">
             <h2 className="mt-6 text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-6xl">
               Powering Innovation with Blue Data Digital
@@ -83,30 +84,30 @@ const Homepage = () => {
         </div>
 
         {/* Section - 4 */}
-        <section className="bg-gray-100 py-24 my-24">
+        <section className="bg-gray-100 pb-16 pt-12 my-24">
           <div className="container mx-auto px-2 ">
-            <div className="flex flex-wrap items-center mt-16">
+            <div className="flex flex-wrap items-center ">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-gray-400 shadow-lg rounded-full bg-white">
+                <div className="text-gray-700 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-gray-400 shadow-lg rounded-full bg-white">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
-                <h3 className="text-4xl mb-2 font-bold leading-normal">
+                <h3 className="text-5xl mb-2 font-bold leading-normal">
                   Tech-Driven Collaboration
                 </h3>
-                <p className="text-lg font-normal leading-relaxed mt-4 mb-4 text-gray-600">
+                <p className="text-xl font-normal leading-9 mt-4 mb-4 text-gray-600">
                   Join forces with our tech enthusiasts to bring your
                   revolutionary ideas to life. We specialize in innovative
                   technology solutions, ensuring your concepts are translated
                   into cutting-edge applications.
                 </p>
-                <p className="text-lg font-normal leading-relaxed mt-0 mb-4 text-gray-600">
+                <p className="text-xl font-normal leading-9 mt-0 mb-4 text-gray-600">
                   Experience a collaborative journey into the world of
                   technology transformation. Let's build extraordinary solutions
                   together!
                 </p>
                 <Link
                   to="/contact"
-                  className="font-bold text-lg text-gray-700 mt-8"
+                  className="font-bold text-xl text-gray-800 mt-8"
                   onClick={() => {
                     window.scroll({
                       top: 0,
@@ -153,6 +154,7 @@ const Homepage = () => {
             </div>
           </div>
         </section>
+        <Blog />
         <Faq />
       </div>
       {/* Footer */}

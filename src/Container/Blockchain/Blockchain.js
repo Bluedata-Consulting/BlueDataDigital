@@ -87,10 +87,10 @@ const Blockchain = () => {
       <IndustryUseCases />
 
       {/*Section - 8*/}
-      <Faq />
+      <Blog />
 
       {/*Section - 9*/}
-      <Blog />
+      <Faq />
 
       <Footer />
     </div>

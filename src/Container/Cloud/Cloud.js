@@ -92,10 +92,10 @@ const Cloud = () => {
       <IndustryUseCases />
 
       {/* Section - 6*/}
-      <Faq />
+      <Blog />
 
       {/* Section - 7*/}
-      <Blog />
+      <Faq />
 
       <Footer />
     </div>

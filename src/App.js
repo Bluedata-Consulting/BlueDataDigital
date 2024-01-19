@@ -6,6 +6,8 @@ import Contact from "./Container/Contact/Contact";
 import Telecom from "./Container/Telecom/Telecom";
 import Manufacturing from "./Container/Manufacturing/Manufacturing";
 import Article from "./Container/Article/Article";
+import Article2 from "./Container/Article/Article2";
+import Article3 from "./Container/Article/Article3";
 import AI from "./Container/AI/AI";
 import GenAI from "./Container/GenAI/GenAI";
 import Cloud from "./Container/Cloud/Cloud";
@@ -24,7 +26,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/telecom" element={<Telecom />} />
           <Route path="/manufacturing" element={<Manufacturing />} />
-          <Route path="/article" element={<Article />} />
+          <Route path="/article-1" element={<Article />} />
+          <Route path="/article-2" element={<Article2 />} />
+          <Route path="/article-3" element={<Article3 />} />
           <Route path="/ai" element={<AI />} />
           <Route path="/genai" element={<GenAI />} />
           <Route path="/cloud" element={<Cloud />} />

@@ -10,6 +10,7 @@ const ArticleCard = ({
   readTime,
   imageUrl,
   authorImageUrl,
+  link,
 }) => {
   return (
     <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
@@ -34,7 +35,7 @@ const ArticleCard = ({
             </Link>
           </p>
           <Link
-            to="/article"
+            to={link}
             className="mt-2 block"
             onClick={() => {
               window.scroll({
@@ -48,30 +49,6 @@ const ArticleCard = ({
             <p className="mt-3 text-base text-gray-600">{description}</p>
           </Link>
         </div>
-        {/* <div className="mt-6 flex items-center">
-          <div className="flex-shrink-0">
-            <a href="/">
-              <span className="sr-only">{author}</span>
-              <img
-                className="h-10 w-10 rounded-full"
-                src={authorImageUrl}
-                alt=""
-              />
-            </a>
-          </div>
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">
-              <a href="/" className="hover:underline">
-                {author}
-              </a>
-            </p>
-            <div className="flex space-x-1 text-sm text-gray-500">
-              <time dateTime="2020-03-16">{date}</time>
-              <span aria-hidden="true">·</span>
-              <span>{readTime}</span>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
@@ -95,32 +72,35 @@ const Blog = () => {
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
           <ArticleCard
             category="Article"
-            title="Boost your conversion rate"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum."
+            title="Technology Consulting"
+            description="We help organizations to accelerate ongoing projects and plan their upcoming projects from AI, data, automation and IoT domain. we get involved in mentoring, monitoring and architecting technology projects."
             author="Roel Aufderehar"
             date="Mar 16, 2020"
             readTime="6 min read"
-            imageUrl="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80"
+            link="/article-1"
+            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/student-849825_640-1-1.jpg"
             authorImageUrl="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
           <ArticleCard
             category="Blog"
-            title="How to use search engine optimization to drive sales"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium."
+            title="Analytics & AI Solution"
+            description="We at Blue Data Digital help organizations by building AI, Data engines, integrating silos with in the organizations, analyzing their business processes & developing productive solutions."
             author="Brenna Goyette"
             date="Mar 10, 2020"
             readTime="4 min read"
-            imageUrl="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80"
+            link="/article-2"
+            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/digital-marketing-1433427_640-1-1.jpg"
             authorImageUrl="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
           <ArticleCard
             category="Case Study"
-            title="Improve your customer experience"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic."
+            title="Scaling Teams"
+            description="We help organizations to scale up their existing teams by providing required coaching and training on the relevant tools, technology, approach and project development methodology."
             author="Daniela Metz"
             date="Feb 12, 2020"
             readTime="11 min read"
-            imageUrl="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80"
+            link="/article-3"
+            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/technology_training_blue_data_consulting_it_services-370x285.png"
             authorImageUrl="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
         </div>
