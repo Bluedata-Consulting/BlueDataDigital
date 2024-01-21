@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import { DollarSign, Filter, Moon, Zap } from "lucide-react";
 import Footer from "../../Components/Footer/Footer";
-import CarouselComponent from "./CarouselComponent";
+// import CarouselComponent from "./CarouselComponent";
 import Faq from "./Faq";
 import Blog from "../Article/Blog";
+import Hero from "./Hero";
 
 const Homepage = () => {
   return (
     <div className="relative">
       <Header />
-      <CarouselComponent />
+      <Hero />
 
       <div className="relative z-10 bg-white">
         {/* Features Section */}
