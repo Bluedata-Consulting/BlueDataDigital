@@ -63,8 +63,8 @@ const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-            assumenda
+            Have questions? Find answers to commonly asked questions about Blue
+            Data Digital and our services
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">
