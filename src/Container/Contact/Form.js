@@ -26,7 +26,7 @@ const Form = () => {
     e.preventDefault();
 
     // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual Formspree endpoint
-    const endpoint = "https://formspree.io/your_formspree_id";
+    const endpoint = "https://formspree.io/f/xwkgvppn";
 
     fetch(endpoint, {
       method: "POST",
