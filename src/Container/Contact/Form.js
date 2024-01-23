@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import ReCAPTCHA from "react-google-recaptcha";
 import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,6 +30,11 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!captchaValue) {
+      // Display an error or prevent form submission
+      console.error("reCAPTCHA verification failed");
+      return;
+    }
     // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual Formspree endpoint
     const endpoint = "https://formspree.io/f/xwkgvppn";
 
@@ -232,7 +242,7 @@ const Form = () => {
                     />
                   </div>
 
-                  <div className="w-full mt-6">
+                  <div className="w-full my-6">
                     <label className="block mb-2 text-md font-medium text-gray-900">
                       Message
                     </label>
@@ -244,9 +254,16 @@ const Form = () => {
                       placeholder="Message"
                     ></textarea>
                   </div>
+                  <div className="flex align-center justify-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf2wFkpAAAAAK93jUueap5oFNE2J9ZY1Jbe-m25" // Replace with your actual reCAPTCHA Site Key
+                      onChange={handleCaptchaChange}
+                    />
+                  </div>
 
                   <button
                     type="submit"
+                    disabled={!captchaValue}
                     className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-500 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50"
                   >
                     Submit
