@@ -66,46 +66,41 @@ const TeamSection = () => {
   // Team members array with placeholder images
   const teamMembers = [
     {
-      name: "John Doe",
-      position: "Founder & CEO",
-      image:
-        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+      name: "Anshu Pandey",
+      position: "MD & CTO",
+      image: "anshu.png",
       linkedin: "https://www.linkedin.com/in/johndoe",
       twitter: "https://twitter.com/johndoe",
       instagram: "https://www.instagram.com/johndoe",
     },
     {
-      name: "Jane Smith",
-      position: "CTO",
-      image:
-        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+      name: "Sun Tze Yun",
+      position: "Director",
+      image: "mr_sun.png",
       linkedin: "https://www.linkedin.com/in/janesmith",
       twitter: "https://twitter.com/janesmith",
       instagram: "https://www.instagram.com/janesmith",
     },
     {
-      name: "Faridah Abdullah",
-      position: "Lead Developer",
-      image:
-        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+      name: "Abhishek Pandey",
+      position: "CFO",
+      image: "abhishek.png",
       linkedin: "https://www.linkedin.com/in/alexjohnson",
       twitter: "https://twitter.com/alexjohnson",
       instagram: "https://www.instagram.com/alexjohnson",
     },
     {
-      name: "Emily Brown",
-      position: "Designer",
-      image:
-        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+      name: "Aashish Pandey",
+      position: "COO",
+      image: "aashish.png",
       linkedin: "https://www.linkedin.com/in/emilybrown",
       twitter: "https://twitter.com/emilybrown",
       instagram: "https://www.instagram.com/emilybrown",
     },
     {
-      name: "Lee Siew Hui",
-      position: "Marketing Specialist",
-      image:
-        "https://png.pngtree.com/png-clipart/20210915/ourlarge/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg",
+      name: "Divya Rank",
+      position: "Associate Data Scientist",
+      image: "divya.png",
       linkedin: "https://www.linkedin.com/in/chriswilson",
       twitter: "https://twitter.com/chriswilson",
       instagram: "https://www.instagram.com/chriswilson",

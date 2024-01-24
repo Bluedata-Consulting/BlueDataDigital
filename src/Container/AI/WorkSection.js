@@ -37,8 +37,8 @@ const WorkSection = () => {
   return (
     <div className="bg-gray-100 p-4 pb-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-        <div className="md:w-2/3 lg:w-1/2 mt-4 text-gray-100">
-          <h2 className="my-2 text-4xl font-bold text-black md:text-6xl">
+        <div className="mt-4 text-gray-100">
+          <h2 className="my-2 text-4xl font-bold text-black md:text-5xl">
             Tech Consulting Benefits with AI & ML Solutions
           </h2>
         </div>

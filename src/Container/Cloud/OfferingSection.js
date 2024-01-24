@@ -39,11 +39,11 @@ const OfferingSection = () => {
       id="features"
       className="container mx-auto px-4 my-8 space-y-10 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-20"
     >
-      <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
+      <div className="mx-auto flex max-w-[90rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
           Blue Data Digital's Cloud Offerings
         </h2>
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
+        <p className="max-w-[95%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
           Comprehensive Cloud Offerings for Disruptive Tech Solutions
         </p>
       </div>

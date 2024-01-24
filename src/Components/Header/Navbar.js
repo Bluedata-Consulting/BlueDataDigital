@@ -9,17 +9,17 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     closeDropdowns(); // Close other dropdowns when opening the menu
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prevState) => !prevState);
   };
 
   const toggleExpertiseDropdown = () => {
     closeDropdowns("expertise");
-    setIsExpertiseOpen(!isExpertiseOpen);
+    setIsExpertiseOpen((prevState) => !prevState);
   };
 
   const toggleIndustriesDropdown = () => {
     closeDropdowns("industries");
-    setIsIndustriesOpen(!isIndustriesOpen);
+    setIsIndustriesOpen((prevState) => !prevState);
   };
 
   const closeDropdowns = (except = "") => {
@@ -43,6 +43,7 @@ const Navbar = () => {
         !event.target.closest(".dropdown-item-industries")
       ) {
         closeDropdowns();
+        event.stopPropagation();
       }
     };
 
@@ -69,7 +70,7 @@ const Navbar = () => {
           }}
         >
           <span>
-            <img src='logo35.png' alt='' className=""/>
+            <img src="logo35.png" alt="" className="" />
           </span>
           <span className="font-bold">BLUE DATA DIGITAL</span>
         </Link>
@@ -302,6 +303,7 @@ const Navbar = () => {
                       left: 0,
                       behavior: "smooth",
                     });
+                    toggleMenu();
                   }}
                 >
                   Home
@@ -315,6 +317,7 @@ const Navbar = () => {
                       left: 0,
                       behavior: "smooth",
                     });
+                    toggleMenu();
                   }}
                 >
                   About
@@ -331,7 +334,7 @@ const Navbar = () => {
                   {isExpertiseOpen && (
                     <div className="ml-4 mt-2 space-y-2">
                       <Link
-                        to="/"
+                        to="/ai"
                         className="block text-md text-gray-700"
                         onClick={() => {
                           window.scroll({
@@ -339,22 +342,10 @@ const Navbar = () => {
                             left: 0,
                             behavior: "smooth",
                           });
+                          toggleExpertiseDropdown();
                         }}
                       >
-                        Item 1
-                      </Link>
-                      <Link
-                        to="/"
-                        className="block text-md text-gray-700"
-                        onClick={() => {
-                          window.scroll({
-                            top: 0,
-                            left: 0,
-                            behavior: "smooth",
-                          });
-                        }}
-                      >
-                        Item 2
+                        Artificial Intelligence
                       </Link>
                       {/* Add more dropdown items as needed */}
                     </div>
@@ -372,7 +363,7 @@ const Navbar = () => {
                   {isIndustriesOpen && (
                     <div className="ml-4 mt-2 space-y-2">
                       <Link
-                        to="/"
+                        to="/telecom"
                         className="block text-md text-gray-700"
                         onClick={() => {
                           window.scroll({
@@ -380,23 +371,12 @@ const Navbar = () => {
                             left: 0,
                             behavior: "smooth",
                           });
+                          toggleIndustriesDropdown();
                         }}
                       >
-                        Item 1
+                        Telecom
                       </Link>
-                      <Link
-                        to="/"
-                        className="block text-md text-gray-700"
-                        onClick={() => {
-                          window.scroll({
-                            top: 0,
-                            left: 0,
-                            behavior: "smooth",
-                          });
-                        }}
-                      >
-                        Item 2
-                      </Link>
+
                       {/* Add more dropdown items as needed */}
                     </div>
                   )}
@@ -410,6 +390,7 @@ const Navbar = () => {
                       left: 0,
                       behavior: "smooth",
                     });
+                    toggleMenu();
                   }}
                 >
                   Contact

@@ -27,13 +27,7 @@ const AI = () => {
 
       {/* Section - 2*/}
       <div className="mx-auto bg-gray-100">
-        <div
-          className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 px-10"
-          // style={{
-          //   backgroundImage:
-          //     "linear-gradient(to left bottom, #f87171, #f55979, #ee4085, #e12896, #cb18a9, #bd12b5, #aa16c1, #921fce, #881ed5, #7d1fdc, #6e21e3, #5c24eb)",
-          // }}
-        >
+        <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
               <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl sm:leading-10">
@@ -70,13 +64,13 @@ const AI = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="relative ml-16"> */}
-          <img
-            className="relative inset-0 w-4/5 h-2/3 transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-10 lg:translate-y-20"
-            src="https://cdn.dribbble.com/userupload/7730730/file/original-4e6602e8d4b3b2b49133e316fd9c4d5f.png?resize=1024x768"
-            alt=""
-          />
-          {/* </div> */}
+          <div className="relative ml-24 mt-12">
+            <img
+              className="relative w-2/3 h-3/4 transform translate-x-6 translate-y-6 rounded-md object-contain"
+              src="ai3.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       {/*Section - 3*/}

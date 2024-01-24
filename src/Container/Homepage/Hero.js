@@ -1,32 +1,29 @@
 // Hero.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import slide1 from "../../Assets/B1.png";
-import slide2 from "../../Assets/B2.png";
-import slide3 from "../../Assets/benefit.png";
 
 const slides = [
   {
     id: 1,
-    image: slide1,
+    image: "b2.jpg",
     heading: "GenAI",
-    subheading: "REDEFINE EXECUTION BOUNDARIES TO MAXIMIZE PRODUCTIVITY",
+    subheading: "Redifne execution boundaries to maximize productivity",
     link: "/article-1",
   },
   {
     id: 2,
-    image: slide2,
+    image: "ow2.png",
     heading: "Innovate Solutions",
     subheading:
-      "UNLEASH CREATIVITY AND DRIVE INNOVATION WITH OUR AI-POWERED TOOLS",
+      "Unleash creativity and drive innovation with our AI-powered tools",
     link: "/article-2",
   },
   {
     id: 3,
-    image: slide3,
+    image: "ow4.png",
     heading: "Optimize Workflow",
     subheading:
-      "STREAMLINE PROCESSES AND OPTIMIZE WORKFLOW EFFICIENCY FOR GREATER RESULTS",
+      "Streamline processes and optimize workflow efficiency for greater results",
     link: "/article-3",
   },
 ];
@@ -63,15 +60,15 @@ const Hero = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
           <div className="absolute px-4 pb-32 lg:pl-48 bottom-10 w-full text-white">
-            <h1 className="mt-2 max-w-4xl text-3xl font-bold tracking-tight md:text-7xl">
+            <h1 className="mt-2 text-3xl font-bold tracking-wide lg:text-8xl">
               {slide.heading}
             </h1>
-            <p className="mt-3 mb-5 max-w-3xl text-lg md:text-2xl text-gray-300">
+            <p className="mt-3 mb-5 text-xl lg:text-4xl tracking-normal text-gray-300">
               {slide.subheading}
             </p>
             <Link
               to={currentLink}
-              className="mt-4 bg-gray-200 text-black text-lg font-semibold px-4 py-2 rounded hover:bg-gray-50/95"
+              className="mt-4 bg-gray-200 text-black text-xl font-semibold px-4 py-2 rounded hover:bg-gray-50/95"
             >
               Click Here
             </Link>
