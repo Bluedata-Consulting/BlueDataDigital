@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import image from "../../Assets/image-1.jpg";
 import Testimonal from "../../Container/Homepage/testimonal";
 
 const AboutUs = () => {
@@ -74,7 +73,7 @@ const AboutUs = () => {
                 ></path>
               </svg>
               <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                <img src={image} alt="" />
+                <img src="about1.png" alt="" />
               </div>
             </div>
           </div>
@@ -83,7 +82,7 @@ const AboutUs = () => {
           Our Story
         </div>
 
-        <div className=" absolute -bottom-0 left-3/4 z-0  opacity-10 ">
+        {/* <div className=" absolute -bottom-0 left-3/4 z-0  opacity-10 ">
           <svg
             width="800px"
             height="800px"
@@ -96,8 +95,8 @@ const AboutUs = () => {
               fill-rule="evenodd"
             ></path>
           </svg>
-        </div>
-        <div className=" absolute top-10 left-3/4 z-0  opacity-10 ">
+        </div> */}
+        {/* <div className=" absolute top-10 left-3/4 z-0  opacity-10 ">
           <svg
             fill="#000000"
             width="800px"
@@ -111,7 +110,7 @@ const AboutUs = () => {
               fill-rule="evenodd"
             ></path>
           </svg>
-        </div>
+        </div> */}
       </div>
 
       {/*Section - 2*/}

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-// import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const TeamMember = ({
   name,
@@ -34,7 +34,7 @@ const TeamMember = ({
           </div>
 
           {/* Social Icons */}
-          {/* <div className="flex items-center justify-center transition-opacity duration-300">
+          <div className="flex items-center justify-center transition-opacity duration-300">
             <a
               href={linkedin}
               className="flex rounded-full text-3xl  h-12 w-12" // Adjusted size to h-12 w-12
@@ -55,7 +55,7 @@ const TeamMember = ({
             >
               <FaInstagram className="text-orange-600 mx-auto mt-2" />
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

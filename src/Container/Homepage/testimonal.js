@@ -22,14 +22,7 @@ const testimonialsData = [
     content:
       "The company provided consultant to scale up our data and analytics team with Azure services in data and ML space. Our team is now more confident and faster at developing solutions.",
   },
-  {
-    name: "Trainocate",
-    role: "Service Delivery Team",
-    image:
-      "https://www.bluedataconsulting.in/wp-content/uploads/2021/10/trainocate-150x150.png",
-    content:
-      "Blue Data Consulting often collaborates with us in getting right set of consultants for our projects The consultants are usually expert in their domain and help us satisfying our clients for their needs.",
-  },
+
   // Add more testimonials with a similar structure
 ];
 
@@ -81,7 +74,9 @@ const Testimonials = () => {
               <p className="mb-4 font-medium text-lg text-gray-700">
                 {currentTestimonial.role}
               </p>
-              <p className="mb-6 text-gray-500 text-md">{currentTestimonial.content}</p>
+              <p className="mb-6 text-gray-500 text-md">
+                {currentTestimonial.content}
+              </p>
             </div>
           </div>
         </div>

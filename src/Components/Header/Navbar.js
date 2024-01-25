@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -6,57 +6,50 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExpertiseOpen, setIsExpertiseOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [isInsightOpen, setIsInsightOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Toggle menu clicked");
     closeDropdowns(); // Close other dropdowns when opening the menu
-    setIsMenuOpen((prevState) => !prevState);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const toggleExpertiseDropdown = () => {
-    closeDropdowns("expertise");
-    setIsExpertiseOpen((prevState) => !prevState);
+    setIsExpertiseOpen(!isExpertiseOpen);
+    closeOtherDropdowns("expertise");
   };
 
   const toggleIndustriesDropdown = () => {
-    closeDropdowns("industries");
-    setIsIndustriesOpen((prevState) => !prevState);
+    setIsIndustriesOpen(!isIndustriesOpen);
+    closeOtherDropdowns("industries");
   };
 
-  const closeDropdowns = (except = "") => {
+  const toggleInsightDropdown = () => {
+    setIsInsightOpen(!isInsightOpen);
+    closeOtherDropdowns("insight");
+  };
+
+  const closeDropdowns = () => {
     setIsMenuOpen(false);
-    if (except !== "expertise") setIsExpertiseOpen(false);
-    if (except !== "industries") setIsIndustriesOpen(false);
+    setIsExpertiseOpen(false);
+    setIsIndustriesOpen(false);
+    setIsInsightOpen(false);
+  };
+
+  const closeOtherDropdowns = (currentDropdown) => {
+    if (currentDropdown !== "expertise") setIsExpertiseOpen(false);
+    if (currentDropdown !== "industries") setIsIndustriesOpen(false);
+    if (currentDropdown !== "insight") setIsInsightOpen(false);
   };
 
   // UseRef for the dropdown containers
   const expertiseDropdownContainerRef = useRef();
   const industriesDropdownContainerRef = useRef();
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        expertiseDropdownContainerRef.current &&
-        !expertiseDropdownContainerRef.current.contains(event.target) &&
-        !event.target.closest(".dropdown-item-expertise") &&
-        industriesDropdownContainerRef.current &&
-        !industriesDropdownContainerRef.current.contains(event.target) &&
-        !event.target.closest(".dropdown-item-industries")
-      ) {
-        closeDropdowns();
-        event.stopPropagation();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const insightDropdownContainerRef = useRef();
 
   return (
-    <header className="relative w-full border-b bg-white py-1">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
+    <header className="relative w-full border-b bg-white px-4 py-1">
+      <div className="mx-auto flex max-w-7xl items-center justify-between py-1">
         {/* Logo and brand name */}
         <Link
           to="/"
@@ -91,21 +84,6 @@ const Navbar = () => {
                 }}
               >
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="text-md font-semibold text-gray-800 hover:text-gray-900"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                About
               </Link>
             </li>
 
@@ -240,35 +218,61 @@ const Navbar = () => {
                 </div>
               )}
             </li>
-            <li>
-              <Link
-                to="/contact"
-                className="text-md font-semibold text-gray-800 hover:text-gray-900"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
+            <li ref={insightDropdownContainerRef} className="relative">
+              <div
+                onClick={toggleInsightDropdown}
+                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
               >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/team"
-                className="text-md font-semibold text-gray-800 hover:text-gray-900"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                Team
-              </Link>
+                Insight
+                {isInsightOpen ? (
+                  <ChevronUp className="ml-2" />
+                ) : (
+                  <ChevronDown className="ml-2" />
+                )}
+              </div>
+              {isInsightOpen && (
+                <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
+                  <Link
+                    to="/about"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Contact
+                  </Link>
+                  <Link
+                    to="/team"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Team
+                  </Link>
+                </div>
+              )}
             </li>
           </ul>
         </div>
@@ -303,29 +307,17 @@ const Navbar = () => {
                       left: 0,
                       behavior: "smooth",
                     });
-                    toggleMenu();
+                    closeDropdowns();
                   }}
                 >
                   Home
                 </Link>
-                <Link
-                  to="/about"
-                  className="text-base font-medium text-gray-900"
-                  onClick={() => {
-                    window.scroll({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth",
-                    });
-                    toggleMenu();
-                  }}
-                >
-                  About
-                </Link>
-                {/* Dropdown for Expertise in Mobile */}
+                {/* Expertise Dropdown in Mobile */}
                 <div>
                   <button
-                    onClick={toggleExpertiseDropdown}
+                    onClick={() => {
+                      toggleExpertiseDropdown();
+                    }}
                     className="flex justify-between items-center w-full text-base font-medium text-gray-900"
                   >
                     Expertise
@@ -342,19 +334,35 @@ const Navbar = () => {
                             left: 0,
                             behavior: "smooth",
                           });
-                          toggleExpertiseDropdown();
+                          closeDropdowns();
                         }}
                       >
                         Artificial Intelligence
+                      </Link>
+                      <Link
+                        to="/blockchain"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                          closeDropdowns();
+                        }}
+                      >
+                        Blockchain
                       </Link>
                       {/* Add more dropdown items as needed */}
                     </div>
                   )}
                 </div>
-                {/* Dropdown for Industries in Mobile */}
+                {/* Industries Dropdown in Mobile */}
                 <div>
                   <button
-                    onClick={toggleIndustriesDropdown}
+                    onClick={() => {
+                      toggleIndustriesDropdown();
+                    }}
                     className="flex justify-between items-center w-full text-base font-medium text-gray-900"
                   >
                     Industries
@@ -371,30 +379,89 @@ const Navbar = () => {
                             left: 0,
                             behavior: "smooth",
                           });
-                          toggleIndustriesDropdown();
+                          closeDropdowns();
                         }}
                       >
                         Telecom
                       </Link>
-
+                      <Link
+                        to="/manufacturing"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                          closeDropdowns();
+                        }}
+                      >
+                        Manufacturing
+                      </Link>
                       {/* Add more dropdown items as needed */}
                     </div>
                   )}
                 </div>
-                <Link
-                  to="/contact"
-                  className="text-base font-medium text-gray-900"
-                  onClick={() => {
-                    window.scroll({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth",
-                    });
-                    toggleMenu();
-                  }}
-                >
-                  Contact
-                </Link>
+                {/* Insight Dropdown in Mobile */}
+                <div>
+                  <button
+                    onClick={() => {
+                      toggleInsightDropdown();
+                    }}
+                    className="flex justify-between items-center w-full text-base font-medium text-gray-900"
+                  >
+                    Insight
+                    {isInsightOpen ? <ChevronUp /> : <ChevronDown />}
+                  </button>
+                  {isInsightOpen && (
+                    <div className="ml-4 mt-2 space-y-2">
+                      <Link
+                        to="/about"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                          closeDropdowns();
+                        }}
+                      >
+                        About
+                      </Link>
+                      <Link
+                        to="/contact"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                          closeDropdowns();
+                        }}
+                      >
+                        Contact
+                      </Link>
+                      <Link
+                        to="/team"
+                        className="block text-md text-gray-700"
+                        onClick={() => {
+                          window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                          });
+                          closeDropdowns();
+                        }}
+                      >
+                        Team
+                      </Link>
+                      {/* Add more dropdown items as needed */}
+                    </div>
+                  )}
+                </div>
+                {/* ... (existing code) */}
               </nav>
             </div>
           </div>
