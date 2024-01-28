@@ -34,7 +34,7 @@ const TeamMember = ({
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center justify-center transition-opacity duration-300">
+          {/* <div className="flex items-center justify-center transition-opacity duration-300">
             <a
               href={linkedin}
               className="flex rounded-full text-3xl  h-12 w-12" // Adjusted size to h-12 w-12
@@ -55,7 +55,7 @@ const TeamMember = ({
             >
               <FaInstagram className="text-orange-600 mx-auto mt-2" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@ const TeamSection = () => {
     },
     {
       name: "Aashish Pandey",
-      position: "COO",
+      position: "Architect | Consultant | Trainer",
       image: "aashish.png",
       linkedin: "https://www.linkedin.com/in/emilybrown",
       twitter: "https://twitter.com/emilybrown",
