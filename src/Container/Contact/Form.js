@@ -256,7 +256,7 @@ const Form = () => {
                   </div>
                   <div className="flex align-center justify-center">
                     <ReCAPTCHA
-                      sitekey="6Lf2wFkpAAAAAK93jUueap5oFNE2J9ZY1Jbe-m25" // Replace with your actual reCAPTCHA Site Key
+                      sitekey="6LdzA2MpAAAAAGZXjeK9ZYc34y2_38fflXR7ti4T" // Replace with your actual reCAPTCHA Site Key
                       onChange={handleCaptchaChange}
                     />
                   </div>

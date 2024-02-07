@@ -59,11 +59,11 @@ const Hero = () => {
             className="w-full h-full object-cover transition-opacity duration-1500 ease-in-out"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-          <div className="absolute px-4 pb-32 lg:pl-48 bottom-10 w-full text-white">
-            <h1 className="mt-2 text-3xl font-bold tracking-wide lg:text-8xl">
+          <div className="absolute px-4 pb-24 lg:pl-48 bottom-10 w-full text-white">
+            <h1 className="mt-2 text-3xl font-bold tracking-wide lg:text-6xl">
               {slide.heading}
             </h1>
-            <p className="mt-3 mb-5 text-xl lg:text-4xl tracking-normal text-gray-300">
+            <p className="mt-3 mb-5 text-xl lg:text-2xl tracking-normal text-gray-300">
               {slide.subheading}
             </p>
             <Link

@@ -89,8 +89,9 @@ const Contact = () => {
                 </h2>
 
                 <p className="text-lg font-medium text-blue-500 ">
-                  T10, 4th Floor, Atlanta Business Hub, VIP Road, beside Offira,
-                  Vesu, Surat, Gujarat 395007
+                  Blue Data Digital Sdn Bhd
+                  <br /> B2-2-3, Solaris Dutamas, No. 1, Jalan Dutamas 1,50480
+                  Kuala Lumpur, Wilayah Persekutuan
                 </p>
               </div>
 

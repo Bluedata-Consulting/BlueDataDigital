@@ -127,7 +127,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="text-3xl text-gray-900 font-bold md:text-5xl">
+              <h2 className="text-3xl text-gray-900 font-bold md:text-5xl lg:leading-tight">
                 Empowering Businesses Through Technology
               </h2>
               <p className="mt-6 text-lg text-gray-700">

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+// import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const TeamMember = ({
   name,
@@ -188,8 +188,7 @@ const TeamSection = () => {
 
                   {/* Description */}
                   <p className="text-gray-600 text-xl font-normal">
-                    With over 100 years of combined experience, we've got a
-                    well-seasoned team at the helm.
+                    With over 50 years of combined experience.
                   </p>
                 </div>
               </div>

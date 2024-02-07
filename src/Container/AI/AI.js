@@ -30,7 +30,7 @@ const AI = () => {
         <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
-              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl sm:leading-10">
+              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl sm:leading-10 lg:leading-tight">
                 <span className="">AI & ML Solutions for Automation</span>
               </h2>
               <p className="w-4/5 mt-5 text-xl text-gray-900">

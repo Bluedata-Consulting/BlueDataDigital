@@ -9,12 +9,12 @@ import Article from "./Container/Article/Article";
 import Article2 from "./Container/Article/Article2";
 import Article3 from "./Container/Article/Article3";
 import AI from "./Container/AI/AI";
-import GenAI from "./Container/GenAI/GenAI";
 import Cloud from "./Container/Cloud/Cloud";
 import RPA from "./Container/RPA/RPA";
 import Blockchain from "./Container/Blockchain/Blockchain";
 import "./index.css";
 import TeamSection from "./Container/Team/TeamSection";
+import GenrativeAi from "./Container/GenAI/GenrativeAi";
 
 const App = () => {
   return (
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/article-2" element={<Article2 />} />
           <Route path="/article-3" element={<Article3 />} />
           <Route path="/ai" element={<AI />} />
-          <Route path="/genai" element={<GenAI />} />
+          <Route path="/genai" element={<GenrativeAi />} />
           <Route path="/cloud" element={<Cloud />} />
           <Route path="/rpa" element={<RPA />} />
           <Route path="/blockchain" element={<Blockchain />} />

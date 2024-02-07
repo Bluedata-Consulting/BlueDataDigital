@@ -17,8 +17,8 @@ const Blockchain = () => {
       {/* Section - 1*/}
       <section className="py-16 md:py-32 my-20">
         <div className="container mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
-            Blockchain Solutions by Blue Data Digital
+          <h1 className="text-black font-bold  text-4xl md:text-7xl leading-tight mb-6">
+            Blockchain Solutions by<br /> Blue Data Digital
           </h1>
           <p className="text-black text-lg md:text-2xl mb-12">
             Elevate Your Business with Cutting-Edge Blockchain Development.
@@ -31,10 +31,8 @@ const Blockchain = () => {
         <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
-              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl ">
-                <span className="">
-                  Revolutionize Your Business with Blockchain Technology
-                </span>
+              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl lg:leading-tight">
+                Revolutionize Your Business with Blockchain Technology
               </h2>
               <p className="mt-5 text-lg text-gray-900">
                 Blockchain isn't just a technology; it's a game-changer that

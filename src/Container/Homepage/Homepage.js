@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
-import { DollarSign, Filter, Moon, Zap } from "lucide-react";
+import { DollarSign, Moon, Zap } from "lucide-react";
 import Footer from "../../Components/Footer/Footer";
 // import CarouselComponent from "./CarouselComponent";
 import Faq from "./Faq";
@@ -16,7 +16,7 @@ const Homepage = () => {
 
       <div className="relative z-10 bg-white">
         {/* Features Section */}
-        <div className="mx-auto my-12 px-4 lg:max-w-[90rem] sm:px-6 md:my-24 lg:my-32 lg:px-8">
+        <div className="mx-auto my-16 px-4 lg:max-w-[90rem] sm:px-6 md:my-24 lg:my-32 lg:px-8">
           <div className="mx-auto text-center">
             <h2 className="mt-6 text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-6xl">
               Powering Innovation with Blue Data Digital
@@ -27,8 +27,8 @@ const Homepage = () => {
               innovation across various industries.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
-            <div>
+          <div className="mt-20 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-3">
+            <div className="pr-12">
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
                 <DollarSign className="h-9 w-9 text-gray-700" />
               </div>
@@ -41,7 +41,7 @@ const Homepage = () => {
                 artificial intelligence to optimize operations.
               </p>
             </div>
-            <div>
+            <div className="pr-8">
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
                 <Zap className="h-9 w-9 text-gray-700" />
               </div>
@@ -55,7 +55,7 @@ const Homepage = () => {
                 tech.
               </p>
             </div>
-            <div>
+            <div >
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
                 <Moon className="h-9 w-9 text-gray-700" />
               </div>
@@ -68,19 +68,7 @@ const Homepage = () => {
                 like health tech, edtech, telecom, and manufacturing.
               </p>
             </div>
-            <div>
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
-                <Filter className="h-9 w-9 text-gray-700" />
-              </div>
-              <h3 className="mt-8 text-2xl font-bold text-black">
-                Transformative Technologies
-              </h3>
-              <p className="mt-2 text-lg text-gray-700">
-                Stay ahead with transformative technologies. Blue Data Digital
-                serves diverse industries, offering expertise in blockchain,
-                robotics process automation, and more.
-              </p>
-            </div>
+           
           </div>
         </div>
 

@@ -9,9 +9,46 @@ const Navbar = () => {
   const [isInsightOpen, setIsInsightOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log("Toggle menu clicked");
-    closeDropdowns(); // Close other dropdowns when opening the menu
+    closeDropdowns();
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleDropdownHover = (dropdownType) => {
+    closeDropdowns(); // Close other dropdowns
+    switch (dropdownType) {
+      case "expertise":
+        setIsExpertiseOpen(true);
+        break;
+      case "industries":
+        setIsIndustriesOpen(true);
+        break;
+      case "insight":
+        setIsInsightOpen(true);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const handleDropdownLeave = (dropdownContainerRef, setDropdownOpen) => {
+    const dropdownContainer = dropdownContainerRef.current;
+
+    if (dropdownContainer) {
+      // Delay closing the dropdown to check if the pointer is still inside
+      setTimeout(() => {
+        const isPointerInside =
+          dropdownContainer.matches(":hover") ||
+          Array.from(dropdownContainer.querySelectorAll(":hover")).some(
+            (el) => el === dropdownContainer
+          );
+
+        if (!isPointerInside) {
+          setDropdownOpen(false);
+        }
+      }, 100); // Adjust the delay as needed
+    } else {
+      setDropdownOpen(false);
+    }
   };
 
   const toggleExpertiseDropdown = () => {
@@ -68,7 +105,6 @@ const Navbar = () => {
           <span className="font-bold">BLUE DATA DIGITAL</span>
         </Link>
 
-        {/* Navigation Menu for large screens */}
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             <li>
@@ -87,12 +123,18 @@ const Navbar = () => {
               </Link>
             </li>
 
-            {/* Expertise Dropdown */}
-            <li ref={expertiseDropdownContainerRef} className="relative">
-              <div
-                onClick={toggleExpertiseDropdown}
-                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
-              >
+            <li
+              onMouseEnter={() => handleDropdownHover("expertise")}
+              onMouseLeave={() =>
+                handleDropdownLeave(
+                  expertiseDropdownContainerRef,
+                  setIsExpertiseOpen
+                )
+              }
+              ref={expertiseDropdownContainerRef}
+              className="relative"
+            >
+              <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
                 Expertise
                 {isExpertiseOpen ? (
                   <ChevronUp className="ml-2" />
@@ -102,17 +144,19 @@ const Navbar = () => {
               </div>
               {isExpertiseOpen && (
                 <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
-                  {/* Dropdown items */}
                   <Link
                     to="/ai"
                     className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
-                    onClick={(event) => {
-                      toggleExpertiseDropdown(event);
+                    onClick={() => {
                       window.scroll({
                         top: 0,
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        expertiseDropdownContainerRef,
+                        setIsExpertiseOpen
+                      );
                     }}
                   >
                     Artificial Intelligence
@@ -126,6 +170,10 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        expertiseDropdownContainerRef,
+                        setIsExpertiseOpen
+                      );
                     }}
                   >
                     Blockchain
@@ -139,6 +187,10 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        expertiseDropdownContainerRef,
+                        setIsExpertiseOpen
+                      );
                     }}
                   >
                     Cloud Computing
@@ -152,6 +204,10 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        expertiseDropdownContainerRef,
+                        setIsExpertiseOpen
+                      );
                     }}
                   >
                     Generative AI
@@ -165,21 +221,30 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        expertiseDropdownContainerRef,
+                        setIsExpertiseOpen
+                      );
                     }}
                   >
                     Robotics Process Automation
                   </Link>
-                  {/* Add more items as needed */}
                 </div>
               )}
             </li>
-            {/* Industries Dropdown */}
 
-            <li ref={industriesDropdownContainerRef} className="relative">
-              <div
-                onClick={toggleIndustriesDropdown}
-                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
-              >
+            <li
+              onMouseEnter={() => handleDropdownHover("industries")}
+              onMouseLeave={() =>
+                handleDropdownLeave(
+                  industriesDropdownContainerRef,
+                  setIsIndustriesOpen
+                )
+              }
+              ref={industriesDropdownContainerRef}
+              className="relative"
+            >
+              <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
                 Industries
                 {isIndustriesOpen ? (
                   <ChevronUp className="ml-2" />
@@ -198,6 +263,10 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        industriesDropdownContainerRef,
+                        setIsIndustriesOpen
+                      );
                     }}
                   >
                     Telecom
@@ -211,6 +280,10 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        industriesDropdownContainerRef,
+                        setIsIndustriesOpen
+                      );
                     }}
                   >
                     Manufacturing
@@ -218,11 +291,19 @@ const Navbar = () => {
                 </div>
               )}
             </li>
-            <li ref={insightDropdownContainerRef} className="relative">
-              <div
-                onClick={toggleInsightDropdown}
-                className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center"
-              >
+
+            <li
+              onMouseEnter={() => handleDropdownHover("insight")}
+              onMouseLeave={() =>
+                handleDropdownLeave(
+                  insightDropdownContainerRef,
+                  setIsInsightOpen
+                )
+              }
+              ref={insightDropdownContainerRef}
+              className="relative"
+            >
+              <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
                 Insight
                 {isInsightOpen ? (
                   <ChevronUp className="ml-2" />
@@ -241,22 +322,13 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        insightDropdownContainerRef,
+                        setIsInsightOpen
+                      );
                     }}
                   >
                     About
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Contact
                   </Link>
                   <Link
                     to="/team"
@@ -267,9 +339,30 @@ const Navbar = () => {
                         left: 0,
                         behavior: "smooth",
                       });
+                      handleDropdownLeave(
+                        insightDropdownContainerRef,
+                        setIsInsightOpen
+                      );
                     }}
                   >
                     Team
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                      handleDropdownLeave(
+                        insightDropdownContainerRef,
+                        setIsInsightOpen
+                      );
+                    }}
+                  >
+                    Contact
                   </Link>
                 </div>
               )}
@@ -314,7 +407,7 @@ const Navbar = () => {
                 </Link>
                 {/* Expertise Dropdown in Mobile */}
                 <div>
-                  <button
+                  <div
                     onClick={() => {
                       toggleExpertiseDropdown();
                     }}
@@ -322,7 +415,7 @@ const Navbar = () => {
                   >
                     Expertise
                     {isExpertiseOpen ? <ChevronUp /> : <ChevronDown />}
-                  </button>
+                  </div>
                   {isExpertiseOpen && (
                     <div className="ml-4 mt-2 space-y-2">
                       <Link
@@ -359,7 +452,7 @@ const Navbar = () => {
                 </div>
                 {/* Industries Dropdown in Mobile */}
                 <div>
-                  <button
+                  <div
                     onClick={() => {
                       toggleIndustriesDropdown();
                     }}
@@ -367,7 +460,7 @@ const Navbar = () => {
                   >
                     Industries
                     {isIndustriesOpen ? <ChevronUp /> : <ChevronDown />}
-                  </button>
+                  </div>
                   {isIndustriesOpen && (
                     <div className="ml-4 mt-2 space-y-2">
                       <Link
@@ -404,7 +497,7 @@ const Navbar = () => {
                 </div>
                 {/* Insight Dropdown in Mobile */}
                 <div>
-                  <button
+                  <div
                     onClick={() => {
                       toggleInsightDropdown();
                     }}
@@ -412,7 +505,7 @@ const Navbar = () => {
                   >
                     Insight
                     {isInsightOpen ? <ChevronUp /> : <ChevronDown />}
-                  </button>
+                  </div>
                   {isInsightOpen && (
                     <div className="ml-4 mt-2 space-y-2">
                       <Link
