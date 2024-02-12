@@ -14,12 +14,7 @@ const Contact = () => {
           Love to hear from you
         </p>
         <p className="mx-auto max-w-3xl text-center text-base text-gray-600 md:text-xl">
-          Contact us to learn more about the exciting opportunities we can
-          create together. <br />
-          Your questions and proposals are the stepping stones to great
-          achievements.
-          <br />
-          Let's begin our journey towards innovation and success today!
+          Your questions spark innovation. Let's begin our journey today.
         </p>
       </div>
 
@@ -91,7 +86,7 @@ const Contact = () => {
                 <p className="text-lg font-medium text-blue-500 ">
                   Blue Data Digital Sdn Bhd
                   <br /> B2-2-3, Solaris Dutamas, No. 1, Jalan Dutamas 1,50480
-                  Kuala Lumpur, Wilayah Persekutuan
+                  Kuala Lumpur, Malaysia
                 </p>
               </div>
 

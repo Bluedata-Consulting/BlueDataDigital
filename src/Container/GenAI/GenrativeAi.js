@@ -13,7 +13,7 @@ const GenrativeAi = () => {
     <div>
       <Header />
       {/* Section - 1*/}
-      <section className="py-16 md:py-32 my-20">
+      <section className="py-48">
         <div className="container mx-auto px-4 md:px-8 text-center">
           <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
             Empower Your Generative AI Journey

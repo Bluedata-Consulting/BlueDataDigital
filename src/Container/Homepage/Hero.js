@@ -1,29 +1,30 @@
 // Hero.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {ChevronRight} from "lucide-react";
 
 const slides = [
   {
     id: 1,
-    image: "b2.jpg",
-    heading: "GenAI",
-    subheading: "Redifne execution boundaries to maximize productivity",
+    image: "homepage1.png",
+    heading: "Genrative\nAI",
+    subheading: "Redifne execution boundaries \nto maximize productivity",
     link: "/article-1",
   },
   {
     id: 2,
-    image: "ow2.png",
-    heading: "Innovate Solutions",
+    image: "homepage2.jpg",
+    heading: "Innovate \nSolutions",
     subheading:
-      "Unleash creativity and drive innovation with our AI-powered tools",
+      "Unleash creativity and drive innovation\n with our AI-powered tools",
     link: "/article-2",
   },
   {
     id: 3,
-    image: "ow4.png",
-    heading: "Optimize Workflow",
+    image: "homepage3.png",
+    heading: "Optimize \nWorkflow",
     subheading:
-      "Streamline processes and optimize workflow efficiency for greater results",
+      "Streamline processes and optimize workflow\n efficiency for greater results",
     link: "/article-3",
   },
 ];
@@ -59,19 +60,30 @@ const Hero = () => {
             className="w-full h-full object-cover transition-opacity duration-1500 ease-in-out"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-          <div className="absolute px-4 pb-24 lg:pl-48 bottom-10 w-full text-white">
-            <h1 className="mt-2 text-3xl font-bold tracking-wide lg:text-6xl">
-              {slide.heading}
-            </h1>
-            <p className="mt-3 mb-5 text-xl lg:text-2xl tracking-normal text-gray-300">
-              {slide.subheading}
-            </p>
-            <Link
-              to={currentLink}
-              className="mt-4 bg-gray-200 text-black text-xl font-semibold px-4 py-2 rounded hover:bg-gray-50/95"
-            >
-              Click Here
-            </Link>
+          <div className="absolute flex flex-col h-full w-full top-0 start-0 items-end justify-center">
+            <div className=" text-white mr-36 mt-16">
+              <h1
+                className="mt-2 text-3xl font-bold tracking-wide lg:text-7xl text-right"
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {slide.heading}
+              </h1>
+              <p
+                className="mt-3 mb-5 text-xl lg:text-3xl tracking-normal text-gray-300 text-right"
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {slide.subheading}
+              </p>
+              <div className="justify-end flex items-center"> 
+                <Link
+                  to={currentLink}
+                  className="mt-4 bg-transparent text-white border-white border-2  text-xl font-semibold px-4 py-2 rounded-xl flex items-center"
+                >
+                  Click Here
+                  <ChevronRight className="ml-2" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       ))}

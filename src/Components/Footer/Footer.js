@@ -59,21 +59,6 @@ const Footer = () => {
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    to="/contact"
-                    onClick={() => {
-                      window.scroll({
-                        top: 0,
-                        left: 0,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     to="/team"
                     onClick={() => {
                       window.scroll({
@@ -86,6 +71,22 @@ const Footer = () => {
                     Team
                   </Link>
                 </li>
+                <li className="mb-4">
+                  <Link
+                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                    to="/contact"
+                    onClick={() => {
+                      window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Contact
+                  </Link>
+                </li>
+
                 {/* <li>
                   <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"

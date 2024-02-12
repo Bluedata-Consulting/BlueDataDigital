@@ -78,7 +78,7 @@ const Blog = () => {
             date="Mar 16, 2020"
             readTime="6 min read"
             link="/article-1"
-            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/student-849825_640-1-1.jpg"
+            imageUrl="1.png"
             authorImageUrl="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
           <ArticleCard
@@ -89,7 +89,7 @@ const Blog = () => {
             date="Mar 10, 2020"
             readTime="4 min read"
             link="/article-2"
-            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/digital-marketing-1433427_640-1-1.jpg"
+            imageUrl="4.png"
             authorImageUrl="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
           <ArticleCard
@@ -100,7 +100,7 @@ const Blog = () => {
             date="Feb 12, 2020"
             readTime="11 min read"
             link="/article-3"
-            imageUrl="https://www.bluedataconsulting.in/wp-content/uploads/2021/10/technology_training_blue_data_consulting_it_services-370x285.png"
+            imageUrl="3.png"
             authorImageUrl="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
           />
         </div>

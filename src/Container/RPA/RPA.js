@@ -13,7 +13,7 @@ const RPA = () => {
     <div>
       <Header />
       {/* Section - 1*/}
-      <section className="py-16 md:py-32 my-20">
+      <section className="py-48">
         <div className="container mx-auto px-4 md:px-8 text-center">
           <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
             Blue Data Digital RPA Services
@@ -69,7 +69,7 @@ const RPA = () => {
           </div>
           <div className="relative ml-24 mt-12">
             <img
-              className="relative w-2/3 h-4/5 transform translate-x-6 translate-y-6 rounded-md object-contain"
+              className="relative w-2/3 h-3/4 scale-125 transform translate-x-6 translate-y-6 rounded-md"
               src="rpa1.png"
               alt=""
             />

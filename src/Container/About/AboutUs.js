@@ -10,8 +10,8 @@ const AboutUs = () => {
       <Header />
 
       {/* Section - 1*/}
-      <div className="bg-gray-100 flex items-center  n justify-center overflow-hidden z-50 ">
-        <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+      <div className="bg-gray-100 flex items-center justify-center overflow-hidden z-50 ">
+        <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-24">
           <div className="flex flex-col items-center justify-between lg:flex-row py-16">
             <div className=" relative ">
               <div className="lg:max-w-xl lg:pr-5 relative z-40">
@@ -72,8 +72,8 @@ const AboutUs = () => {
                   d="M16 17l-4 4m0 0l-4-4m4 4V3"
                 ></path>
               </svg>
-              <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                <img src="about1.png" alt="" />
+              <div className="abg-orange-400 mx-auto w-fit overflow-hidden  rounded-br-none rounded-tl-none">
+                <img src="icon.png" alt="" />
               </div>
             </div>
           </div>
@@ -118,13 +118,7 @@ const AboutUs = () => {
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
-              <img
-                src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-                alt=""
-                loading="lazy"
-                width=""
-                height=""
-              />
+              <img src="about3.png" alt="" loading="lazy" width="" height="" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-3xl text-gray-900 font-bold md:text-5xl lg:leading-tight">
@@ -156,7 +150,7 @@ const AboutUs = () => {
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-gray-400 shadow-lg  rounded-lg">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                  src="about2.png"
                   className="w-full align-middle rounded-t-lg"
                 />
                 <blockquote className="relative p-8 mb-4">
@@ -165,12 +159,7 @@ const AboutUs = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 583 95"
                     className="absolute left-0 w-full block h-95-px -top-94-px"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      className="text-my-orange fill-current"
-                    ></polygon>
-                  </svg>
+                  ></svg>
                   <h4 className="text-2xl font-bold text-black">
                     Fueling Innovation with Technology
                   </h4>
