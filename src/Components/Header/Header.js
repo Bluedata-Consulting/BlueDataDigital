@@ -85,7 +85,7 @@ const Header = () => {
   const insightDropdownContainerRef = useRef();
   return (
     <div className="relative top-0 z-50">
-      <header className="absolute w-full bg-white px-4 py-1">
+      <header className="absolute w-full bg-blue-shade-5/85 px-4 py-1">
         <div className="mx-auto flex max-w-7xl items-center justify-between py-1">
           {/* Logo and brand name */}
           <Link
@@ -102,7 +102,9 @@ const Header = () => {
             <span>
               <img src="logo35.png" alt="" className="" />
             </span>
-            <span className="font-bold">BLUE DATA DIGITAL</span>
+            <span className="font-bold text-blue-shade-1">
+              BLUE DATA DIGITAL
+            </span>
           </Link>
 
           <div className="hidden lg:block">
@@ -110,7 +112,7 @@ const Header = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-md font-semibold text-gray-800 hover:text-gray-900"
+                  className="text-md font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4"
                   onClick={() => {
                     window.scroll({
                       top: 0,
@@ -134,7 +136,7 @@ const Header = () => {
                 ref={expertiseDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
+                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
                   Expertise
                   {isExpertiseOpen ? (
                     <ChevronUp className="ml-2" />
@@ -143,10 +145,10 @@ const Header = () => {
                   )}
                 </div>
                 {isExpertiseOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
                       to="/ai"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -163,7 +165,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/blockchain"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -180,7 +182,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/cloud"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -197,7 +199,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/genai"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -214,7 +216,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/rpa"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -244,7 +246,7 @@ const Header = () => {
                 ref={industriesDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
+                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
                   Industries
                   {isIndustriesOpen ? (
                     <ChevronUp className="ml-2" />
@@ -253,10 +255,10 @@ const Header = () => {
                   )}
                 </div>
                 {isIndustriesOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
                       to="/telecom"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -273,7 +275,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/manufacturing"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -303,7 +305,7 @@ const Header = () => {
                 ref={insightDropdownContainerRef}
                 className="relative"
               >
-                <div className="text-md cursor-pointer font-semibold text-gray-800 hover:text-gray-900 flex items-center">
+                <div className="text-md cursor-pointer font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 flex items-center">
                   Insight
                   {isInsightOpen ? (
                     <ChevronUp className="ml-2" />
@@ -312,10 +314,10 @@ const Header = () => {
                   )}
                 </div>
                 {isInsightOpen && (
-                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white">
+                  <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-blue-shade-5">
                     <Link
                       to="/about"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -333,7 +335,7 @@ const Header = () => {
 
                     <Link
                       to="/team"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -350,7 +352,7 @@ const Header = () => {
                     </Link>
                     <Link
                       to="/contact"
-                      className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 font-semibold text-md text-blue-shade-1 hover:text-blue-shade-4 hover:text-lg hover:rounded-md"
                       onClick={() => {
                         window.scroll({
                           top: 0,
@@ -373,19 +375,24 @@ const Header = () => {
 
           {/* Hamburger Menu Icon */}
           <div className="lg:hidden">
-            <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+            <Menu
+              onClick={toggleMenu}
+              className="h-6 w-6 cursor-pointer text-blue-shade-1"
+            />
           </div>
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden bg-blue-shade-5 shadow-lg ring-1 ring-blue-shade-3 ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
-                <div className="flex items-center justify-between">
-                  <span className="font-bold">BDD</span>
+                <div className="flex items-center justify-between pb-2">
+                  <span className="font-bold text-xl text-blue-shade-1 ">
+                    Blue Data Digital
+                  </span>
                   <div className="-mr-2">
                     <button
                       onClick={toggleMenu}
-                      className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500"
+                      className="inline-flex items-center justify-center rounded-md p-2 text-blue-shade-1 hover:text-gray-500"
                     >
                       <X className="h-6 w-6" aria-hidden="true" />
                     </button>
@@ -394,7 +401,7 @@ const Header = () => {
                 <nav className="grid gap-y-4">
                   <Link
                     to="/"
-                    className="text-base font-medium text-gray-900"
+                    className="text-lg font-medium text-blue-shade-1"
                     onClick={() => {
                       window.scroll({
                         top: 0,
@@ -412,7 +419,7 @@ const Header = () => {
                       onClick={() => {
                         toggleExpertiseDropdown();
                       }}
-                      className="flex justify-between items-center w-full text-base font-medium text-gray-900"
+                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
                     >
                       Expertise
                       {isExpertiseOpen ? <ChevronUp /> : <ChevronDown />}
@@ -421,7 +428,7 @@ const Header = () => {
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
                           to="/ai"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -435,7 +442,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/blockchain"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -447,6 +454,48 @@ const Header = () => {
                         >
                           Blockchain
                         </Link>
+                        <Link
+                          to="/cloud"
+                          className="block text-lg text-blue-shade-1"
+                          onClick={() => {
+                            window.scroll({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                            closeDropdowns();
+                          }}
+                        >
+                          Cloud Computing
+                        </Link>
+                        <Link
+                          to="/genai"
+                          className="block text-lg text-blue-shade-1"
+                          onClick={() => {
+                            window.scroll({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                            closeDropdowns();
+                          }}
+                        >
+                          Generative AI
+                        </Link>
+                        <Link
+                          to="/rpa"
+                          className="block text-lg text-blue-shade-1"
+                          onClick={() => {
+                            window.scroll({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                            closeDropdowns();
+                          }}
+                        >
+                          Robotic Process Automation  
+                        </Link>
                         {/* Add more dropdown items as needed */}
                       </div>
                     )}
@@ -457,7 +506,7 @@ const Header = () => {
                       onClick={() => {
                         toggleIndustriesDropdown();
                       }}
-                      className="flex justify-between items-center w-full text-base font-medium text-gray-900"
+                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
                     >
                       Industries
                       {isIndustriesOpen ? <ChevronUp /> : <ChevronDown />}
@@ -466,7 +515,7 @@ const Header = () => {
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
                           to="/telecom"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -480,7 +529,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/manufacturing"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -502,7 +551,7 @@ const Header = () => {
                       onClick={() => {
                         toggleInsightDropdown();
                       }}
-                      className="flex justify-between items-center w-full text-base font-medium text-gray-900"
+                      className="flex justify-between items-center w-full text-lg font-medium text-blue-shade-1"
                     >
                       Insight
                       {isInsightOpen ? <ChevronUp /> : <ChevronDown />}
@@ -511,7 +560,7 @@ const Header = () => {
                       <div className="ml-4 mt-2 space-y-2">
                         <Link
                           to="/about"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -525,7 +574,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/contact"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,
@@ -539,7 +588,7 @@ const Header = () => {
                         </Link>
                         <Link
                           to="/team"
-                          className="block text-md text-gray-700"
+                          className="block text-lg text-blue-shade-1"
                           onClick={() => {
                             window.scroll({
                               top: 0,

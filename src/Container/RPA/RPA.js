@@ -13,27 +13,31 @@ const RPA = () => {
     <div>
       <Header />
       {/* Section - 1*/}
-      <section className="py-48">
-        <div className="container mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
+      <div
+        className="py-64 relative bg-cover bg-clip-border backdrop-blur-sm bg-center"
+        style={{ backgroundImage: 'url("bgrpa1.png")' }}
+      >
+        <div className="absolute inset-0 bg-slate-800 opacity-60"></div>
+        <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
+          <h1 className="text-gray-100 font-bold text-4xl lg:text-[55px] leading-tight mb-6">
             Blue Data Digital RPA Services
           </h1>
-          <p className="text-black text-lg md:text-2xl mb-12">
+          <p className="text-gray-100 text-lg md:text-2xl mb-12">
             Transform Your Business Processes with Robotic Process Automation
             (RPA).
           </p>
         </div>
-      </section>
+      </div>
 
       {/* Section - 2*/}
-      <div className="mx-auto bg-gray-100">
+      <div className="mx-auto bg-gray-50">
         <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
-              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl lg:leading-tight">
+              <h2 className="text-4xl leading-9 font-bold text-blue lg:text-[40px] sm:leading-10 lg:leading-tight">
                 <span className="">Enhance Operations with RPA Solutions</span>
               </h2>
-              <p className="mt-5 text-lg text-gray-900">
+              <p className="w-4/5 mt-5 text-xl text-gray-700">
                 Blue Data Digital's RPA development services empower businesses
                 to automate repetitive tasks, streamline operations, and improve
                 overall efficiency. Mundane and time-consuming tasks, such as
@@ -42,7 +46,7 @@ const RPA = () => {
                 Our RPA solutions are designed to elevate productivity, reduce
                 errors, and enhance user experiences.
               </p>
-              <p className="mt-4 text-lg  text-gray-900">
+              <p className="w-4/5 mt-4 text-xl  text-gray-900">
                 With our RPA consulting services, we extend the automation
                 capabilities by integrating RPA with cognitive technologies,
                 Machine Learning, and Artificial Intelligence. Blue Data Digital
@@ -67,9 +71,9 @@ const RPA = () => {
               </Link>
             </div>
           </div>
-          <div className="relative ml-24 mt-12">
+          <div className="relative ml-24 mt-16">
             <img
-              className="relative w-2/3 h-3/4 scale-125 transform translate-x-6 translate-y-6 rounded-md"
+              className="relative w-2/3 h-auto scale-125 transform translate-x-6 translate-y-6 rounded-md"
               src="rpa1.png"
               alt=""
             />

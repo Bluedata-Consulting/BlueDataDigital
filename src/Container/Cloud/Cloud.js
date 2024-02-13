@@ -15,17 +15,24 @@ const Cloud = () => {
       <Header />
 
       {/* Section - 1*/}
-      <section className="py-48">
-        <div className="container mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-black font-bold text-4xl md:text-7xl leading-tight mb-6">
-            Cloud Services for Tech Transformation
+
+      <div
+        className="py-64 relative bg-cover bg-clip-border backdrop-blur-sm bg-center"
+        style={{ backgroundImage: 'url("bgcloud.jpg")' }}
+      >
+        <div className="absolute inset-0 bg-slate-800 opacity-60"></div>
+        <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
+          <h1 className="text-gray-100 font-bold text-4xl lg:text-[55px] leading-tight mb-6">
+          Cloud Services for Tech Transformation
           </h1>
-          <p className="text-black text-lg md:text-2xl mb-12">
-            Powering Tech Transformation with Cloud Expertise at Blue Data
+          <p className="text-gray-100 text-lg md:text-2xl mb-12">
+          Powering Tech Transformation with Cloud Expertise at Blue Data
             Digital.
           </p>
         </div>
-      </section>
+      </div>
+
+      
 
       {/* Section - 2*/}
       <div className="mx-auto bg-gray-100">

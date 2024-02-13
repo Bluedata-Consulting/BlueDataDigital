@@ -55,7 +55,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="bg-gray-100 mx-auto px-2 my-10 py-16 md:px-0 ">
+    <section className="bg-gray-100 mx-auto px-2  py-16 md:px-0 ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">

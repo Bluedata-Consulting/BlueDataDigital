@@ -5,11 +5,11 @@ function ServiceSection() {
   return (
     <div className=" px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-4 lg:py-12 lg:mt-12">
       <div className="mx-auto text-center mb-12">
-        <h2 className="mt-6 text-4xl font-bold leading-tight text-blue-shade-2 sm:text-5xl lg:text-[50px]">
+        <h2 className="mt-6 text-4xl font-bold leading-tight text-blue-shade-4 sm:text-5xl lg:text-[50px]">
           <span className="text-black">Powering Innovation with</span> Blue Data
           Digital
         </h2>
-        <p className="mt-4 text-[18px] leading-relaxed ml-36 w-[80%] text-gray-600">
+        <p className="mt-4 text-[18px] leading-relaxed lg:ml-36 lg:w-[80%] text-gray-600">
           Explore our expertise in AI, Blockchain, and ML for cutting-edge
           solutions.Blue Data Digital is your partner in technology innovation
           across various industries.
