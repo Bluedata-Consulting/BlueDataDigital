@@ -25,20 +25,11 @@ const IndustryUseCase = ({ useCases }) => {
 const IndustryUseCases = () => {
   const industryUseCases = [
     {
-      heading: "Insurance",
-      content:
-        "Revolutionize the life settlement process with a blockchain-backed solution. Real-time policy tracking, transparency, and security enhance policy sale and purchase while reducing operational costs.",
-    },
-    {
       heading: "Banking & Finance",
       content:
         "Transform the loan process and settlement with smart contracts and DLT. Expedite syndicate loans and secure payments with a fully-functional blockchain solution.",
     },
-    {
-      heading: "Proxy Voting",
-      content:
-        "Enable decentralized trustless proxy voting with a blockchain-powered solution. Utilize private Ethereum and Quorum for secure shareholder voting in annual general meetings.",
-    },
+
     {
       heading: "Digital Verification",
       content:
@@ -48,21 +39,6 @@ const IndustryUseCases = () => {
       heading: "Healthcare",
       content:
         "Facilitate smart patient-facing and researcher-facing systems for clinical trials. Ethereum-based smart contracts provide BlockTrial functionality and metadata search for healthcare companies.",
-    },
-    {
-      heading: "Supply Chain",
-      content:
-        "Enhance supply chain efficiency with blockchain-based track and trace models. Ensure seamless transfer of goods while preventing frauds like counterfeiting.",
-    },
-    {
-      heading: "Retail & E-Commerce",
-      content:
-        "Create a customer-centric e-commerce platform with blockchain. Features include store performance analysis, crypto payment systems, and special prices for token holders.",
-    },
-    {
-      heading: "Gaming",
-      content:
-        "Develop a blockchain-powered gaming and loyalty program platform. Seamlessly integrate with gaming services, CSM, and CRM for an immersive gaming experience.",
     },
     {
       heading: "Cryptocurrency Trading",

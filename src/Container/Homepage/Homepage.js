@@ -27,7 +27,7 @@ const Homepage = () => {
                   <i className="fas fa-user-friends text-blue-shade-2 text-xl"></i>
                 </div>
                 <h3 className="text-[46px] mb-2 text-blue-shade-2 font-bold leading-normal">
-                  Tech-Driven Collaboration
+                  Tech-Driven Collaboration 
                 </h3>
                 <p className="text-xl font-normal leading-9 mt-4 mb-4 text-gray-800">
                   Join forces with our tech enthusiasts to bring your

@@ -32,13 +32,13 @@ const MainFeatures = () => {
     },
   ];
   return (
-    <section id="features" className="py-20 lg:pb-32 lg:pt-20">
+    <section id="features" className="bg-blue-shade-5/70 py-20 lg:pb-32 lg:pt-20">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold">How We Can Help</h2>
+        <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">How We Can Help</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           {features.map((feature, index) => (
             <div key={index} className="flex-1 px-3">
-              <div className="p-8 rounded-lg border border-solid border-gray-300 bg-white shadow-md h-full flex flex-col items-center">
+              <div className="py-6 px-4 rounded-lg border border-solid border-blue-shade-1/50 bg-white shadow-md shadow-blue-shade-1/25 h-full flex flex-col items-center">
                 <div className="rounded-full overflow-hidden w-16 h-16 mb-4">
                   <img
                     src={feature.image}
@@ -46,10 +46,10 @@ const MainFeatures = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="font-semibold text-xl flex-grow">
+                <p className="font-semibold text-xl text-gray-800">
                   {feature.title}
                 </p>
-                <p className="mt-4">{feature.description}</p>
+                <p className="mt-1 text-gray-600">{feature.description}</p>
               </div>
             </div>
           ))}

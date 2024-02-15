@@ -30,16 +30,14 @@ const GenrativeAi = () => {
       </div>
 
       {/* Section - 2*/}
-      <div className="mx-auto bg-gray-100">
+      <div className="mx-auto bg-blue-shade-5/70">
         <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
-              <h2 className="text-4xl leading-9 font-bold text-gray-900 sm:text-5xl sm:leading-10 lg:leading-tight">
-                <span className="">
-                  Elevate Your Business with Generative AI Technology
-                </span>
+              <h2 className="text-4xl leading-9 font-bold text-blue-shade-2 lg:text-[40px] sm:leading-10 lg:leading-tight">
+                Elevate Your Business with Generative AI Technology
               </h2>
-              <p className="w-4/5 mt-5 text-xl text-gray-900">
+              <p className="w-4/5 mt-5 text-xl text-gray-800">
                 Blue Data Digital is your trusted partner in navigating the
                 world of generative AI. Our skilled tech experts harness the
                 potential of advanced AI algorithms to craft tailor-made
@@ -49,7 +47,7 @@ const GenrativeAi = () => {
                 our expertise and experience will propel your business into the
                 future.
               </p>
-              <p className="w-4/5 mt-4 text-xl  text-gray-900">
+              <p className="w-4/5 mt-5 text-xl text-gray-800">
                 Our generative AI solutions are built with scalability in mind,
                 adapting to your evolving needs seamlessly. And because we
                 understand the importance of data security, we prioritize the
@@ -64,8 +62,7 @@ const GenrativeAi = () => {
                     behavior: "smooth",
                   });
                 }}
-                style={{ backgroundColor: "#000" }}
-                className="mt-8 border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-white transition duration-150 ease-in-out"
+                className="mt-8 bg-blue-shade-2 hover:bg-blue-shade-3 border border-transparent rounded-md shadow px-[12px] py-[6px] inline-flex items-center text-lg leading-6 font-medium text-white transition duration-150 ease-in-out"
               >
                 Get started
               </Link>
@@ -73,7 +70,7 @@ const GenrativeAi = () => {
           </div>
           <div className="relative ml-24 mt-12">
             <img
-              className="relative w-2/3 h-3/4 transform translate-x-6 translate-y-6 rounded-md object-contain"
+              className="relative w-2/3 h-3/4 transform translate-x-6 translate-y-6 rounded-md object-fill"
               src="genai.png"
               alt=""
             />
@@ -82,13 +79,13 @@ const GenrativeAi = () => {
       </div>
 
       {/*Section - 3*/}
-      <MainFeatures />
+      <Principle />
 
       {/*Section - 4*/}
-      <IndustryUseCases />
+      <MainFeatures />
 
       {/*Section - 5*/}
-      <Principle />
+      <IndustryUseCases />
 
       {/*Section - 6*/}
       <Blog />

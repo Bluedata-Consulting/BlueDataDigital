@@ -26,10 +26,10 @@ const TeamMember = ({
         {/* Details */}
         <div className="text-center mt-6">
           {/* Name */}
-          <h1 className="text-gray-900 text-2xl font-bold mb-1">{name}</h1>
+          <h1 className="text-blue-shade-1/90 text-2xl font-bold mb-1">{name}</h1>
 
           {/* Title */}
-          <div className="text-gray-700 text-lg font-normal mb-2">
+          <div className="text-blue-shade-1/80 text-lg font-normal mb-2">
             {position}
           </div>
 
@@ -173,7 +173,7 @@ const TeamSection = () => {
   return (
     <div>
       <Header />
-      <section className="bg-white py-6">
+      <section className="bg-white pt-48 pb-12">
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col mt-8">
             {/* Meet the Team */}
@@ -182,12 +182,12 @@ const TeamSection = () => {
               <div className="flex flex-wrap justify-center text-center mb-24">
                 <div className="w-full lg:w-3/4 px-4">
                   {/* Header */}
-                  <h1 className="text-gray-900 text-6xl font-bold mb-4">
-                    Meet the Team
+                  <h1 className="text-gray-800 text-[64px] font-bold mb-2">
+                    Meet the <span className="text-blue-shade-4">Team</span>
                   </h1>
 
                   {/* Description */}
-                  <p className="text-gray-600 text-xl font-normal">
+                  <p className="text-blue-shade-1/80 text-xl font-normal">
                     With over 50 years of combined experience.
                   </p>
                 </div>

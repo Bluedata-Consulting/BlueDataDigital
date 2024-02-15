@@ -1,49 +1,63 @@
 import React from "react";
 
-const Principle = () => {
-  const principlesData = [
-    {
-      title: "Secure",
-      content:
-        "Blue Data Digital employs robust security measures to safeguard your data from unauthorized access, breaches, and cyber threats. Our generative AI solutions are designed with encryption, access controls, and continuous monitoring to mitigate risks and maintain the integrity of sensitive information.",
-    },
-    {
-      title: "Ethical",
-      content:
-        "We uphold ethical standards in generative AI development, ensuring our solutions respect user privacy and adhere to fairness and transparency. We actively work to prevent biases in AI algorithms, fostering equal treatment and inclusivity.",
-    },
-    {
-      title: "Intuitive",
-      content:
-        "We strive to build AI systems that are user-friendly and intuitive in nature. Our teams emphasize designing interfaces and interactions that enable users to seamlessly engage with AI, ensuring an impeccable experience.",
-    },
-    {
-      title: "Reliable",
-      content:
-        "We implement rigorous quality assurance during the development and training of our AI models. This includes thorough testing, validation, and monitoring to identify and address issues related to content quality, coherence, and relevance.",
-    },
-  ];
+const features = [
+  {
+    title: "Ethical",
+    description:
+      "We uphold ethical standards in generative AI development, ensuring our solutions respect user privacy and adhere to fairness and transparency. We actively work to prevent biases in AI algorithms, fostering equal treatment and inclusivity.",
+  },
+  {
+    title: "Intuitive",
+    description:
+      "We strive to build AI systems that are user-friendly and intuitive in nature. Our teams emphasize designing interfaces and interactions that enable users to seamlessly engage with AI, ensuring an impeccable experience.",
+  },
+  {
+    title: "Reliable",
+    description:
+      "We implement rigorous quality assurance during the development and training of our AI models. This includes thorough testing, validation, and monitoring to identify and address issues related to content quality, coherence, and relevance.",
+  },
+];
+
+const OfferingSection = () => {
   return (
-    <section id="principles" className="mb-20">
-      <div className="container mx-auto px-4">
-        <p className="text-5xl font-bold text-center">
+    <section id="features" className="px-4 space-y-10 py-8 md:py-12 lg:py-20">
+      <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
+        <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">
           Our Generative AI Principles
+        </h2>
+        <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-7">
+          As a leading enterprise blockchain development company, Blue Data
+          Digital leverages a broad array of Blockchain platforms to facilitate
+          robust and secure Blockchain application development for various
+          industries. Our expertise spans financial, insurance, healthcare,
+          manufacturing, supply chain, logistics, and more.
         </p>
-        <div className="flex flex-col md:flex-row md:-mx-3 md:flex-wrap mt-6">
-          {principlesData.map((principle, index) => (
-            <div key={index} className="md:w-1/2 px-3 mt-6">
-              <div className="px-6 py-6 rounded-lg border border-solid border-gray-200 bg-white h-full shadow-lg">
-                <p className="text-xl font-bold">{principle.title}</p>
-                <p className="mt-2 text-md md:text-md font-normal">
-                  {principle.content}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      </div>
+
+      <div className="mx-auto grid justify-center gap-10 sm:grid-cols-2 md:max-w-[95%] md:grid-cols-3">
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            description={feature.description}
+          />
+        ))}
       </div>
     </section>
   );
 };
 
-export default Principle;
+const FeatureCard = ({ title, description }) => (
+  <div className="relative bg-blue-shade-5/70 overflow-hidden rounded-lg select-none  hover:shadow hover:shadow-blue-shade-3/75 p-2">
+    <div className="flex h-full flex-col justify-between rounded-md p-1">
+      <div className="space-y-2">
+        <h3 className="font-bold text-xl text-blue-shade-2">{title}</h3>
+        <p className="text-md text-muted-foreground text-gray-800">
+          {description}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+export default OfferingSection;

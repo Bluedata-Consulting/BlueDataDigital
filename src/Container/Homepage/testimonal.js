@@ -56,7 +56,7 @@ const Testimonials = () => {
   return (
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
-        <h2 className="mb-12 text-3xl font-bold">
+        <h2 className="mb-12 text-3xl font-bold text-blue-shade-2">
           WHAT OUR CLIENTS HAVE TO SAY
         </h2>
 
@@ -68,13 +68,13 @@ const Testimonials = () => {
                 src={currentTestimonial.image}
                 alt="avatar"
               />
-              <h5 className="mb-2 text-xl font-bold">
+              <h5 className="mb-2 text-2xl font-bold text-blue-shade-3">
                 {currentTestimonial.name}
               </h5>
-              <p className="mb-4 font-medium text-lg text-gray-700">
+              <p className="mb-4 font-medium text-xl text-blue-shade-1">
                 {currentTestimonial.role}
               </p>
-              <p className="mb-6 text-gray-500 text-md">
+              <p className="mb-6 text-blue-shade-1/80 text-lg">
                 {currentTestimonial.content}
               </p>
             </div>
@@ -85,7 +85,7 @@ const Testimonials = () => {
         <div className="flex justify-between">
           {/* Previous Button with Icon */}
           <div
-            className="cursor-pointer text-gray-700 mr-4"
+            className="cursor-pointer text-lg text-blue-shade-1 mr-4"
             type="button"
             onClick={handlePrev}
           >
@@ -94,7 +94,7 @@ const Testimonials = () => {
           </div>
           {/* Next Button with Icon */}
           <div
-            className="cursor-pointer text-gray-700 ml-4"
+            className="cursor-pointer text-lg text-blue-shade-1  ml-4"
             type="button"
             onClick={handleNext}
           >

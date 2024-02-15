@@ -85,7 +85,7 @@ const Header = () => {
   const insightDropdownContainerRef = useRef();
   return (
     <div className="relative top-0 z-50">
-      <header className="absolute w-full bg-blue-shade-5/85 px-4 py-1">
+      <header className="absolute w-full bg-blue-shade-5/85 px-4 py-1 border-b border-blue-shade-1">
         <div className="mx-auto flex max-w-7xl items-center justify-between py-1">
           {/* Logo and brand name */}
           <Link

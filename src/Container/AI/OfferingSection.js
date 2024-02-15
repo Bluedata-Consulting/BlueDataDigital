@@ -51,13 +51,13 @@ const OfferingSection = () => {
   return (
     <section
       id="features"
-      className="container mx-auto px-4 space-y-10 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-20"
+      className=" px-4 space-y-10 py-8 md:py-12 lg:py-20"
     >
       <div className="mx-auto flex max-w-[65rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-7xl">
+        <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">
           Our Tech Consulting Offerings
         </h2>
-        <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7">
+        <p className="max-w-[85%] text-gray-700 leading-normal text-muted-foreground sm:text-xl sm:leading-7">
           Empowering Your Business with Innovative Tech Solutions.
         </p>
       </div>
@@ -77,11 +77,13 @@ const OfferingSection = () => {
 };
 
 const FeatureCard = ({ icon, title, description }) => (
-  <div className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-gray-600 p-2">
+  <div className="relative bg-blue-shade-5/70 overflow-hidden rounded-lg select-none  hover:shadow hover:shadow-blue-shade-3/75 p-2">
     <div className="flex h-full flex-col justify-between rounded-md p-1">
       <div className="space-y-2">
-        <h3 className="font-bold text-xl">{title}</h3>
-        <p className="text-md text-muted-foreground">{description}</p>
+        <h3 className="font-bold text-xl text-blue-shade-2">{title}</h3>
+        <p className="text-md text-muted-foreground text-gray-800">
+          {description}
+        </p>
       </div>
     </div>
   </div>

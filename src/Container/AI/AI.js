@@ -3,10 +3,11 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import OfferingsSection from "./OfferingSection";
 import WorkSection from "./WorkSection";
-import IndustryUseCases from "./IndustryUseCases";
+// import IndustryUseCases from "./IndustryUseCases";
 import Blog from "../Article/Blog";
 import Faq from "./Faq";
 import { Link } from "react-router-dom";
+import Section from "./Section";
 const AI = () => {
   return (
     <>
@@ -30,21 +31,24 @@ const AI = () => {
       </div>
 
       {/* Section - 2*/}
-      <div className="mx-auto bg-gray-100">
+      <div className="mx-auto bg-blue-shade-5/70">
         <div className="relative z-20 overflow-hidden lg:grid lg:grid-cols-2 lg:pl-48 lg:pt-6">
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0">
             <div className="lg:self-center">
-              <h2 className="text-4xl leading-9 font-bold text-gray-900 lg:text-[40px] sm:leading-10 lg:leading-tight">
+              <h2 className="text-4xl leading-9 font-bold text-blue-shade-2 lg:text-[40px] sm:leading-10 lg:leading-tight">
                 <span className="">AI & ML Solutions for Automation</span>
               </h2>
-              <p className="w-4/5 mt-5 text-xl text-gray-900">
-                Blue Data Digital is a leading tech consulting company, offering
+              <p className="w-4/5 mt-5 text-xl text-gray-800">
+                {/* Blue Data Digital is a leading tech consulting company, offering
                 state-of-the-art Artificial Intelligence and Machine Learning
                 solutions. In an era where technology is driving rapid
                 transformations, our AI & ML services empower businesses to
-                innovate, automate processes, and gain a competitive edge .
+                innovate, automate processes, and gain a competitive edge . */}
+                Blue Data Digital is a top tech consultancy, providing advanced
+                AI and ML solutions to help businesses innovate, automate, and
+                stay competitive in a rapidly evolving tech landscape.
               </p>
-              <p className="w-4/5 mt-4 text-xl  text-gray-900">
+              <p className="w-4/5 mt-4 text-xl  text-gray-800">
                 With Blue Data Digital’s expertise, you can harness the power of
                 AI to automate operations, enhance analytics, and future-proof
                 your business. Our AI & ML consulting services unlock new
@@ -61,8 +65,7 @@ const AI = () => {
                     behavior: "smooth",
                   });
                 }}
-                style={{ backgroundColor: "#000" }}
-                className="mt-8 border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-white transition duration-150 ease-in-out"
+                className="mt-8 bg-blue-shade-2 hover:bg-blue-shade-3 border border-transparent rounded-md shadow px-[12px] py-[6px] inline-flex items-center text-lg leading-6 font-medium text-white transition duration-150 ease-in-out"
               >
                 Get started
               </Link>
@@ -84,7 +87,8 @@ const AI = () => {
       <WorkSection />
 
       {/* Section - 5*/}
-      <IndustryUseCases />
+      {/* <IndustryUseCases /> */}
+      <Section />
 
       {/* Section - 6*/}
       <Blog />

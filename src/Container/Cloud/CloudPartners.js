@@ -2,16 +2,16 @@ import React from "react";
 
 const CloudPartners = () => {
   return (
-    <div className="bg-gray-100 my-8 px-4 py-16">
-      <div className="container mx-auto pt-10 pb-16">
-        <h1 className="text-5xl font-bold text-gray-900 text-center mb-10">
+    <div className="px-4 space-y-10 py-8 md:py-8 lg:py-12">
+      <div className="mx-auto flex max-w-[75rem] flex-col items-center space-y-4 text-center">
+        <h1 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px] pb-6">
           Blue Data Digital's Cloud Partner Ecosystem
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* AWS Section */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">AWS</h2>
-            <p className="text-gray-700 text-normal">
+          <div className="bg-blue-shade-5/70 rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-blue-shade-1 mb-2">AWS</h2>
+            <p className="text-gray-800 text-normal">
               As strategic partners with Amazon Web Services (AWS), Blue Data
               Digital offers a comprehensive suite of Cloud services and
               solutions tailored to meet enterprise requirements. Our AWS
@@ -21,11 +21,11 @@ const CloudPartners = () => {
             </p>
           </div>
           {/* Azure Section */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">
+          <div className="bg-blue-shade-5/70 rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-blue-shade-1 mb-2">
               Microsoft Azure
             </h2>
-            <p className="text-gray-700 text-normal">
+            <p className="text-gray-800 text-normal">
               Blue Data Digital leverages its partnership with Microsoft Azure
               to provide custom services and solutions, simplifying the
               migration of applications and infrastructures to the Azure Cloud.
@@ -35,11 +35,11 @@ const CloudPartners = () => {
             </p>
           </div>
           {/* Google Cloud Section */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">
+          <div className="bg-blue-shade-5/70 rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-blue-shade-1 mb-2">
               Google Cloud
             </h2>
-            <p className="text-gray-700 text-md">
+            <p className="text-gray-800 text-md">
               Blue Data Digital delivers tailored Google Cloud services to
               develop and optimize solutions based on the business's maturity
               level and specific needs. Our proven expertise and Google Cloud

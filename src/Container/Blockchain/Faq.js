@@ -6,24 +6,24 @@ const FaqSection = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="cursor-pointer bg-white rounded-md border border-gray-400 shadow-lg transition-all duration-200">
+    <div className="cursor-pointer bg-blue-shade-5/50 rounded-md border border-blue-shade-1/35 shadow-lg shadow-blue-shade-1/25 transition-all duration-200">
       <div
         type="button"
         className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="flex text-lg font-semibold text-black">
+        <span className="flex text-lg font-semibold text-blue-shade-1">
           {question}
         </span>
         {isOpen ? (
-          <ChevronUp className="h-5 w-5 text-gray-500" />
+          <ChevronUp className="h-5 w-5 text-blue-shade-1" />
         ) : (
-          <ChevronDown className="h-5 w-5 text-gray-500" />
+          <ChevronDown className="h-5 w-5 text-blue-shade-1" />
         )}
       </div>
       {isOpen && (
         <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-          <p className="text-gray-700">{answer}</p>
+          <p className="text-gray-700 text-lg">{answer}</p>
         </div>
       )}
     </div>
@@ -57,13 +57,13 @@ const Faq = () => {
   ];
 
   return (
-    <section className="bg-gray-100 mx-auto px-2 my-10 py-16 md:px-0 ">
+    <section className="mx-auto px-2 py-10 md:px-0 ">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-blue-shade-3 sm:text-4xl lg:text-4xl">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600 lg:mx-auto">
             Discover more about our Blockchain development services through
             these commonly asked questions.
           </p>
@@ -77,7 +77,7 @@ const Faq = () => {
             />
           ))}
         </div>
-        <p className="textbase mt-6 text-center text-gray-600">
+        <p className="textbase mt-6 text-center text-gray-700">
           Can't find what you're looking for?{" "}
           <Link
             href="/contact"
@@ -88,7 +88,7 @@ const Faq = () => {
                 behavior: "smooth",
               });
             }}
-            className="font-semibold text-black hover:underline"
+            className="font-semibold text-blue-shade-3 hover:underline"
           >
             Contact our support
           </Link>
