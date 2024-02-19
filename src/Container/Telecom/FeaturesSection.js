@@ -44,12 +44,12 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:pt-10 my-10">
+    <section className=" px-4 space-y-6 py-8 lg:pt-16 lg:pb-20 lg:px-12">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+        <h2 className="font-bold text-xl leading-[1.1] sm:text-3xl md:text-4xl text-blue-shade-2">
           Telecom Analytics Services
         </h2>
-        <p className="max-w-full leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        <p className="max-w-full leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-gray-600">
           We assist you optimize your business performance with the following
           Telecom Analytics services:
         </p>
@@ -59,16 +59,16 @@ const FeaturesSection = () => {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-gray-500 p-4"
+            className="relative overflow-hidden rounded-lg border bg-blue-shade-5/70 select-none hover:shadow hover:shadow-blue-shade-3/70 p-4"
           >
             <div className="flex items-center mb-4">
               <FontAwesomeIcon
                 icon={card.icon}
-                className="text-3xl text-gray-800 mr-2"
+                className="text-3xl mr-2 text-blue-shade-1"
               />
-              <h3 className="text-lg font-bold">{card.topic}</h3>
+              <h3 className="text-lg font-bold text-blue-shade-1">{card.topic}</h3>
             </div>
-            <p className="text-md text-muted-foreground">{card.text}</p>
+            <p className="text-md text-muted-foreground text-gray-700">{card.text}</p>
           </div>
         ))}
       </div>

@@ -45,7 +45,7 @@ const OfferingSection = () => {
         </p>
       </div>
 
-      <div className="mx-auto grid justify-center gap-10 sm:grid-cols-2 md:max-w-[95%] md:grid-cols-3">
+      <div className="mx-auto grid justify-center gap-10 sm:grid-cols-2 md:max-w-[90%] md:grid-cols-3">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}

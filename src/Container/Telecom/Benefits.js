@@ -14,7 +14,7 @@ const ImageWithListSection = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-8 space-y-6 bg-slate-50 dark:bg-transparent md:py-12 lg:pt-10 my-10 flex flex-col md:flex-row items-center">
+    <section className="px-4 py-8 space-y-6 bg-blue-shade-5/70 md:py-12 lg:pt-10 my-10 flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 mb-8 md:mb-0">
         <img
           src={BenefitImage}
@@ -22,9 +22,9 @@ const ImageWithListSection = () => {
           className="w-full h-auto md:max-w-full md:h-auto rounded-3xl"
         />
       </div>
-      <div className="md:w-1/2 ml-4 md:ml-8 flex flex-col justify-start h-full">
-        <div className="flex flex-col justify-start h-full">
-          <p className="text-3xl font-bold tracking-tight text-black md:text-4xl lg:text-6xl mb-4">
+      <div className="md:w-1/2 ml-4 md:ml-12 flex flex-col justify-start h-full">
+        <div className="flex flex-col justify-start h-full ml-8">
+          <p className="text-3xl font-bold tracking-tight text-blue-shade-2 lg:text-[40px] mb-4">
             Business Benefits
           </p>
           <div className="w-full mt-4">
@@ -43,7 +43,7 @@ const ImageWithListSection = () => {
 const ListItem = ({ text }) => {
   return (
     <li className="flex text-base text-body-color dark:text-dark-6">
-      <span className="mr-2.5 mt-0.5 text-primary">
+      <span className="mr-2.5 mt-1.5 text-primary text-blue-shade-1">
         <svg
           width={20}
           height={20}
@@ -68,7 +68,7 @@ const ListItem = ({ text }) => {
           </defs>
         </svg>
       </span>
-      <p className="text-md md:text-xl">{text}</p>
+      <p className="text-md md:text-xl text-gray-700">{text}</p>
     </li>
   );
 };

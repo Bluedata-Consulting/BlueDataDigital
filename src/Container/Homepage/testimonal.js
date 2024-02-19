@@ -8,7 +8,7 @@ import {
 const testimonialsData = [
   {
     name: "Airtel, India",
-    role: "Enterprise buisnes team",
+    role: "Enterprise business team",
     image:
       "https://www.bluedataconsulting.in/wp-content/uploads/2021/11/airtel-logo-white-text-vertical_customer_blue_data_consulting_telecom-150x150.jpg",
     content:

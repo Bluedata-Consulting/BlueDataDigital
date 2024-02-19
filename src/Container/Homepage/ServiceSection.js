@@ -11,7 +11,7 @@ function ServiceSection() {
         </h2>
         <p className="mt-4 text-[18px] leading-relaxed lg:ml-36 lg:w-[80%] text-gray-600">
           Explore our expertise in AI, Blockchain, and ML for cutting-edge
-          solutions.Blue Data Digital is your partner in technology innovation
+          solutions. Blue Data Digital is your partner in technology innovation
           across various industries.
         </p>
       </div>

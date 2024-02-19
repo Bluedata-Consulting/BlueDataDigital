@@ -7,8 +7,8 @@ const slides = [
   {
     id: 1,
     image: "homepage1.png",
-    heading: "Genrative\nAI",
-    subheading: "Redifne execution boundaries \nto maximize productivity",
+    heading: "Generative\nAI",
+    subheading: "Redefine execution boundaries \nto maximize productivity",
     link: "/article-1",
   },
   {

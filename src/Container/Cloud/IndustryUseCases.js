@@ -3,18 +3,16 @@ import React from "react";
 const IndustryUseCase = ({ useCases }) => {
   return (
     <div className="max-w-7xl mx-auto px-5 mt-16 py-16">
-      <h2 className="font-bold text-5xl text-center pb-2">
-        Success Stories with Blue Data Digital
-      </h2>
-      <p className="text-center font-normal leading-normal text-muted-foreground sm:text-xl sm:leading-7">
-        Explore how Blue Data Digital's Cloud consulting services are empowering
-        businesses across various industries.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="mx-auto pb-8 flex max-w-[65rem] flex-col items-center space-y-4 text-center">
+        <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">
+          Tech Consulting Use Cases
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
         {useCases.map((useCase, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold mb-4">{useCase.heading}</h3>
-            <p className="text-lg text-gray-600">{useCase.content}</p>
+          <div key={index} className="bg-blue-shade-5/40 p-6 rounded-lg shadow-md shadow-blue-shade-1/80">
+            <h3 className="text-2xl font-semibold text-blue-shade-2 mb-2">{useCase.heading}</h3>
+            <p className="text-[18px] text-gray-600">{useCase.content}</p>
           </div>
         ))}
       </div>
@@ -57,7 +55,7 @@ const IndustryUseCases = () => {
   ];
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100/80">
       <IndustryUseCase useCases={industryUseCases} />
     </div>
   );

@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <section className="container mx-auto px-4 space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:pt-10 my-10">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+        <h2 className="text-blue-shade-2 font-bold text-2xl leading-[1.1] sm:text-3xl md:text-[40px]">
           Our Services
         </h2>
       </div>
@@ -43,16 +43,18 @@ const Services = () => {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-gray-500 p-4"
+            className="relative overflow-hidden rounded-lg border bg-blue-shade-5/60 select-none hover:shadow hover:shadow-blue-shade-4/60 p-4"
           >
             <div className="flex items-center mb-4">
               <FontAwesomeIcon
                 icon={card.icon}
-                className="text-3xl text-gray-800 mr-2"
+                className="text-3xl text-blue-shade-2 mr-2"
               />
-              <h3 className="text-lg font-bold">{card.topic}</h3>
+              <h3 className="text-lg text-blue-shade-2 font-bold">
+                {card.topic}
+              </h3>
             </div>
-            <p className="text-md text-muted-foreground">{card.text}</p>
+            <p className="text-md text-gray-700 ">{card.text}</p>
           </div>
         ))}
       </div>

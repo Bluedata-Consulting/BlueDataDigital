@@ -6,9 +6,9 @@ const SingleFeature = ({ featureList }) => {
       <ul className="mt-2 space-y-2 font-medium">
         {featureList.map((item, index) => (
           <li key={index} className="flex items-start lg:col-span-2">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 ">
               <svg
-                className="w-5 h-5 text-gray-800"
+                className="w-5 h-5 text-blue-shade-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >

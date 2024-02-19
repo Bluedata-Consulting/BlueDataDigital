@@ -3,23 +3,9 @@ import SingleFeature from "./SingleFeature";
 
 const FeatureCard = ({ number, title, description, features }) => {
   return (
-    // <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-    //   <div className="rounded-md bg-white shadow-md p-8 h-full">
-    //     {" "}
-    //     {/* Set height to 'full' */}
-    //     <div className="text-4xl font-bold text-purple-600 mb-4">{number}</div>
-    //     <h3 className="text-2xl font-bold mb-4">{title}</h3>
-    //     <p className="text-gray-600 mb-4">{description}</p>
-    //     {features && features.length > 0 && (
-    //       <SingleFeature featureList={features} />
-    //     )}
-    //   </div>
-    // </div>
     <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-      <div className="p-8 h-full bg-gray-100 border border-gray-200 rounded-md">
-        {/* Set height to 'full' */}
-        <div className="text-4xl font-bold text-purple-600 mb-4">{number}</div>
-        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+      <div className="p-8 h-full border bg-white border-blue-shade-2 rounded-md shadow-md shadow-blue-shade-3/50">
+        <h3 className="text-2xl text-blue-shade-2 font-bold mb-4">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
         {features && features.length > 0 && (
           <SingleFeature featureList={features} />
@@ -79,12 +65,11 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className=" bg-blue-shade-5/70 py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-2">
-            Embrace Industry 4.0 and revolutionize your operations with
-            manufacturing analytics solutions
+          <h2 className="text-[40px] font-bold mb-2">
+            Revolutionize your operations with Manufacturing Analytics Solutions
           </h2>
           <p className="text-gray-600 mb-12 text-md">
             The manufacturing industry is prone to volatility due to multiple

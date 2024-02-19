@@ -81,7 +81,7 @@ const Form = () => {
       <div className="flex flex-col min-h-screen bg-white">
         <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
           <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
-            <div className="text-black lg:w-1/2 lg:mx-6">
+            <div className="text-blue-shade-2 lg:w-1/2 lg:mx-6">
               <h1 className="text-2xl font-bold capitalize lg:text-4xl">
                 Send Us a Message
               </h1>
@@ -92,11 +92,13 @@ const Form = () => {
               </p>
 
               <div className="mt-6 md:mt-8">
-                <h3 className="text-gray-900 text-xl font-bold  ">Follow us</h3>
+                <h3 className="text-blue-shade-2 text-xl font-bold  ">
+                  Follow us
+                </h3>
 
                 <div className="flex mt-4 -mx-1.5 ">
                   <Link
-                    className="mx-1.5  text-black transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5  text-blue-500 transition-colors duration-300 transform hover:text-blue-800"
                     to="/"
                     target="_blank"
                     onClick={() => {
@@ -118,7 +120,7 @@ const Form = () => {
                   </Link>
 
                   <Link
-                    className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5 text-blue-500 transition-colors duration-300 transform hover:text-blue-shade-2"
                     to="/"
                     target="_blank"
                     onClick={() => {
@@ -151,7 +153,7 @@ const Form = () => {
                   </Link>
 
                   <Link
-                    className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5 text-blue-700 transition-colors duration-300 transform hover:text-blue-shade-2"
                     to="/"
                     target="_blank"
                     onClick={() => {
@@ -176,7 +178,7 @@ const Form = () => {
                   </Link>
 
                   <Link
-                    className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5 text-pink-950 transition-colors duration-300 transform hover:text-blue-500"
                     to="/"
                     target="_blank"
                     onClick={() => {
@@ -204,8 +206,8 @@ const Form = () => {
             </div>
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
-              <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl  lg:max-w-xl">
-                <h1 className="text-3xl font-semibold text-gray-900">
+              <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-lg shadow-blue-shade-2 rounded-xl  lg:max-w-xl">
+                <h1 className="text-3xl font-semibold text-blue-shade-2">
                   Contact Form
                 </h1>
 
@@ -215,7 +217,7 @@ const Form = () => {
 
                 <form className="mt-6" onSubmit={handleSubmit}>
                   <div className="flex-1">
-                    <label className="block mb-2 text-md font-medium text-gray-900 ">
+                    <label className="block mb-2 text-md font-medium text-blue-shade-2 ">
                       Full Name
                     </label>
                     <input
@@ -229,7 +231,7 @@ const Form = () => {
                   </div>
 
                   <div className="flex-1 mt-6">
-                    <label className="block mb-2 text-md font-medium text-gray-900">
+                    <label className="block mb-2 text-md font-medium text-blue-shade-2">
                       Email address
                     </label>
                     <input
@@ -243,7 +245,7 @@ const Form = () => {
                   </div>
 
                   <div className="w-full my-6">
-                    <label className="block mb-2 text-md font-medium text-gray-900">
+                    <label className="block mb-2 text-md font-medium text-blue-shade-2">
                       Message
                     </label>
                     <textarea
@@ -264,14 +266,14 @@ const Form = () => {
                   <button
                     type="submit"
                     disabled={!captchaValue}
-                    className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-500 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50"
+                    className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-shade-4 rounded-md hover:bg-blue-shade-5 hover:text-blue-shade-2 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50"
                   >
                     Submit
                   </button>
                 </form>
               </div>
             </div>
-          </div>/"/"
+          </div>
         </div>
       </div>
     </section>

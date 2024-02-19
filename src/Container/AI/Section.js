@@ -2,7 +2,7 @@ import React from "react";
 
 const Section = () => {
   return (
-    <section className="p-4 lg:px-8 py-24">
+    <section className="p-4 lg:px-8 py-20">
       <div className="mx-auto pb-8 flex max-w-[65rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">
           Tech Consulting Use Cases
@@ -11,11 +11,11 @@ const Section = () => {
 
       <div className="container mx-auto">
         {/* First Row */}
-        <div className="flex justify-between gap-8">
+        <div className="flex justify-center gap-8">
           {/* First Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/2">
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
             <img
-              src="https://source.unsplash.com/640x480/?1"
+              src="dt-min.jpg"
               alt=""
               className="h-60 w-auto aspect-video"
             />
@@ -32,9 +32,9 @@ const Section = () => {
           </div>
 
           {/* Second Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/2">
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
             <img
-              src="https://source.unsplash.com/640x480/?2"
+              src="ca.jpg"
               alt=""
               className="h-60 w-auto aspect-video"
             />
@@ -49,33 +49,52 @@ const Section = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Second Row */}
-        <div className="flex justify-between gap-8 mt-8">
-          {/* Third Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/2">
+          {/* Second Section */}
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
             <img
-              src="https://source.unsplash.com/640x480/?3"
+              src="ipd-min.jpg"
               alt=""
               className="h-60 w-auto aspect-video"
             />
             <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
               <h3 className="text-3xl font-bold text-blue-shade-1">
-                Smart Automation Solutions
+                Innovative Product Development
               </h3>
               <p className="my-2 text-gray-700">
-                Implemented smart automation solutions for manufacturing and
-                logistics clients, streamlining operations and reducing
-                operational costs through AI and ML applications.
+                Collaborated with emerging tech companies to develop innovative
+                products powered by AI and ML, positioning them as industry
+                leaders in their respective niches.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="flex justify-center gap-8 mt-8">
+          {/* Third Section */}
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
+            <img
+              src="dsc-min.jpg"
+              alt=""
+              className="h-60 w-auto aspect-video"
+            />
+            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
+              <h3 className="text-3xl font-bold text-blue-shade-1">
+                Data Security Consulting
+              </h3>
+              <p className="my-2 text-gray-700">
+                Offered expertise in data security consulting, implementing
+                advanced AI-driven security measures to safeguard sensitive
+                information for financial and technology clients.
               </p>
             </div>
           </div>
 
           {/* Fourth Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/2">
+          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
             <img
-              src="https://source.unsplash.com/640x480/?4"
+              src="cee.png"
               alt=""
               className="h-60 w-auto aspect-video"
             />

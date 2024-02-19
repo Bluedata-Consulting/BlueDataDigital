@@ -29,9 +29,9 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:pt-10 my-10">
+    <section className="container mx-auto px-4 space-y-6 py-8 dark:bg-transparent md:py-12 lg:pt-10 my-10">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-[40px] text-blue-shade-2">
           Why Choose Us?
         </h2>
       </div>
@@ -40,12 +40,12 @@ const WhyUs = () => {
         {reasonsData.map((reason, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-lg border border-gray-3 00 bg-gray-50/95 select-none p-4"
+            className="relative overflow-hidden rounded-lg bg-blue-shade-5/60 border border-blue-shade-1/70 shadow-sm shadow-blue-shade-1/50 select-none p-4"
           >
-            <div className="mb-4">
-              <h3 className="text-lg font-bold">{reason.heading}</h3>
+            <div className="mb-1">
+              <h3 className="text-[20px] font-bold text-blue-shade-2">{reason.heading}</h3>
             </div>
-            <p className="text-md text-muted-foreground">{reason.text}</p>
+            <p className="text-[18px] text-muted-foreground text-gray-700">{reason.text}</p>
           </div>
         ))}
       </div>

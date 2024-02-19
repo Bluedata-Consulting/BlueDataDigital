@@ -14,12 +14,10 @@ const Manufacturing = () => {
       <section className="pt-32">
         <div className="my-20 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
           <div className="sm:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl lg:leading-tight">
-              <span className="block xl:inline">
-                Manufacturing Analytics Solutions
-              </span>
+            <h1 className="text-4xl tracking-normal font-bold text-blue-shade-2 md:text-[40px]">
+              <span>Manufacturing Analytics Solutions</span>
             </h1>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-[18px] lg:mx-0">
               Discover the transformative potential of manufacturing analytics
               and drive your business toward unprecedented success.
             </p>
@@ -27,7 +25,7 @@ const Manufacturing = () => {
               <div className="rounded-md shadow">
                 <Link
                   to="/contact"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-shade-3 hover:bg-blue-shade-2 md:text-lg"
                   onClick={() => {
                     window.scroll({
                       top: 0,
@@ -36,7 +34,7 @@ const Manufacturing = () => {
                     });
                   }}
                 >
-                  Get in touch
+                  GET IN TOUCH
                 </Link>
               </div>
             </div>
