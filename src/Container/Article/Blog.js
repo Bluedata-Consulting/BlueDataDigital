@@ -21,7 +21,7 @@ const ArticleCard = ({
         <div className="flex-1">
           <p className="text-sm font-medium text-blue-shade-4">
             <Link
-              to="/article"
+              to={link} 
               className="hover:underline"
               onClick={() => {
                 window.scroll({
