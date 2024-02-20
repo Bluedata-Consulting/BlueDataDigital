@@ -59,15 +59,15 @@ const Faq = () => {
   ];
 
   return (
-    <section className="mx-auto px-2 py-10 md:px-0 ">
+    <section className="mx-auto px-12 py-10 md:px-12">
       <div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-blue-shade-3 sm:text-4xl lg:text-4xl">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-gray-600 lg:mx-auto">
-            Discover more about our Cloud computing services through
-            these commonly asked questions.
+            Discover more about our Cloud computing services through these
+            commonly asked questions.
           </p>
         </div>
         <div className="mx-auto mt-8 max-w-4xl space-y-4 md:mt-16">

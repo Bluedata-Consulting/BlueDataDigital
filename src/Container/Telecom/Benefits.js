@@ -15,7 +15,7 @@ const ImageWithListSection = () => {
 
   return (
     <section className="px-4 py-8 space-y-6 bg-blue-shade-5/70 md:py-12 lg:pt-10 my-10 flex flex-col md:flex-row items-center">
-      <div className="md:w-1/2 mb-8 md:mb-0">
+      <div className="ml-10 md:w-1/2 mb-8 md:mb-0">
         <img
           src={BenefitImage}
           alt="Business Benefits"

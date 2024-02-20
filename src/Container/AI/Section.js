@@ -1,117 +1,98 @@
 import React from "react";
+import FeatureBox from "./FeatureBox";
 
 const Section = () => {
+  const features = [
+    {
+      gradient: "from-green-400 to-blue-500",
+      title: "Digital Transformation",
+      description:
+        "Implemented AI/ML solutions for a multinational corporation, streamlining processes and boosting efficiency in their digital transformation journey.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-12 w-12 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.75 5.75a4.94 4.94 0 001.466-1.25M14.25 5.75a4.94 4.94 0 01-1.466-1.25M12 12.25c-3.333 0-6-2.58-6-5.75S8.667 0 12 0s6 2.58 6 5.75-2.667 5.75-6 5.75zM12 12.25a6 6 0 00-6 6.25c0 .69.316 1.325.817 1.75h9.366c.501-.425.817-1.06.817-1.75a6 6 0 00-6-6.25z"
+          />
+        </svg>
+      ),
+    },
+    {
+      gradient: "from-purple-400 via-pink-500 to-red-500",
+      title: "Customized Analytics",
+      description:
+        "Provided tailored analytics solutions for tech startups, enabling them to gain actionable insights from their data and make informed decisions for sustainable growth.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-12 w-12 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M17.657 16.343A8.017 8.017 0 0119 12a8 8 0 11-16 0 8 8 0 019.657-7.657M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+        </svg>
+      ),
+    },
+
+    {
+      gradient: "from-red-400 to-yellow-500",
+      title: "Data Security Consulting",
+      description:
+        "Offered expertise in data security consulting, implementing advanced AI-driven security measures to safeguard sensitive information for financial and technology clients.",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-12 w-12 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
-    <section className="p-4 lg:px-8 py-20">
-      <div className="mx-auto pb-8 flex max-w-[65rem] flex-col items-center space-y-4 text-center">
-        <h2 className="font-bold text-3xl text-blue-shade-2 leading-[1.1] sm:text-3xl lg:text-[40px]">
-          Tech Consulting Use Cases
-        </h2>
+    <div className="py-20 px-10">
+      <div className=" ">
+        <h1 className="text-[42px] font-bold text-center text-black">
+          Our <span className="text-blue-shade-2">ARTIFICAL INTELLIGENCE </span>{" "}
+          Services and Use Cases
+        </h1>
       </div>
 
-      <div className="container mx-auto">
-        {/* First Row */}
-        <div className="flex justify-center gap-8">
-          {/* First Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
-            <img
-              src="dt-min.jpg"
-              alt=""
-              className="h-60 w-auto aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
-              <h3 className="text-3xl font-bold text-blue-shade-1">
-                Digital Transformation
-              </h3>
-              <p className="my-2 text-gray-700">
-                Assisted a multinational corporation in their digital
-                transformation journey by implementing AI and ML solutions,
-                optimizing business processes, and enhancing overall efficiency.
-              </p>
-            </div>
-          </div>
-
-          {/* Second Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
-            <img
-              src="ca.jpg"
-              alt=""
-              className="h-60 w-auto aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
-              <h3 className="text-3xl font-bold text-blue-shade-1">
-                Customized Analytics
-              </h3>
-              <p className="my-2 text-gray-700">
-                Provided tailored analytics solutions for tech startups,
-                enabling them to gain actionable insights from their data and
-                make informed decisions for sustainable growth.
-              </p>
-            </div>
-          </div>
-
-          {/* Second Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
-            <img
-              src="ipd-min.jpg"
-              alt=""
-              className="h-60 w-auto aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
-              <h3 className="text-3xl font-bold text-blue-shade-1">
-                Innovative Product Development
-              </h3>
-              <p className="my-2 text-gray-700">
-                Collaborated with emerging tech companies to develop innovative
-                products powered by AI and ML, positioning them as industry
-                leaders in their respective niches.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Second Row */}
-        <div className="flex justify-center gap-8 mt-8">
-          {/* Third Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
-            <img
-              src="dsc-min.jpg"
-              alt=""
-              className="h-60 w-auto aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
-              <h3 className="text-3xl font-bold text-blue-shade-1">
-                Data Security Consulting
-              </h3>
-              <p className="my-2 text-gray-700">
-                Offered expertise in data security consulting, implementing
-                advanced AI-driven security measures to safeguard sensitive
-                information for financial and technology clients.
-              </p>
-            </div>
-          </div>
-
-          {/* Fourth Section */}
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm border border-blue-shade w-1/3">
-            <img
-              src="cee.png"
-              alt=""
-              className="h-60 w-auto aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-blue-shade-5/70">
-              <h3 className="text-3xl font-bold text-blue-shade-1">
-                Customer Experience Enhancement
-              </h3>
-              <p className="my-2 text-gray-700">
-                Enhanced customer experience for e-commerce businesses by
-                deploying AI-based chatbots, personalized recommendations, and
-                predictive analytics.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 gap-8 lg:mx-20 mt-12 text-center md:grid-cols-2 lg:grid-cols-3">
+        {features.map((feature, index) => (
+          <FeatureBox
+            key={index}
+            gradient={feature.gradient}
+            title={feature.title}
+            description={feature.description}
+            icon={feature.icon}
+          />
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
