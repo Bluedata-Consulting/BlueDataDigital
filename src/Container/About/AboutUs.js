@@ -106,9 +106,10 @@ const AboutUs = () => {
               <p className="mt-4 text-lg text-gray-700 lg:text-[18px]">
                 {" "}
                 With a focus on innovation and client satisfaction, we provide a
-                range of services including web development, software solutions,
-                and technology consulting. Partner with us for a transformative
-                journey towards success.
+                range of services including cutting-edge Generative AI-based
+                solutions, seamless automation through RPA or Python,
+                comprehensive Data Auditing, and Advanced Analytics. Partner
+                with us for a transformative journey towards success.
               </p>
             </div>
           </div>

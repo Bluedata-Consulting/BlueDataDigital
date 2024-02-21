@@ -6,46 +6,55 @@ import FeaturesSection from "./FeaturesSection";
 import WhyUs from "./WhyUs";
 import Benefits from "./Benefits";
 import Blog from "./Blog";
-import ImageTele from "../../Assets/telecom.jpg";
-
 const Telecom = () => {
   return (
     <div>
       <Header />
 
       {/* Hero Section */}
-      <div className="pt-24">
-        <div className="mx-auto w-[90%] lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-          <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-            <h1 className="mt-8 text-3xl font-bold tracking-tight text-blue-shade-2 md:text-4xl lg:text-5xl lg:leading-tight">
-              Telecom Analytics Services
+
+      <section className="pt-24 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+          <div className="sm:text-center lg:text-left">
+            <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-t">
+              <span className="block xl:inline">Enrich your </span>
+              <span className="block text-blue-shade-2/90 xl:inline">
+                Telecom Analytics
+              </span>
+              <span className="block xl:inline"> business</span>
             </h1>
-            <p className="mt-8 text-lg text-gray-800">
+            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Looking to engineer a smarter future with data? You need a correct
               blend of technical skills, experience and business knowledge.
               Count on us to deliver these in the exact measure.
             </p>
-            <div className="mt-8 flex items-start space-x-2">
-              <Link
-                to="/contact"
-                className="rounded-md bg-blue-shade-3 px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-shade-2"
-                onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                GET IN TOUCH
-              </Link>
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                <Link
+                  to="/contact"
+                  className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-shade-2/90 hover:bg-gray-600 md:text-lg "
+                  onClick={() => {
+                    window.scroll({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                >
+                  GET STARTED
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
-            <img className=" object-cover " src={ImageTele} alt="" />
+          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
+            <img
+              className="ml-4 lg:pt-0 object-fit md:h-full scale-105"
+              src="TAS-icon2.png"
+              alt=""
+            />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Hero Section */}
       <div className="bg-blue-shade-5/60 flex flex-col space-y-8 py-16">

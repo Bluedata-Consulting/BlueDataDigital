@@ -1,5 +1,4 @@
 import React from "react";
-import BenefitImage from "../../Assets/benefit.png";
 
 const ImageWithListSection = () => {
   const listItems = [
@@ -17,9 +16,9 @@ const ImageWithListSection = () => {
     <section className="px-4 py-8 space-y-6 bg-blue-shade-5/70 md:py-12 lg:pt-10 my-10 flex flex-col md:flex-row items-center">
       <div className="ml-10 md:w-1/2 mb-8 md:mb-0">
         <img
-          src={BenefitImage}
+          src="TAS-icon.png"
           alt="Business Benefits"
-          className="w-full h-auto md:max-w-full md:h-auto rounded-3xl"
+          className="w-full h-auto md:max-w-full md:h-auto rounded-3xl scale-75"
         />
       </div>
       <div className="md:w-1/2 ml-4 md:ml-12 flex flex-col justify-start h-full">

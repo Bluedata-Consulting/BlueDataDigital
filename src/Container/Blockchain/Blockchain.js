@@ -2,12 +2,10 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Faq from "./Faq";
-// import IndustryUseCases from "./IndustryUseCases";
 import WorkSection from "./WorkSection";
 import OfferingSection from "./OfferingSection";
 import CryptocurrencyDevelopment from "./CryptocurrencyDevelopment";
 import Blog from "./Blog";
-// import { Link } from "react-router-dom";
 import Section from "./Section";
 import CtaSection from "./CtaSection";
 
